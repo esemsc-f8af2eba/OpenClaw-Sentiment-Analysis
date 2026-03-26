@@ -1,0 +1,1198 @@
+post_id,timestamp,source,subreddit,text,upvotes,comments,predicted_label,predicted_category
+1rx7uz5,2026-03-19 00:00:49,reddit,r/MachineLearning,"[P] AIBuildAI: An AI agent that automatically builds AI models (#1 on OpenAI MLE-Bench) Hi everyone,",,,1.0,Productivity Gain
+We recently released AIBuildAI, an agentic system that automatically builds AI models.  ,,,,,,1.0,Productivity Gain
+GitHub: [https://github.com/aibuildai/AI-Build-AI](https://github.com/aibuildai/AI-Build-AI) ,,,,,,,1.0,Productivity Gain
+On OpenAI’s MLE-Bench benchmark, AIBuildAI ranked #1: [https://github.com/openai/mle-bench](https://github.com/openai/mle-bench) ,,,,,,1.0,Productivity Gain
+The system runs an agent loop that automatically:  ,,,,,,,1.0,Productivity Gain
+• analyzes the task  ,,,,,,,1.0,Productivity Gain
+• designs models  ,,,,,,,1.0,Productivity Gain
+• writes code to implement them  ,,,,,,,1.0,Productivity Gain
+• trains the models  ,,,,,,,1.0,Productivity Gain
+• tunes hyperparameters  ,,,,,,,1.0,Productivity Gain
+• evaluates model performance  ,,,,,,,1.0,Productivity Gain
+• iteratively improves the models,,,,,,,1.0,Productivity Gain
+The goal is to reduce the amount of manual work required to build AI models and automate much of the model development process.,,,,,,,1.0,Productivity Gain
+"Happy to answer questions and would love to hear feedback from the community.""",2,1,,,,,1.0,Productivity Gain
+1rx5i61,2026-03-18 22:31:43,reddit,r/MachineLearning,"[D] Looking for arXiv endorsement (cs.LG) - PDE-based world model paper Hi everyone,",,,2.0,Neutral
+I'm a researcher looking for an arXiv endorsement for cs.LG to submit my first paper. I've been working for about a year on FluidWorld, a world model where the prediction engine is a reaction-difffusion PDE instead of attention. The Laplacian diffusion handles spatial propagation, learned reaction terms do the nonlinear mixing, and the PDE integration itself produces the prediction.,,,,1.0,Productivity Gain
+No attention, no KV-cache, O(N) complexity, 867K parameters total. I ran a parameter matched comparison (PDE vs Transformer vs ConvLSTM, all at \~800K params, same encoder/decoder/losses/data on UCF-101) and the interesting finding is that while single-step metrics are nearly identical, the PDE holds together much better on multi-step rollouts -- the diffusion acts as a natural spatial regularizer that prevents error accumulation.,1.0,Productivity Gain
+Paper: [https://github.com/infinition/FluidWorld/blob/main/paper/Fluidworld.pdf](https://github.com/infinition/FluidWorld/blob/main/paper/Fluidworld.pdf),,,,,,,1.0,Productivity Gain
+Endorsement code: 6AB9UP  ,,,,,,,1.0,Productivity Gain
+[https://arxiv.org/auth/endorse?x=6AB9UP](https://arxiv.org/auth/endorse?x=6AB9UP),,,,,,,1.0,Productivity Gain
+If anyone is working on world model, video prediction, neural PDEs, or efficient architectures could endorse me," that would be really appreciated. Happy to answer any questions about the work. Thanks!""",0,0,1.0,Productivity Gain
+1rx5avj,2026-03-18 22:23:58,reddit,r/MachineLearning,[P] ColQwen3.5-v3 release + Case study Happy to share the latest colqwen3.5-4.5B model in the series.,,,1.0,Productivity Gain
+ColQwen3.5-4.5B-v3 is #1 (avg) on the MTEB ViDoRe leaderboard (Pending release) at 75.67 mean, \~half the params, \~13x fewer embedding dims, \~half the memory footprint of the previous #1 model.,,,,1.0,Productivity Gain
+Thoughts: V3 edges out v2 on V3 English u@5 (0.6034 vs 0.6023), a marginal gain for substantially more compute. The real win was the V2 benchmark jump and surpassing 8B models on V3. That's where I decided to draw the line between further optimization and accepting the limitations of the model and training data.,,,,,,1.0,Productivity Gain
+The full evaluation trail is public, with result files covering every candidate tried.,,,,,,1.0,Productivity Gain
+Links:,,,,,,,1.0,Productivity Gain
+* Models (V1, V2, V3): [https://huggingface.co/athrael-soju/colqwen3.5-4.5B-v3](https://huggingface.co/athrael-soju/colqwen3.5-4.5B-v3) (Model cards may need corrections),,,,,1.0,Productivity Gain
+* All eval files are up if you want to check my homework: [https://huggingface.co/datasets/athrael-soju/colqwen-optimization-trail](https://huggingface.co/datasets/athrael-soju/colqwen-optimization-trail),,,,,,,1.0,Productivity Gain
+* Full training methodology &amp; Case Study in the blog post: [https://athrael.net/blog/research/diminishing-returns-benchmark-optimization](https://athrael.net/blog/research/diminishing-returns-benchmark-optimization),,,,,,,1.0,Productivity Gain
+* Mteb Leaderboard (Select ViDoRe V3 from the sidebar on the left): [https://huggingface.co/spaces/mteb/leaderboard](https://huggingface.co/spaces/mteb/leaderboard),,,,,,,1.0,Productivity Gain
+ColQwen3.5-4.5B-v3 is already officially supported by colpali-engine and vLLM (ROCm + CUDA), so you can actually use the thing.,,,,,,1.0,Productivity Gain
+License: Apache 2.0,,,,,,,1.0,Productivity Gain
+"I'm now training the 9B variant with a much simpler setup and will post once that's done.""",1,0,,,,,1.0,Productivity Gain
+1rx4j4s,2026-03-18 21:53:58,reddit,r/MachineLearning,"Evaluation and Alignment: The Seminal Papers (new book + 50% code) Hi r/MachineLearning,",,,1.0,Productivity Gain
+I'm Stjepan from Manning, and I'm posting on behalf of Manning with the mods' approval.,,,,,,1.0,Productivity Gain
+We’ve just released a book that focuses on a part of ML systems that tends to get less attention than model design, but ends up driving a lot of the hard decisions in practice: evaluation and alignment.,,,,,,1.0,Productivity Gain
+**Evaluation and Alignment: The Seminal Papers** by Hanchung Lee  ,,,,,,,1.0,Productivity Gain
+[https://www.manning.com/books/evaluation-and-alignment-the-seminal-papers](https://hubs.la/Q047k5xH0),,,,,,,1.0,Productivity Gain
+[Evaluation and Alignment, The Seminal Papers](https://preview.redd.it/bdl6e5136tpg1.jpg?width=2213&amp;format=pjpg&amp;auto=webp&amp;s=fb15bd9b1540243ff9786193d1ea0e85903c780b),,,,,,1.0,Productivity Gain
+A lot of current work in LLMs and applied ML ends up circling the same set of questions: what does “good” actually mean for this system, how do we measure it, and what do we do when the metrics don’t match user expectations? This book approaches those questions by going back to the research that shaped how we evaluate and adapt models.,,,,,1.0,Productivity Gain
+It walks through the progression from surface-level metrics to semantic similarity approaches and then into more judgment-based evaluation methods. The interesting part is how those ideas connect to real system design. Evaluation is treated as something you define upfront, based on what your system needs to get right, rather than something you tack on at the end.,,,,,1.0,Productivity Gain
+The book also introduces a working cycle that shows up a lot in production settings: define what matters, evaluate against it, analyze failures, and then align the system accordingly. That loop is where most of the practical work happens, especially when you’re balancing things like helpfulness, safety, and consistency of outputs.,1.0,Productivity Gain
+If you’ve ever had a model that looked good on paper but didn’t behave the way you expected in practice, this book spends time in that gap between metrics and behavior.,,,,,,1.0,Productivity Gain
+**For the** r/MachineLearning **community:**  ,,,,,,,1.0,Productivity Gain
+You can get **50% off** with the code **MLLEE450RE**.,,,,,,,1.0,Productivity Gain
+If there’s interest, I’d be happy to invite the author to join the discussion and answer questions about the papers and evaluation approaches covered in the book.,,,,,,1.0,Productivity Gain
+Thanks for having us here.,,,,,,,1.0,Productivity Gain
+Cheers,,,,,,,1.0,Productivity Gain
+"Stjepan""",6,1,,,,,1.0,Productivity Gain
+1rx201a,2026-03-18 20:03:38,reddit,r/MachineLearning,[D] ICML rejects papers of reviewers who used LLMs despite agreeing not to According to multiple posts on Twitter/X ICML has rejected all paper of reviewers who used LLMs for their reviews even though they chose the review track with no LLM use. What are your thoughts on this? Too harsh considering the limited precision of AI detection tools?,,,2.0,Neutral
+It is the first time I see a major conferences taking harsh actions on LLM-generated reviews.,,,,,,,1.0,Productivity Gain
+https://preview.redd.it/trkb82lumspg1.png?width=1205&amp;format=png&amp;auto=webp&amp;s=03953ce11b9803cf35dd7fe83428e4187f8c4092,,,,,,,1.0,Productivity Gain
+",90,39,",,,,,,,1.0,Productivity Gain
+1rx1gtn,2026-03-18 19:37:24,reddit,r/MachineLearning,"[R] A Gradient Descent Misalignment — Causes Normalisation To Emerge [**This paper**](https://arxiv.org/pdf/2512.22247), just accepted at ICLR's GRaM workshop, asks a simple question:",,,1.0,Productivity Gain
+&gt;*Does gradient descent systematically take the wrong step in activation space*?,,,,,,,1.0,Productivity Gain
+It is shown:,,,,,,,1.0,Productivity Gain
+&gt;*Parameters take the step of steepest descent*; ***activations do not***,,,,,,,1.0,Productivity Gain
+The paper mathematically demonstrates this for simple affine layers, convolution, and attention.,,,,,1.0,Productivity Gain
+The work then explores solutions to address this.,,,,,,,1.0,Productivity Gain
+The solutions may consequently provide an alternative *mechanistic explanation* for why normalisation helps at all, as two structurally distinct fixes arise: existing (L2/RMS) normalisers and a new form of fully connected layer (MLP).,,,,,,1.0,Productivity Gain
+Derived is:,,,,,,,1.0,Productivity Gain
+1. **A new form of affine-like layer** (a.k.a. new form for fully connected/linear layer). featuring inbuilt normalisation whilst preserving DOF (unlike typical normalisers). Hence, a new alternative layer architecture for MLPs.,,,,,,1.0,Productivity Gain
+"2. A new family of normalisers: **""""PatchNorm""""** **for convolution**", opening new directions for empirical search.,,,,,,1.0,Productivity Gain
+Empirical results include:,,,,,,,1.0,Productivity Gain
+* This affine-like solution is *not* scale-invariant and is *not* a normaliser, yet it consistently matches or exceeds BatchNorm/LayerNorm in controlled MLP ablation experiments—suggesting that scale invariance is not the primary mechanism at work—but maybe this it is the misalignment.,,,,,,1.0,Productivity Gain
+* The framework makes a clean, falsifiable prediction: increasing batch size should *hurt* performance for divergence-correcting layers. **This counterintuitive effect is observed** empirically and does not hold for BatchNorm or standard affine layers. Corroborating the theory.,,,,,,1.0,Productivity Gain
+Hope this is interesting and worth a read.,,,,,,,1.0,Productivity Gain
+* I've added some (hopefully) interesting intuitions scattered throughout, e.g. the consequences of *reweighting LayerNorm's mean* &amp; why RMSNorm may need the sqrt-n factor &amp; unifying normalisers and activation functions. Hopefully, all surprising fresh insights - please let me know what you think.,,,,,1.0,Productivity Gain
+Happy to answer any questions :-),,,,,,,1.0,Productivity Gain
+"\[[**ResearchGate Alternative Link**](https://www.researchgate.net/publication/399175786_The_Affine_Divergence_Aligning_Activation_Updates_Beyond_Normalisation)\] \[[**Peer Reviews**](https://openreview.net/forum?id=KKQSwSpfJ1#discussion)\]""",20,8,,,,,1.0,Productivity Gain
+1rwyy9g,2026-03-18 17:17:30,reddit,r/MachineLearning,[R] From Garbage to Gold: A Formal Proof that GIGO Fails for High-Dimensional Data with Latent Structure — with a Connection to Benign Overfitting Prerequisites Paper: [https://arxiv.org/abs/2603.12288](https://arxiv.org/abs/2603.12288)  ,,,1.0,Productivity Gain
+GitHub (R simulation, Paper Summary, Audio Overview): [https://github.com/tjleestjohn/from-garbage-to-gold](https://github.com/tjleestjohn/from-garbage-to-gold),,,,,1.0,Productivity Gain
+I'm Terry, the first author. This paper has been 2.5 years in the making and I'd genuinely welcome technical critique from this community.,,,,,,1.0,Productivity Gain
+**The core result:** We formally prove that for data generated by a latent hierarchical structure — Y ← S¹ → S² → S'² — a Breadth strategy of expanding the predictor set asymptotically dominates a Depth strategy of cleaning a fixed predictor set. The proof follows from partitioning predictor-space noise into two formally distinct components:,,,,,,,1.0,Productivity Gain
+* **Predictor Error:** Observational discrepancy between true and measured predictor values. Addressable by cleaning, repeated measurement, or expanding the predictor set with distinct proxies of S¹.,,,,,1.0,Productivity Gain
+* **Structural Uncertainty:** The irreducible ambiguity arising from the probabilistic S¹ → S² generative mapping — the information deficit that persists even with perfect measurement of a fixed predictor set. Only resolvable by expanding the predictor set with distinct proxies of S¹.,,,,,,,1.0,Productivity Gain
+The distinction matters because these two noise types obey different information-theoretic limits. Cleaning strategies are provably bounded by Structural Uncertainty regardless of measurement precision. Breadth strategies are not.,,,,,,,1.0,Productivity Gain
+**The BO connection:** We formally show that the primary structure Y ← S¹ → S² → S'² naturally produces low-rank-plus-diagonal covariance structure in S'² — precisely the spiked covariance prerequisite that the Benign Overfitting literature (Bartlett et al., Hastie et al., Tsigler &amp; Bartlett) identifies as enabling interpolating classifiers to generalize. This provides a generative data-architectural explanation for why the BO conditions hold empirically rather than being imposed as abstract mathematical prerequisites.,,,,,1.0,Productivity Gain
+**Empirical grounding:** The theory was motivated by a peer-reviewed clinical result at Cleveland Clinic Abu Dhabi — .909 AUC predicting stroke/MI in 558k patients using thousands of uncurated EHR variables with no manual cleaning, published in PLOS Digital Health — that could not be explained by existing theory.,,,,,,1.0,Productivity Gain
+**Honest scope:** The framework requires data with a latent hierarchical structure. The paper provides heuristics for assessing whether this condition holds. We are explicit that traditional DCAI's focus on outcome variable cleaning remains distinctly powerful in specific conditions — particularly where Common Method Variance is present.,,,,,,,1.0,Productivity Gain
+The paper is long — 120 pages with 8 appendices — because GIGO is deeply entrenched and the theory is nuanced. The core proofs are in Sections 3-4. The BO connection is Section 7. Limitations are Section 15 and are extensive.,,,,,,,1.0,Productivity Gain
+Fully annotated R simulation in the repo demonstrating Dirty Breadth vs Clean Parsimony across varying noise conditions.,,,,,,,1.0,Productivity Gain
+"Happy to engage with technical questions or pushback on the proofs.""",10,17,,,,,1.0,Productivity Gain
+1rwy5ch,2026-03-18 16:27:22,reddit,r/MachineLearning,"""[P] Tridiagonal eigenvalue models in PyTorch: cheaper training/inference than dense spectral models This post is part of a series I'm working on with a broader goal: understand what one nonlinear """"neuron"""" can do when the nonlinearity is a matrix eigenvalue", and whether that gives a useful middle ground between linear models that are easy to explain and larger neural networks that are more expressive but much less transparent. Something unusual," in this """"attention is all you need"""" world :)",1.0,Productivity Gain
+In this installment, I look at a cheaper variant of the model family by constraining each learned matrix to be symmetric tridiagonal instead of dense.,,,,,,1.0,Productivity Gain
+The model family is still f(x) = λₖ(A₀ + ∑ᵢ xᵢAᵢ), but the eigensolve becomes much cheaper. The motivation here is that diagonal structure collapses the model to something close to piecewise linear, while tridiagonal structure still keeps adjacent latent-variable interactions.,,,,,1.0,Productivity Gain
+The post walks through why this structural restriction is interesting, how I wired `scipy.linalg.eigh_tridiagonal` into PyTorch autograd, and what happens on a few toy and tabular experiments. In my runs, the tridiagonal eigensolver was about `5x-6x` faster than the dense one on `100x100` batches, which was enough to make larger experiments much cheaper to run.,,,1.0,Productivity Gain
+If you're interested in structured spectral models, custom autograd around numerical linear algebra routines, or model families that try to sit between linear interpretability and fully opaque neural nets, the full writeup is here:,,,,1.0,Productivity Gain
+https://alexshtf.github.io/2026/03/15/Spectrum-Banded.html,,,,,,,1.0,Productivity Gain
+This is an engineering writeup rather than a paper," so I'd read it in that spirit.""",15,0,,,,1.0,Productivity Gain
+1rwua2c,2026-03-18 12:39:10,reddit,r/MachineLearning,"[R] PhD Topic Ideas (Malaysia): Machine Learning for Process Monitoring – Industry Needs &amp; Research Gaps Hi everyone,",,,1.0,Productivity Gain
+I’m planning to pursue a PhD in Machine Learning for Process Monitoring, with a focus on applications relevant to Malaysia.,,,,,,1.0,Productivity Gain
+I’m particularly interested in industries that are important in Malaysia, such as:,,,,,,1.0,Productivity Gain
+* Oil &amp; gas and petrochemicals,,,,,,,1.0,Productivity Gain
+* Palm oil processing and biomass/biorefineries,,,,,,,1.0,Productivity Gain
+* Power sector (especially renewable energy integration),,,,,,,1.0,Productivity Gain
+* Manufacturing and semiconductor industries,,,,,,,1.0,Productivity Gain
+From my initial review, it seems the field is evolving toward:,,,,,,1.0,Productivity Gain
+* Real-time monitoring and predictive maintenance using ML,,,,,,,1.0,Productivity Gain
+* Fault Detection,,,,,,,1.0,Productivity Gain
+* Digital twins for industrial processes,,,,,,,1.0,Productivity Gain
+* Deployment challenges (MLOps, scalability, reliability),,,,,1.0,Productivity Gain
+However, I’m trying to better understand the **local context and gaps**, such as:,,,,,1.0,Productivity Gain
+* Limited high-quality industrial datasets in Malaysia,,,,,,,1.0,Productivity Gain
+* Challenges in adopting ML in traditional industries,,,,,,,1.0,Productivity Gain
+* Model reliability in harsh or variable operating conditions,,,,,,,1.0,Productivity Gain
+* Skill and infrastructure gaps for AI deployment,,,,,,,1.0,Productivity Gain
+* Need for explainable and safety-compliant ML systems,,,,,,,1.0,Productivity Gain
+I’d really appreciate insights from those working in or familiar with Malaysia:,,,,,,,1.0,Productivity Gain
+1. What are the key challenges industries in Malaysia are currently facing in process monitoring?,,,,,,,1.0,Productivity Gain
+2. Where do you see the biggest research gaps or unmet needs?,,,,,,,1.0,Productivity Gain
+3. What would be high-impact PhD topics that are both relevant to Malaysia and publishable internationally?,,,,,,,1.0,Productivity Gain
+4. Are there specific companies, sectors, or collaborations (industry–academia) worth exploring?,,,,,1.0,Productivity Gain
+My goal is to work on something that has real industrial impact in Malaysia while maintaining strong research novelty.,,,,,,,1.0,Productivity Gain
+"Thanks in advance for your insights 🙏""",4,1,,,,,1.0,Productivity Gain
+1rwswk1,2026-03-18 11:31:38,reddit,r/MachineLearning,"[R] Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation Hey all,",,,1.0,Productivity Gain
+Quick share: we just dropped a paper ([https://arxiv.org/abs/2603.13099](https://arxiv.org/abs/2603.13099)) where we stop grading models on just the final answer and start looking at whether they actually reason through the problem.,,,,,,,1.0,Productivity Gain
+**TL;DR:** We built CRYSTAL, 6,372 visual questions with verified step by step reasoning. Tested 20 models. The takeaway? Most models are really good at saying the right answer while skipping most of the actual thinking.,,,,,1.0,Productivity Gain
+**The fun stuff:**,,,,,,,1.0,Productivity Gain
+* GPT5 gets 58% accuracy but only recovers 48% of the reasoning steps. It's basically vibing to the right answer.,,,,,,,1.0,Productivity Gain
+* Gemma3 4B out reasons InternVL3.5 38B. 9.5x smaller. Size isn't everything.,,,,,,,1.0,Productivity Gain
+* 19/20 models cherry pick, say a few correct things, skip the rest. High precision, terrible recall.,,,,1.0,Productivity Gain
+* No model keeps its reasoning steps in the right order more than 60% of the time.,,,,,,,1.0,Productivity Gain
+We also trained with a new reward (CPR Curriculum) that forces models to actually reason, not just guess. Got +32% reasoning improvement on Qwen2.5 VL 3B and +93% on InternVL3.5 4B where standard rewards just collapsed to NaN.,,,,,,1.0,Productivity Gain
+Where it falls short:,,,,,,,1.0,Productivity Gain
+"* There's no single """"correct"""" reasoning path. Our references come from 4 MLLMs + human validation", but someone could reason differently and still be right. We can't capture every valid chain.,,,,,,1.0,Productivity Gain
+* Step matching uses cosine similarity with a fixed threshold (0.35). Agrees with humans 84% of the time and 100% below threshold (zero false matches), but the borderline zone (0.35 to 0.70) is messy. That's where most disagreements live.,,,,,,1.0,Productivity Gain
+* We trained CPR Curriculum on Qwen2.5 VL 3B and InternVL3.5 4B. Two models, two architectures. Worked great on both, but we haven't tested on 70B+ scale yet.,,,,,1.0,Productivity Gain
+* Ordered Match F1 checks if steps are in sequence, but doesn't know if step 3 depends on step 2. Causal structure is a different beast we haven't tackled.,,,,,,1.0,Productivity Gain
+Bottom line: this won't tell you everything about your model's reasoning, but it will tell you things that accuracy alone never will.,,,,,,1.0,Productivity Gain
+GitHub: [https://github.com/waybarrios/crystal-benchmark](https://github.com/waybarrios/crystal-benchmark),,,,,,,1.0,Productivity Gain
+Dataset on HuggingFace soon.,,,,,,,1.0,Productivity Gain
+Feedback welcome, roast us if you want.,,,,,,1.0,Productivity Gain
+"[](https://www.reddit.com/submit/?source_id=t3_1rwsuvy&amp;composer_entry=crosspost_nudge)""",2,0,,,,,1.0,Productivity Gain
+1rwm05e,2026-03-18 06:41:37,reddit,r/MachineLearning,[P] I built a visual drag-and-drop ML trainer (no code required). Free &amp; open source. # For those who are tired of writing the same ML boilerplate every single time or to beginners who don't have coding experience.,,,2.0,Neutral
+MLForge is an app that lets you visually craft a machine learning pipeline.,,,,,,,1.0,Productivity Gain
+You build your pipeline like a node graph across three tabs:,,,,,,,1.0,Productivity Gain
+Data Prep - drag in a dataset (MNIST, CIFAR10, etc), chain transforms, end with a DataLoader. Add a second chain with a val DataLoader for proper validation splits.,,,1.0,Productivity Gain
+Model - connect layers visually. Input -&gt; Linear -&gt; ReLU -&gt; Output. A few things that make this less painful than it sounds:,,,,,,,1.0,Productivity Gain
+* Drop in a MNIST (or any dataset) node and the Input shape auto-fills to 1, 28, 28,,,,,1.0,Productivity Gain
+* Connect layers and in\_channels / in\_features propagate automatically,,,,,,,1.0,Productivity Gain
+* After a Flatten, the next Linear's in\_features is calculated from the conv stack above it, so no more manually doing that math,,,,,1.0,Productivity Gain
+* Robust error checking system that tries its best to prevent shape errors.,,,,,,,1.0,Productivity Gain
+Training - Drop in your model and data node, wire them to the Loss and Optimizer node, press RUN. Watch loss curves update live, saves best checkpoint automatically.,,,,1.0,Productivity Gain
+Inference - Open up the inference window where you can drop in your checkpoints and evaluate your model on test data.,,,,,,,1.0,Productivity Gain
+Pytorch Export - After your done with your project, you have the option of exporting your project into pure PyTorch, just a standalone file that you can run and experiment with.,,,,,1.0,Productivity Gain
+Free, open source. Project showcase is on README in Github repo.,,,,,,1.0,Productivity Gain
+GitHub: [https://github.com/zaina-ml/ml\_forge](https://github.com/zaina-ml/ml_forge),,,,,,,1.0,Productivity Gain
+To install MLForge, enter the following in your command prompt,,,,,,1.0,Productivity Gain
+    pip install zaina-ml-forge,,,,,,,1.0,Productivity Gain
+Then,,,,,,,1.0,Productivity Gain
+    ml-forge,,,,,,,1.0,Productivity Gain
+Please, if you have any feedback feel free to comment it below. My goal is to make this software that can be used by beginners and pros.,,,,,,1.0,Productivity Gain
+This is v1.0 so there will be rough edges, if you find one," drop it in the comments and I'll fix it.""",0,4,,,1.0,Productivity Gain
+1rwl1sq,2026-03-18 06:05:45,reddit,r/MachineLearning,[P] Weight Norm Clipping Accelerates Grokking 18-66× | Zero Failures Across 300 Seeds | PDF in Repo https://preview.redd.it/9hxa34bwhopg1.png?width=3600&amp;format=png&amp;auto=webp&amp;s=909e4e1ba2feebbab94651d125a5c8e7591c4ca6,,,1.0,Productivity Gain
+Zero failures across 300 seeds. 66× speedup. 5 lines of code.,,,,,,,1.0,Productivity Gain
+We're two independent researchers. **The method:** per-row ℓ₂ clipping on decoder weights after every optimizer step. No additional memory, no weight decay needed.,,,,,,1.0,Productivity Gain
+**Results on the standard grokking benchmark** (modular arithmetic, decoder-only transformer, same setup as Grokfast \[2024\]):,,,,,1.0,Productivity Gain
+* 2-layer (422k params): 66× over AdamW baseline with Lion+Clip,,,,,,,1.0,Productivity Gain
+* 8-layer (1.6M params): 18× over baseline, zero failures across 300 seeds, IQR reduction 61–72% with edge initialization,,,,,1.0,Productivity Gain
+**Honest scope:** all experiments are modular arithmetic. We're running a 277M LLM test but it'll take weeks on our hardware and results may not transfer cleanly — we're not claiming otherwise. Happy to share progress, dataset, and full model/training parameters.,,,,,1.0,Productivity Gain
+Code + PDF:  ,,,,,,,1.0,Productivity Gain
+[https://github.com/NiftyliuS/cliptogrok](https://github.com/NiftyliuS/cliptogrok)  ,,,,,,,1.0,Productivity Gain
+[https://github.com/NiftyliuS/cliptogrok/blob/main/cliptogrok.pdf](https://github.com/NiftyliuS/cliptogrok/blob/main/cliptogrok.pdf),,,,,,,1.0,Productivity Gain
+"*We're seeking arXiv endorsement (cs.LG) — DM if willing.*""",41,14,,,,,1.0,Productivity Gain
+1rwgcql,2026-03-18 03:17:04,reddit,r/MachineLearning,"[D] : Submission ID in CVPR Workshops. Submitted a CVPR Workshop recently, a first. Official template has space for Submission ID, I presumed that filling it is mandatory just for the main conference. Should Workshop Submission number as on OpenReview be mentioned in that spot ? Will one face a desk rejection in the event that it's not done ?",,,1.0,Productivity Gain
+"Workshop Guidelines don't specify anything about this.""",2,1,,,,,1.0,Productivity Gain
+1rwelsk,2026-03-18 02:17:26,reddit,r/MachineLearning,"[P] Visualizing token-level activity in a transformer I’ve been experimenting with a 3D visualization of LLM inference where nodes represent components like attention layers, FFN, KV cache, etc.",,,1.0,Productivity Gain
+As tokens are generated, activation paths animate across a network (kind of like lightning chains), and node intensity reflects activity.,,,,,1.0,Productivity Gain
+The goal is to make the inference process feel more intuitive, but I’m not sure how accurate/useful this abstraction is.,,,,,,1.0,Productivity Gain
+Curious what people here think — does this kind of visualization help build intuition," or does it oversimplify what’s actually happening?""",5,4,,,,1.0,Productivity Gain
+1rw96pw,2026-03-17 23:08:41,reddit,r/MachineLearning,[P] Built confidence scoring for autoresearch because keeps that don't reproduce are worse than discards Been running autoresearch for about a week. \~100 experiments per night on an H100. The keep rate is around 15%.,,,1.0,Productivity Gain
+The problem isn't the keep/discard loop. That works. The problem is that some of those keeps don't hold up. Karpathy's metioned that 5% warmup (a keep on an earlier session) actually hurt performance when run again. A 0.02% improvement in val\_bpb could be a real win or GPU nondeterminism. After extended runs it gets worse: 68 experiments for a single keep.,,,,,,,1.0,Productivity Gain
+If you build on a false keep (change architecture based on it, stack more experiments on top), you're compounding noise. That's worse than a clean discard.,,,,,1.0,Productivity Gain
+So I built three CLIs:,,,,,,,1.0,Productivity Gain
+**autojudge** estimates noise floor from your recent experiments, checks if the result sits on the Pareto front (val\_bpb vs memory), and returns a confidence scored verdict: STRONG\_KEEP, KEEP, MARGINAL, RETEST, DISCARD,1.0,Productivity Gain
+**autosteer** analyzes which categories of experiments (architecture, hyperparams, optimizer) historically produced real improvements and suggests what to try next. Exploit mode when you're on a streak, explore when you're stuck. Stops the random walk.,,,,1.0,Productivity Gain
+**autoevolve** is more experimental. It puts multiple agents on separate git worktrees with different strategies competing on the same problem. Winning ideas get cross pollinated.,,,,,,,1.0,Productivity Gain
+The difference in practice: instead of waking up to a TSV and guessing which keeps are real, you wake up to ranked results with confidence scores and a clear next step.,,,,,,1.0,Productivity Gain
+Caveats: noise floor estimation needs \~5 experiments to stabilize. autosteer's suggestions are category level, not causal. autoevolve is the newest and least polished.,,,,,,1.0,Productivity Gain
+pip install autojudge autosteer autoevolve,,,,,,,1.0,Productivity Gain
+"https://preview.redd.it/ekm1db5lfmpg1.png?width=800&amp;format=png&amp;auto=webp&amp;s=68265f92001c7582d049a74969e8bf0993e021d9""",6,5,,,,,1.0,Productivity Gain
+1rw58ku,2026-03-17 20:33:15,reddit,r/MachineLearning,"[P] mlx-tune – Fine-tune LLMs on Apple Silicon with MLX (SFT, DPO, GRPO, VLM) Sharing **mlx-tune**, a Python library for fine-tuning LLMs natively on Apple Silicon using Apple's MLX framework.",,,2.0,Neutral
+It supports SFT, DPO, ORPO, GRPO, KTO, SimPO trainers with proper loss implementations, plus vision-language model fine-tuning (tested with Qwen3.5). The API mirrors Unsloth/TRL,1.0,Productivity Gain
+Built on top of mlx-lm and mlx-vlm. LoRA/QLoRA, chat templates for 15 model families, GGUF export. Runs on 8GB+ unified RAM.,,,,,1.0,Productivity Gain
+Not a replacement for Unsloth on NVIDIA — this is for prototyping locally on Mac before scaling to cloud GPUs.,,,,,,,1.0,Productivity Gain
+"GitHub: [https://github.com/ARahim3/mlx-tune](https://github.com/ARahim3/mlx-tune) """,44,3,,,,,1.0,Productivity Gain
+1rw3a3j,2026-03-17 18:56:52,reddit,r/MachineLearning,"[D] Releasing a professional MQM-annotated MT dataset (16 lang pairs, 48 annotators) Hey all,",,,1.0,Productivity Gain
+We've been doing translation quality evaluation work and decided to open-source one of our annotated datasets. Most MT test sets out there have either crowdsourced (noisy) annotations or are locked behind paywalls - we wanted to put something out with proper professional linguist annotations.,,,,,,,1.0,Productivity Gain
+What's in it:,,,,,,,1.0,Productivity Gain
+* 362 translation segments,,,,,,,1.0,Productivity Gain
+* 16 language pairs,,,,,,,1.0,Productivity Gain
+* 48 professional linguists (not crowdsourced),,,,,,,1.0,Productivity Gain
+* Full MQM error annotations (category, severity, span),,,,,1.0,Productivity Gain
+* Multiple annotators per segment for IAA analysis,,,,,,,1.0,Productivity Gain
+The methodology follows WMT guidelines - same error typology, same severity levels. We hit Kendall's τ = 0.317 on inter-annotator agreement, which is \~2.6x what typical WMT campaigns report. Not saying we're special, just that consistent annotator training seems to matter a lot.,,,,1.0,Productivity Gain
+Dataset: [https://huggingface.co/datasets/alconost/mqm-translation-gold](https://huggingface.co/datasets/alconost/mqm-translation-gold),,,,,,,1.0,Productivity Gain
+Happy to answer questions about the annotation process or methodology - and if anyone digs in and spots issues with the data," we'd genuinely want to know.""",6,0,,,,1.0,Productivity Gain
+1rw1eag,2026-03-17 17:05:17,reddit,r/MachineLearning,[R] Attention Residuals by Kimi Team arXiv:2603.15031 \[cs.CL\]: https://arxiv.org/abs/2603.15031,,,1.0,Productivity Gain
+Abstract: Residual connections with PreNorm are standard in modern LLMs, yet they accumulate all layer outputs with fixed unit weights. This uniform aggregation causes uncontrolled hidden-state growth with depth, progressively diluting each layer's contribution. We propose Attention Residuals (AttnRes), which replaces this fixed accumulation with softmax attention over preceding layer outputs, allowing each layer to selectively aggregate earlier representations with learned, input-dependent weights. To address the memory and communication overhead of attending over all preceding layer outputs for large-scale model training, we introduce Block AttnRes,1.0,Productivity Gain
+Scaling law experiments confirm that the improvement is consistent across model sizes, and ablations validate the benefit of content-dependent depth-wise selection. We further integrate AttnRes into the Kimi Linear architecture (48B total / 3B activated parameters) and pre-train on 1.4T tokens, where AttnRes mitigates PreNorm dilution, yielding more uniform output magnitudes and gradient distribution across depth, and improves downstream performance across all evaluated tasks.,,,1.0,Productivity Gain
+"From Kimi.ai on 𝕏: https://x.com/Kimi\_Moonshot/status/2033378587878072424""",85,18,,,,,1.0,Productivity Gain
+1rvy3m4,2026-03-17 13:39:57,reddit,r/MachineLearning,[N] openreview profile glitch?? my openreview profile info is looking like this. and it is same for all of my co workers as well. ,,,2.0,Neutral
+https://preview.redd.it/dy7y0pkxljpg1.png?width=1245&amp;format=png&amp;auto=webp&amp;s=c4131e0868919f5fef525b0cf5004aea673c676d,,,,,,,1.0,Productivity Gain
+",25,15,",,,,,,,1.0,Productivity Gain
+1rvxztn,2026-03-17 13:33:59,reddit,r/MachineLearning,"[R] What kind on video benchmark is missing VLMs? I am just curious searching out lots of benchmarks to evaluate VLMs for videos for instance VideoMME, MLVU, MVBench,LVBench and many more ",,,1.0,Productivity Gain
+"I am still fingering out what is missing in terms of benchmarking VLMs? like what kind of dataset i can create to make it more physical and open world""",0,0,,,,,1.0,Productivity Gain
+1rvu5df,2026-03-17 10:20:44,reddit,r/MachineLearning,[R] Genomic Large Language Models Can a DNA language model find what sequence alignment can't?,,,1.0,Productivity Gain
+I've been exploring Evo2, Arc Institute's genomic foundation model trained on 9.3 trillion nucleotides, to see if its learned representations capture biological relationships beyond raw sequence similarity.,,,,,1.0,Productivity Gain
+The setup: extract embeddings from Evo2's intermediate layers for 512bp windows across 25 human genes, then compare what the model thinks is similar against what BLAST (the standard sequence alignment tool) finds.,,,,,,1.0,Productivity Gain
+Most strong matches were driven by common repeat elements (especially Alu). But after stricter filtering, a clean pair remained:,,,,,,1.0,Productivity Gain
+A section of the VIM (vimentin, chr10) gene and a section of the DES(desmin, chr2) gene showed very high similarity (cosine = 0.948), even though they have no detectable sequence match. Both regions are active promoters in muscle and connective tissue cells, share key regulatory proteins, and come from two related genes that are often expressed together.,,1.0,Productivity Gain
+This suggests Evo2 is starting to learn to recognize patterns of gene regulation — not just the DNA letters themselves — even when the sequences look completely different.,,,,,,,1.0,Productivity Gain
+That said, this kind of meaningful signal is still hard to find. It only appears after heavy filtering, and many other matches remain noisy.,,,,,1.0,Productivity Gain
+Overall, Evo2 appears to capture some real biological information beyond sequence alignment, but making it practically useful will take more work.,,,,,1.0,Productivity Gain
+Would be curious to hear thoughts from others in genomics and AI.,,,,,,,1.0,Productivity Gain
+https://preview.redd.it/ya4k6xwhmipg1.png?width=2496&amp;format=png&amp;auto=webp&amp;s=8e7b4c0bd8c9540b39678a9adb5ab6e0a500eac6,,,,,,,1.0,Productivity Gain
+",18,11,",,,,,,,1.0,Productivity Gain
+1rv7e1e,2026-03-16 19:56:24,reddit,r/MachineLearning,[D] Lossless tokenizers lose nothing and add nothing — trivial observation or worth formalizing? I wrote up a short information-theoretic argument for why lossless tokenization neither restricts the expressiveness of language models nor introduces unavoidable redundancy. The key ideas:,,,0.0,Security Risk
+* Any target distribution over strings can be exactly induced by a distribution over token sequences (via the canonical construction),,,,,,,1.0,Productivity Gain
+* The canonical distribution achieves H(Q) = H(P) — no extra entropy from tokenization,,,,,,,1.0,Productivity Gain
+* In practice, models do leak \~0.5–2% probability onto non-canonical tokenizations (Chirkova et al., 2023), and deliberately introducing this noise via BPE-Dropout can actually help generalization,,,,1.0,Productivity Gain
+[https://douglasswng.github.io/why-tokens-enough/](https://douglasswng.github.io/why-tokens-enough/),,,,,,,1.0,Productivity Gain
+"I'm curious whether people find this kind of formalization useful or if it's """"obviously true"""" and not worth writing down. The practical punchline — that the theoretically optimal thing (concentrate on canonical tokenizations) isn't always best in practice (BPE-Dropout helps) — was the part I found most interesting.""",21,16,,,,,1.0,Productivity Gain
+1rv45pi,2026-03-16 16:49:36,reddit,r/MachineLearning,"[D] how to parallelize optimal parameter search for DL NNs on multiple datasets? suppose i have 5 and 6 datasets, 11 in total.",,,1.0,Productivity Gain
+then i have a collection of 5 different deep learning networks, each having their own set of free non-DL parameters, ranging from none to 3-4.,,,,,1.0,Productivity Gain
+imagine i have a list of educated guesses for each parameter (5-6 values) and i wanna try all their combinations for each DL method on each dataset. i’m okay with leaving it computing overnight. how would you approach this problem? is there a way to compute these non-sequentially/in parallel with a single GPU?,,,,,,,1.0,Productivity Gain
+\* each run has 2 phases: learning and predicting, and there’s the model checkpoint artifact that’s passed between them. i guess these have to now be assigned special suffixes so they don’t get overwritten.,,,,,,1.0,Productivity Gain
+\* the main issue is a single GPU. i don’t think there’s a way to “split” the GPU as you can do with CPU that has logical cores. i’ve completed this task for non-DL/NN methods where each of 11 datasets occupied 1 core. seems like the GPU will become a bottleneck.,,,,,,,1.0,Productivity Gain
+\* should i also try to sweep the DL parameters like epochs, tolerance, etc?,,,,,1.0,Productivity Gain
+"does anyone have any advice on how to do this efficiently?""",10,11,,,,,1.0,Productivity Gain
+1ruxn9t,2026-03-16 10:40:43,reddit,r/MachineLearning,"[P] Using residual ML correction on top of a deterministic physics simulator for F1 strategy prediction Personal project I've been working on as a CSE student: F1Predict, a race simulation and strategy intelligence system.",,,2.0,Neutral
+Architecture overview:,,,,,,,1.0,Productivity Gain
+\- Deterministic lap time engine (tyre deg, fuel load, DRS, traffic) as the baseline,,,,1.0,Productivity Gain
+\- LightGBM residual model trained on FastF1 historical telemetry to correct pace deltas — injected into driver profile generation before Monte Carlo execution,,,,,,,1.0,Productivity Gain
+\- 10,000-iteration Monte Carlo producing P10/P50/P90 distributions per driver per race,,,,,,1.0,Productivity Gain
+\- Auxiliary safety car hazard classifier (per lap window) modulating SC probability in simulation,,,,,,,1.0,Productivity Gain
+\- Feature versioning in the pipeline: tyre age × compound, qualifying delta, sector variance, DRS activation rate, track evolution coefficient, weather delta,,1.0,Productivity Gain
+\- Strategy optimizer runs at 400 iterations (separate from the main MC engine) to keep web response times reasonable,,,,,,,1.0,Productivity Gain
+The ML layer degrades gracefully if no trained artifact is present, simulation falls back to the deterministic baseline cleanly. Redis caches results keyed on sha256 of the normalized request.,,,,,,1.0,Productivity Gain
+Current limitation: v1 residual artifact is still being trained on a broader historical dataset, so ML and deterministic paths are close in output for now. Scaffolding and governance are in place.,,,,,,1.0,Productivity Gain
+Stack: Python · FastAPI · LightGBM · FastF1 · Supabase · Redis · React/TypeScript,,,,,,,1.0,Productivity Gain
+Repo: [https://github.com/XVX-016/F1-PREDICT](https://github.com/XVX-016/F1-PREDICT),,,,,,,1.0,Productivity Gain
+Live: [https://f1.tanmmay.me](https://f1.tanmmay.me),,,,,,,1.0,Productivity Gain
+Happy to discuss the modelling approach, feature engineering choices," or anything that looks architecturally off. This is a learning project and I'd genuinely value technical feedback.""",11,5,,,1.0,Productivity Gain
+1rux8j1,2026-03-16 10:21:30,reddit,r/MachineLearning,"[D] Anyone else facing issues with Dataset Track submission for ACM MM 2026? The official OpenReview submission page doesn’t seem to include a link or option for dataset track submissions. But in the official guidelines, it clearly states that papers for datasets must be submitted under the Dataset Track.",,,2.0,Neutral
+I checked last year’s ACM MM 2025, and they had a separate track listed but I can’t seem to find it this year.,,,,,,1.0,Productivity Gain
+Has anyone figured this out or heard any updates from the organizers?,,,,,,,1.0,Productivity Gain
+https://preview.redd.it/951k180nhbpg1.png?width=683&amp;format=png&amp;auto=webp&amp;s=3099ec6bb5a2efb3475dc04f9418da648a122941,,,,,,,1.0,Productivity Gain
+https://preview.redd.it/5wisjp3ohbpg1.png?width=587&amp;format=png&amp;auto=webp&amp;s=64feaa4a4512bca99003a8c9da55df05e0d0320f,,,,,,,1.0,Productivity Gain
+",1,2,",,,,,,,1.0,Productivity Gain
+1rx502f,2026-03-18 22:12:16,reddit,r/devops,"Weve been running into a lot of friction trying to get a clear picture across all our services lately Over the past few months we scaled out more microservices and evrything is spread across different logging and metrics tools. kubernetes logs stay in the cluster, app logs go into the SIEM, cloud provider keeps its own audit and metrics, and any time a team rolls out a new service it seems to come with its own dashboard.",,,1.0,Productivity Gain
+last week we had a weird spike in latency for one service. It wasnt a full outage, just intermittent slow requests, but figuring out what happened took way too long. we ended up flipping between kubernetes logs, SIEM exports, and cloud metrics trying to line up timestamps. some of the fields didn’t match perfectly, one pod was restarted during the window so the logs were split, and a cou\[ple of the dashboards showed slightly different numbers. By the time we had a timeline,1.0,Productivity Gain
+For teams running microservices at scale," how do you handle this without adding more dashboards or tools? do you centralize logs somewhere first or just accept that investigations will be a mess every time something spikes?""",0,6,,,,1.0,Productivity Gain
+1rwnudj,2026-03-18 07:51:14,reddit,r/devops,"Looking to get real DevOps exposure by helping on small tasks Hey everyone I know this might not be the usual way to ask, so feel free to ignore if it’s not appropriate here I’m currently learning DevOps and trying to move beyond tutorials into real-world work I’m not looking for paid work right now just an opportunity to contribute and learn by doing If anyone has small, non-critical tasks, backlog items, or anything in a dev/staging setup where an extra hand could help, I’d be glad to contribute i understand the concerns around access and trust, so even guidance towards where I can find such opportunities would mean a lot.",26,18,2.0,Neutral
+1rwecc6,2026-03-18 02:08:29,reddit,r/devops,AWS CloudFormation Diagrams 0.3.0 is out! [AWS CloudFormation Diagrams](https://github.com/philippemerle/AWS-CloudFormation-Diagrams) is an open source tool to generate AWS infrastructure diagrams from AWS CloudFormation templates.,,,2.0,Neutral
+It parses both YAML and JSON AWS CloudFormation templates, supports [159 AWS resource types and any custom resource types](https://github.com/philippemerle/AWS-CloudFormation-Diagrams/blob/main/docs/supported_resource_types.md), supports `Rain::Module` resource type, supports `DependsOn`, `Ref`, `Fn::GetAtt` relationships, and `${}` resource attributes,1.0,Productivity Gain
+This new release comes with [many improvements](https://github.com/philippemerle/AWS-CloudFormation-Diagrams/releases/tag/0.3.0) and is available as a [Python package in PyPI](https://pypi.org/project/AWS-CloudFormation-Diagrams).,,,,,,,1.0,Productivity Gain
+",5,3,",,,,,,,1.0,Productivity Gain
+1rw7c6l,2026-03-17 22:00:24,reddit,r/devops,"DevOps Intern Facing an Issue – Need Advice I am a 21M DevOps intern who was recently moved to a new project where I handle some responsibilities while my senior mentor mainly reviews my work. However, my mentor expects me to have very deep, associate-level knowledge. Whenever I make a mistake, he only points it out without explaining it, and even when he fixes something, he does not provide any explanation , I am not expecting spoon feeding but if it's my accountability then atleast one explanation would be great. Since I am still an intern and learning, I am unsure how to handle this situation.What should I do??",51,65,1.0,Productivity Gain
+1rvw6b8,2026-03-17 11:57:00,reddit,r/devops,Do DevOps engineers actually need to understand business logic deeply? I’ve been thinking about this lately while working on my own projects and learning more about DevOps.,,,1.0,Productivity Gain
+From what I understand, DevOps is mostly about automation, CI/CD, infrastructure, monitoring, etc. But when I try to build more “real-world” projects, I keep running into situations where I need to understand the business logic to do things properly.,1.0,Productivity Gain
+For example:,,,,,,,1.0,Productivity Gain
+Setting up pipelines — you need to know what actually matters in the app (critical flows, edge cases, etc.),,,,,1.0,Productivity Gain
+Monitoring — what should you alert on if you don’t understand what’s “business critical”?,,,,,,,1.0,Productivity Gain
+Scaling — which services matter most to users or revenue?,,,,,,,1.0,Productivity Gain
+At the same time, I’ve seen people say DevOps engineers should stay more on the platform/infrastructure side and not go too deep into application logic.,,,,,,1.0,Productivity Gain
+So I’m a bit confused.,,,,,,,1.0,Productivity Gain
+How deep do you actually need to go into business logic as a DevOps engineer? Is a high-level understanding enough," or do you need to think almost like a backend engineer/product person?""",5,23,,,,1.0,Productivity Gain
+1rvv08u,2026-03-17 11:00:19,reddit,r/devops,I’ve been experimenting with deterministic secret remediation in CI/CD pipelines using Python AST (refuses unsafe fixes) I’ve been experimenting with a slightly different approach to secret handling in CI/CD pipelines.,,,2.0,Neutral
+Most scanners detect hardcoded secrets, but the remediation is still manual. The pipeline fails, someone edits the file, commits again, and reruns the build.,,,1.0,Productivity Gain
+I wanted to see if the obvious safe cases could be automated.,,,,,,,1.0,Productivity Gain
+The idea was to see if secret remediation could be automated safely enough to run directly inside CI pipelines.,,,,,,,1.0,Productivity Gain
+So I started experimenting with a small tool that:,,,,,,,1.0,Productivity Gain
+\- scans Python repositories for hardcoded secrets  ,,,,,,,1.0,Productivity Gain
+\- analyzes assignments using the Python **AST** instead of regex  ,,,,,,,1.0,Productivity Gain
+\- replaces the secret with an **environment variable reference** when the change is structurally safe  ,,,,,,,1.0,Productivity Gain
+**- refuses the change** if it can’t prove the rewrite is safe,,,,,,,1.0,Productivity Gain
+The idea is to keep the behavior **deterministic**.,,,,,,,1.0,Productivity Gain
+No LLM patches, no guessing. If the transformation isn’t guaranteed to preserve the code structure, it just reports the finding and leaves the file untouched.,,,,,1.0,Productivity Gain
+Example of the kind of case it handles.,,,,,,,1.0,Productivity Gain
+Before  ,,,,,,,1.0,Productivity Gain
+"SENDGRID\_API\_KEY = """"SG.live-abc123xyz987""""",,,,,,,1.0,Productivity Gain
+After  ,,,,,,,1.0,Productivity Gain
+"SENDGRID\_API\_KEY = os.environ\[""""SENDGRID\_API\_KEY""""\]",,,,,,,1.0,Productivity Gain
+But something like this would be **refused**:  ,,,,,,,1.0,Productivity Gain
+"token = """"Bearer """" + """"sk-live-abc123""""",,,,,,,1.0,Productivity Gain
+because the literal can't be safely isolated.,,,,,,,1.0,Productivity Gain
+The motivation is mainly **automation in CI/CD**:  ,,,,,,,1.0,Productivity Gain
+detect → deterministic fix → pipeline continues  ,,,,,,,1.0,Productivity Gain
+or  ,,,,,,,1.0,Productivity Gain
+detect → refuse → pipeline fails and requires manual review,,,,,,,1.0,Productivity Gain
+Curious how people here approach this.,,,,,,,1.0,Productivity Gain
+\- Would you allow **automatic remediation** in a CI pipeline?  ,,,,,,,1.0,Productivity Gain
+\- Or should CI stop at **detection only**?  ,,,,,,,1.0,Productivity Gain
+\- Are teams already doing something like this internally?,,,,,,,1.0,Productivity Gain
+Interested to hear how teams handle this problem in real pipelines.,,,,,,,1.0,Productivity Gain
+If anyone wants to look at the experiment or try breaking it:  ,,,,,,,1.0,Productivity Gain
+"[https://github.com/VihaanInnovations/autonoma](https://github.com/VihaanInnovations/autonoma)""",8,21,,,,,1.0,Productivity Gain
+1rvt8tr,2026-03-17 09:41:47,reddit,r/devops,Product developer to devops. What should I know? I recently got moved out of my company where I was doing SaaS development in Django (DRF) and React for a few years. I got really comfy doing that and enjoyed it a lot but for financial reasons my company moved me to the parent company on a team that’s very devops heavy. ,,,1.0,Productivity Gain
+Now it’s all Kubernetes, Terraform, GitHub actions, Jenkins, CI/CD," Datadog etc. I’ve been feeling pretty overwhelmed and out of my element. The imposter syndrome is real! Any advice for adapting to this new environment? Are there good resources for learning these tools or is it just better to observe and learn by osmosis? """,9,1.0,Productivity Gain
+1rvgyh6,2026-03-17 02:00:21,reddit,r/devops,does anyone using this exact architecture?                     Internet Users,,,2.0,Neutral
+                          │,,,,,,,1.0,Productivity Gain
+                          ▼,,,,,,,1.0,Productivity Gain
+                  api.google.ai,,,,,,,1.0,Productivity Gain
+                  app.google.ai,,,,,,,1.0,Productivity Gain
+                          │,,,,,,,1.0,Productivity Gain
+                          ▼,,,,,,,1.0,Productivity Gain
+                   CloudFront CDN,,,,,,,1.0,Productivity Gain
+                          │,,,,,,,1.0,Productivity Gain
+            ┌─────────────┴─────────────┐,,,,,,,1.0,Productivity Gain
+            │                           │,,,,,,,1.0,Productivity Gain
+            ▼                           ▼,,,,,,,1.0,Productivity Gain
+          S3 Bucket              Load Balancer,,,,,,,1.0,Productivity Gain
+         (Frontend)                    │,,,,,,,1.0,Productivity Gain
+         stati website                 |,,,,,,,1.0,Productivity Gain
+                                       ▼,,,,,,,1.0,Productivity Gain
+                                 Target Group,,,,,,,1.0,Productivity Gain
+                                  Port 8001,,,,,,,1.0,Productivity Gain
+                                       │,,,,,,,1.0,Productivity Gain
+                                       ▼,,,,,,,1.0,Productivity Gain
+                                EC2 Instance,,,,,,,1.0,Productivity Gain
+                                       │,,,,,,,1.0,Productivity Gain
+                                       ▼,,,,,,,1.0,Productivity Gain
+                               Docker Container,,,,,,,1.0,Productivity Gain
+                                  Node.js API,,,,,,,1.0,Productivity Gain
+                                   Port 8001,,,,,,,1.0,Productivity Gain
+Is there any need for improvement?  ,,,,,,,1.0,Productivity Gain
+Is this the good approach for a production application?  ,,,,,,,1.0,Productivity Gain
+"What are the other alternatives?""",0,10,,,,,1.0,Productivity Gain
+1rv99cj,2026-03-16 21:21:11,reddit,r/devops,"Cinder CSI vs Ceph RBD CSI in Kubernetes: An Analysis of Persistent Volume Lifecycle Performance Hey everyone, I recently investigated the performance differences between [storage classes on Rackspace Spot](https://spot.rackspace.com/docs/en/persistent-volumes), specifically comparing storage classes backed by OpenStack Cinder against those backed directly by Ceph RBD on Rackspace Spot and I wrote an article on it.",,,1.0,Productivity Gain
+Here's the article: [Cinder CSI vs Ceph RBD CSI in Kubernetes: An Analysis of Persistent Volume Lifecycle Performance on Rackspace Spot](https://spot.rackspace.com/blogs/cinder-csi-vs-ceph-rbd-csi-in-kubernetes-an-analysis-of-persistent-volume-lifecycle-performance-on-rackspace-spot),,,,,,,1.0,Productivity Gain
+Users of Rackspace Spot observed that when creating or deleting Persistent Volumes backed by OpenStack Cinder storage classes, the operations often took a significant amount of time to complete. This could lead to pods getting stuck in `ContainerCreating` for a long time.,,,,,,1.0,Productivity Gain
+Meanwhile, things were a whole lot faster with the Ceph RBD storage class.,,,,,,1.0,Productivity Gain
+I ran a detailed analysis to understand exactly why this happens architecturally and compared it against the [newer spot-ceph storage class](https://spot.rackspace.com/blogs/why-kubernetes-ceph-csi-for-rackspace-spot).,,,,,,,1.0,Productivity Gain
+The summary is that OpenStack Cinder requires coordination across about five independent control plane layers before a single volume attachment can finalize: Kubernetes, the CSI driver, Cinder, Nova(OpenStack Compute), and the hypervisor all have to reach agreement before the VolumeAttachment object is updated.,,,1.0,Productivity Gain
+When Kubernetes retries while any of those layers is still in a transitional state, you get state conflicts that compound into significant delays and longer pod startup times.,,,,,,1.0,Productivity Gain
+Meanwhile, for Ceph, the CSI driver communicates directly with the Ceph cluster, resulting in a straightforward volume attachment path. ,,,,1.0,Productivity Gain
+Here's the Performance summary:,,,,,,,1.0,Productivity Gain
+* Detach phase: Cinder requires 75 seconds; Ceph completes in 10 seconds with clean removal,,,,,,,1.0,Productivity Gain
+* Attach phase (initial): Cinder requires 70 seconds with 3 retry failures due to state conflicts; Ceph completes in &lt;1 second with a single successful attempt,,,,,,,1.0,Productivity Gain
+* Attach phase (reattachment): Cinder requires 71 seconds with 3 retry failures (identical pattern); Ceph completes in &lt;1 second with a single successful attempt,,,,,,,1.0,Productivity Gain
+* End-to-end pod rescheduling: 151 seconds (Cinder: 75s detach + 76s reattach) versus 11 seconds (Ceph: 10s detach + 1s reattach) - a **13.7x performance improvement**,,,,,,,1.0,Productivity Gain
+If you're interested in Kubernetes volume internals or want to understand how these two different storage class implementations work in Kubernetes," you might find this article useful.""",3,1,,,,1.0,Productivity Gain
+1ruxklc,2026-03-16 10:37:10,reddit,r/devops,"Workspaces, Terragrunt or something else In past I have maintained around 7 environments with Terraform, each in its separate directory and state , the main file calling common modules. Recently have been given ownership of another project, they have around 7-8 environments maintained using Terraform. They utilise workspaces. Each solution has benefits and issues, the first one having to duplicate file and workspaces having a common state file. I started looking at Terragrunt as alternative. I would like to know practical experiences of managing environments at scale and which practice/tools can make life easier.",23,32,2.0,Neutral
+1rup0dr,2026-03-16 04:36:00,reddit,r/devops,Another Burnout Article Found this article:,,,1.0,Productivity Gain
+&gt;This was an unusually hard post to write, because it flies in the face of everything else going on. I first started noticing a concerning new phenomenon a month ago, just after the new year, where people were overworking due to AI. This week I’m suddenly seeing a bunch of articles about it. I’ve collected a number of data points, and I have a theory. My belief is that this all has a very simple explanation: AI is starting to kill us all, Colin Robinson style.,,1.0,Productivity Gain
+"[https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163](https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163)""",49,24,,,,,1.0,Productivity Gain
+1ru0ih0,2026-03-15 09:03:27,reddit,r/devops,"Need assistance with switching into Devops Role/Cloud Role Hello guys,",,,1.0,Productivity Gain
+I’m feeling really depressed right now because I haven’t been able to switch jobs. I’ve been trying for a year, but nothing has worked out so far. I started studying cloud technologies, but I don’t feel confident enough to appear for the certification exam. I also tried building a DevOps project, yet I’m unsure how to present it properly on my resume.,,,,1.0,Productivity Gain
+I feel extremely tired and exhausted from trying continuously. I would really appreciate any advice on why switching jobs feels so difficult right now. I’m currently targeting a salary of around 12 LPA," but I haven’t been receiving any interview calls. I am currently working in support and no little experience in devops role where I cant write in my resume. I tried applying for freelancing but somehow gets rejected. I tried checking in my organisation for role switch / opportunity still nothing works out. What to do ?""",0,18,,,,1.0,Productivity Gain
+1rtz5kz,2026-03-15 08:01:05,reddit,r/devops,"Close to “Retirement”, how to find part time remote work So I’m a few years from retirement. I have over 10 years in DevOps (Mostly AWS), before that 20 years in backend Java Development. ",,,1.0,Productivity Gain
+I’m. It sure I want to completely stop work. I don’t want to do the full 40 hours either. ,,,,,,,1.0,Productivity Gain
+I’m wondering if others have found part time or even project work. How you go about finding those types of jobs. ,,,,,,,1.0,Productivity Gain
+"I’ve looked at some site like UpWork but I don’t see a lot of postings that aren’t full time. """,48,26,,,,,1.0,Productivity Gain
+1rtv50m,2026-03-15 05:14:24,reddit,r/devops,"""What are folks using for their IaC devops environments? Hi all, to preface I work as a software engineer full time but own a small business that I run on the side. That's all to say my skillset isn't predominantly in devops but through previous jobs and my side business I've had a """"fair amount"""" of exposure to various technologies (e.g. k8s", rancher, RKE,1.0,Productivity Gain
+The business runs on a rancher provisioned RKE cluster and a combination of argocd apps and rancher apps (via helm) are used as deployments. Backups are gathered via Velero and stored in S3 every night.,,,,,,,1.0,Productivity Gain
+"A few weeks ago the cluster was corrupted and had to be restored via velero with a lot of manual intervention to get everything working again. This (alongside our inability to """"easily"""" move to RKE2", upgrade the cluster, etc), has convinced me that its time to investigate an IaC solution.,,,,1.0,Productivity Gain
+"I've been playing around with pulumi + cloud-init for standing up the core infrastructure and moving all rancher apps to argocd to centralize everything as a gitops workflow. My question(s) are: is this a reasonable setup? And if so what's the dividing line between where pulumi ends and argocd starts? Does the following sound like a """"good""""", sustainable setup?,,,,,,1.0,Productivity Gain
+* Pulumi,,,,,,,1.0,Productivity Gain
+   * Provision k3s via cloud-init, setup rancher,,,,,,1.0,Productivity Gain
+   * After rancher node sets up, use rancher provider to create a RKE2 cluster, let rancher provision,,,,,1.0,Productivity Gain
+   * After cluster provisions, setup argocd projects/apps,,,,,,1.0,Productivity Gain
+* Argocd handles daily gitops based deployments,,,,,,,1.0,Productivity Gain
+"I know there's no """"one size fits all"""" solution and I'm happy to answer questions about the business", access patterns," etc.""",10,23,,,1.0,Productivity Gain
+1rttiym,2026-03-15 04:10:36,reddit,r/devops,How does DevOps actually work inside companies day to day? Hi everyone,,,1.0,Productivity Gain
+I’ve been curious about how DevOps actually works inside companies on a day-to-day basis a lot of content online focuses on tools like CI/CD, Docker, Kubernetes, Terraform, etc but I rarely see people talk about how the work actually happens in real teams for those working in DevOps or platform teams, I’d love to hear about things like,,1.0,Productivity Gain
+- How are DevOps teams usually structured? Is there a lead or manager coordinating the work?,,,,,,,1.0,Productivity Gain
+- How do tasks usually come in tickets, sprint planning, requests from developers, incidents, etc?,,,1.0,Productivity Gain
+- What does a typical day look like for someone on the team?,,,,,,,1.0,Productivity Gain
+- What kind of problems come up the most in production environments?,,,,,,,1.0,Productivity Gain
+- How much collaboration happens with developers or other teams during deployments or incidents?,,,,,,,1.0,Productivity Gain
+"Basically I’m just interested in understanding how the real workflow looks in companies and what challenges DevOps teams deal with regularly""",126,86,,,,,1.0,Productivity Gain
+1rtq85s,2026-03-15 02:02:04,reddit,r/devops,"DevOps engineer from Africa trying to break into the global market looking for advice I’ve worked as a DevOps engineer for about 5 years and have been fortunate to work for three of the top tech companies in my country. I’ve learned a lot and grown significantly, but lately I feel like I’ve reached a point where I need bigger challenges and exposure to the global market.",,,2.0,Neutral
+However, I’m starting to realize that geography plays a huge role. Many opportunities that people talk about seem unavailable from my region, and some companies simply don’t respond to applications even when I meet the requirements.,,,,,1.0,Productivity Gain
+I’m very motivated to keep growing and don’t want to lose the momentum and drive I currently have. My background include , cloud infrastructure (AWS, Azure, GCP), Kubernetes / containerization, CI/CD pipelines, private cloud environment,1.0,Productivity Gain
+I’m open to working remotely from my country and collaborating with global teams.,,,,,,,1.0,Productivity Gain
+For engineers who have successfully broken into international remote roles:,,,,,,,1.0,Productivity Gain
+1. Which companies realistically hire remote DevOps engineers from Africa?,,,,,,,1.0,Productivity Gain
+2. What skills or experience helped you stand out globally?,,,,,,,1.0,Productivity Gain
+3. Are there platforms or strategies that worked better than traditional job applications?,,,,,,,1.0,Productivity Gain
+4. What should I focus on in the next 1–2 years to reach a truly global level?,,,,,,,1.0,Productivity Gain
+"Any advice or shared experiences would be greatly appreciated.""",13,13,,,,,1.0,Productivity Gain
+1rsyzy8,2026-03-14 04:37:41,reddit,r/devops,"Patch management strategies - How regularly do you upgrade minor/patch? Hey folks,",,,1.0,Productivity Gain
+We stumbled across different opinions in my company regarding upgrading the packages. We're pinning dependencies to their sha256, and have renovate running on all our repos.,,,,,,1.0,Productivity Gain
+There are two strategies:,,,,,,,1.0,Productivity Gain
+\- Upgrade daily, with auto merge for release and digest updates: efficient patching, but then we're highly exposed to 3rd party attacks (which is kinda the point of pinning digests). Also, this creates a lot of CI/CD time, for most of the time useless patch (I don't really care about each release of each package for all my codebases),,,1.0,Productivity Gain
+\- Upgrade weekly (or bi-monthly even) digest / updates: that strongly reduces CI/CD duration, pipelines failure fatigues, 3rd party attacks. But on the other side, it greatly increases the fixes of CVEs,,,,1.0,Productivity Gain
+What do you guys do? My personal take is that bi-monthly should be really enough as in case of major CVE, we'd be alerted either by trivy scanning, or by someone in the team with their newsletter/blogpost/linkedin or whatever,,,,,1.0,Productivity Gain
+"Cheers!""",35,55,,,,,1.0,Productivity Gain
+1rswbwi,2026-03-14 03:00:00,reddit,r/devops,"OSS Cartography now inventories AI agents in cloud environments Hey, I'm Alex, I maintain [Cartography](https://github.com/cartography-cncf/cartography), an open source tool that builds a graph of your cloud infrastructure: compute, identities, network, storage, and the relationships between them.",,,2.0,Neutral
+Wanted to share that Cartography now automatically discovers AI agents in container images.,,,,,,,1.0,Productivity Gain
+Once it's set up, it can answer questions like:,,,,,,1.0,Productivity Gain
+- What agents are running in prod?,,,,,,,1.0,Productivity Gain
+- What identities and permissions does each agent have?,,,,,,,1.0,Productivity Gain
+- What tools can they call?,,,,,,,1.0,Productivity Gain
+- What network paths are exposed to the agent?,,,,,,,1.0,Productivity Gain
+- What compute are they running on?,,,,,,,1.0,Productivity Gain
+Agents are super powerful but can be dangerous, so it's important to keep track of them. Most teams are not inventorying them yet because the space is early, and there aren't many tools that do this today. I think these capabilities should be built out in open source.,,,,,1.0,Productivity Gain
+Details are in this [blog post](https://cartography.dev/blog/aibom), and I'm happy to answer questions here.,,,,,,1.0,Productivity Gain
+Feedback and contributions are very welcome!,,,,,,,1.0,Productivity Gain
+Full disclosure: I'm the co-founder of subimage.io, a commercial company built around Cartography. Cartography itself is owned by the Linux Foundation," which means that it will remain fully open source.""",21,11,,,1.0,Productivity Gain
+1rst4ob,2026-03-14 01:06:22,reddit,r/devops,Do you use OpenRouter? What are the pros and cons? Is there a good open source replacement? Hello all.  i guess this sub will know the best (:  ,,,2.0,Neutral
+The time has come when I need to use several LLM APIs, and managing security keys and different APIs will be a pain. From looking for a solution, everything points to OpenRouter, but I was surprised there is no open source version. What am I missing? Is there any good open source replacement?   ,,,,1.0,Productivity Gain
+And if there is none (I mean maintained and good)," what are the pros and cons of using OpenRouter?""",17,34,,,,1.0,Productivity Gain
+1rssq2t,2026-03-14 00:52:13,reddit,r/devops,Policy coverage looked complete until one worker bypassed the execution path We hit an uncomfortable production failure mode.,,,0.0,Security Risk
+Policy checks were enforced in the main execution path, but one background worker still had direct provider credentials from an earlier prototype.  ,,,,,,1.0,Productivity Gain
+That worker could call the model outside the controlled execution flow.,,,,,,,1.0,Productivity Gain
+We first tuned model behavior and retries. Wrong layer. The failure was architectural.   ,,,,,,,1.0,Productivity Gain
+A non-trivial slice of calls had no \`run\_id\` or \`step\_id\`, which meant they bypassed policy and audit entirely.,,,,,,1.0,Productivity Gain
+The fix ended up being infrastructure-level:,,,,,,,1.0,Productivity Gain
+\- centralize provider credentials behind one execution path  ,,,,,,,1.0,Productivity Gain
+\- block direct egress to provider endpoints  ,,,,,,,1.0,Productivity Gain
+\- reject requests without run identity  ,,,,,,,1.0,Productivity Gain
+\- alert on ungated call patterns  ,,,,,,,1.0,Productivity Gain
+After this, shadow calls dropped to zero and audit coverage became reliable again.,,,,,,1.0,Productivity Gain
+How are teams here preventing bypass paths in practice: egress controls, credential brokering," or admission policy?""",3,12,,,1.0,Productivity Gain
+1rsoz8r,2026-03-13 22:34:03,reddit,r/devops,"[ARTICLE] Migrating the Payments Network Twice with Zero Downtime For those curious, I authored a technical deep dive into the engineering decisions, tradeoffs, and lessons learned from migrating the American Express Payments Network. If you’re interested in fintech infrastructure, I’d love to hear your thoughts on the post. Here’s the full piece: [https://americanexpress.io/migrating-the-payments-network-twice/](https://americanexpress.io/migrating-the-payments-network-twice/)",,,1.0,Productivity Gain
+",6,3,",,,,,,,1.0,Productivity Gain
+1rsnzne,2026-03-13 21:55:41,reddit,r/devops,"How do you detect configuration drift between environments? I'm curious how teams here detect configuration drift between environments like prod, staging, and test.",,,1.0,Productivity Gain
+In several projects I've worked on, incidents were caused by unnoticed config differences between environments. Someone changes a config, a deployment happens later, and the difference goes unnoticed until something breaks.,,,,1.0,Productivity Gain
+Most tools I've seen focus on file diff or configuration management, but not really on detecting drift over time.,,,,,,1.0,Productivity Gain
+Because of that I started experimenting with a small tool that:,,,,,,,1.0,Productivity Gain
+- scans configuration from a Git repository,,,,,,,1.0,Productivity Gain
+- defines a baseline run as the expected state,,,,,,,1.0,Productivity Gain
+- runs scheduled scans against that baseline,,,,,,,1.0,Productivity Gain
+- opens findings when drift appears,,,,,,,1.0,Productivity Gain
+- can send alerts to Slack or Jira,,,,,,,1.0,Productivity Gain
+Typical examples I've been testing with:,,,,,,,1.0,Productivity Gain
+- .NET appsettings.json,,,,,,,1.0,Productivity Gain
+- IIS / web.config,,,,,,,1.0,Productivity Gain
+- environment-specific configs,,,,,,,1.0,Productivity Gain
+I'm mostly interested in how other teams handle this problem in practice.,,,,,,,1.0,Productivity Gain
+"Curious what approaches people here use.""",3,21,,,,,1.0,Productivity Gain
+1rsnpkk,2026-03-13 21:44:26,reddit,r/devops,"Anyone started a business in response to RTO? Just curious if anyone has gone this route in response to RTO and a crappy job market they just got fed up and started a business? With ChatGPT services close to being restricted, I gotta imagine more people are taking advantage of it while they still can.",,,2.0,Neutral
+My last team of 10, 8 of them were remote but I was hired hybrid. When I moved south for my wifes job &amp; a better way of life, they mandated i come in 2 days a week still at my expense (flights, hotels, gas, etc). I was doing it for 8 months til I gave up &amp; took a job 5 days in office 10 minutes from home with a paycut. I sent close to 5,000 applications last year,1.0,Productivity Gain
+I'm so sick of using Ai to tweak every god damn resume that I dont EVER want to touch LinkedIn for the next 2 YEARS! Every waking moment the last few months I've been aggressively using ChatGPT &amp; Claude to build apps in hopes I can monetize soon so I can stop coming into an office.,,,,,,,1.0,Productivity Gain
+"I'm just curious if anyone else has gone this route or did y'all just keep grindin for remote jobs until one came in? Or did y'all accept your fate of going into an office for useless teams calls?""",18,25,,,,,1.0,Productivity Gain
+1rsiucx,2026-03-13 17:39:41,reddit,r/devops,"Is DevOps a viable career for me? (Non-IT, Non-CS Background) Hey guys, I'll keep this short, I'm 22 years old, i have a bachelor's in graphic design, and around 9-10 months graphic design experience in a company. The company shut down, has left me in a limbo where job hunting has become hard because of my less than 1 year experience and my portfolio, which honestly isn't as good as it should be. I stumbled upon DevOps while thinking about a career change, and saw that it has a difficult entry but a good income and remote work options which would be helpful to my current situation. I have taken interest in devops and the whole idea of planning and building a system then making it run as efficiently as possible while being able to monitor for any bugs and issues. It seems very AI proof at the higher skill levels ( graphic design has been consumed by AI) and the automation aspect of it sounds very satisfying. Should i venture into this field? I am currently interviewing for roles as a part time ui/ux designer and i hope for a small job within this month. can i start my journey side by side? learn coding, linux, git; build real projects? and actually apply? or will recruiters see my non-cs degree and shut me out",0,42,2.0,Neutral
+1rshqxl,2026-03-13 16:30:38,reddit,r/devops,"From algorithmic trading to DevOps - looking for career advice Hi everyone, hope you’re doing well.",,,2.0,Neutral
+For the past three months I’ve been studying DevOps and cloud technologies. So far I’ve reached an intermediate level in Linux &amp; Bash scripting, Git/GitHub, AWS, Docker, CCNA fundamentals, Ansible, and Terraform.,1.0,Productivity Gain
+My academic background is actually in Food Engineering, not computer science or software engineering. Before this, I was mainly focused on building algorithmic trading systems. While developing tools to support my trading workflow, a friend suggested that my interests and the type of work I was doing could align well with DevOps.,,,,1.0,Productivity Gain
+Since I was already running trading bots on VPS servers, I wasn’t completely new to technologies like Python, GitHub, and Linux. Managing those environments and automating parts of my workflow naturally pushed me toward infrastructure and automation.,,,,1.0,Productivity Gain
+Currently, I run my bots directly from my development environment, but I’m also working on containerizing them so they can run inside Docker containers and be deployed more consistently across environments.,,,,,1.0,Productivity Gain
+I’m planning to obtain AWS, Azure, and CCNA certifications within the next month. I plan to start sending out CVs around May, and I’ve given myself until August to land my first role.,,,,1.0,Productivity Gain
+I’m curious about your opinions and suggestions.  ,,,,,,,1.0,Productivity Gain
+Do you think having a non-CS degree (Food Engineering) could be a disadvantage in this field?,,,,,,,1.0,Productivity Gain
+Also, if you were in my position, what would you focus on in the next few months to maximize the chances of getting a junior DevOps role?,,,,,1.0,Productivity Gain
+"Thanks in advance for any advice.""",3,18,,,,,1.0,Productivity Gain
+1rx4ofl,2026-03-18 21:59:50,reddit,r/programming,"Formally Verifying the Easy Part: a field report on using Dafny to verify AI-generated code, and why all 4 real production bugs were in the integration layer ",0,1,0.0,Security Risk
+1rx4lb3,2026-03-18 21:56:19,reddit,r/programming,"""JavaScript's date parser is out of control and needs to be stopped I recently spent an afternoon learning that JavaScript has a very generous definition of """"date.""""",,,1.0,Productivity Gain
+"    new Date(""""2020-01-23"""")",,,,,,,1.0,Productivity Gain
+    // Wed Jan 22 2020 19:00:00 GMT-0500,,,,,,,1.0,Productivity Gain
+Makes sense. ISO format, midnight UTC, so it shows up as January 22 in the Western Hemisphere.,,,,,1.0,Productivity Gain
+"    new Date(""""Today is 2020-01-23"""")",,,,,,,1.0,Productivity Gain
+    // Thu Jan 23 2020 00:00:00 GMT-0500,,,,,,,1.0,Productivity Gain
+OK, it pulled the date out of a sentence, which might be helpful in some cases. And interestingly, the time shifted, which is a little odd.,,,1.0,Productivity Gain
+"    new Date(""""Route 66"""")",,,,,,,1.0,Productivity Gain
+    // Sat Jan 01 1966 00:00:00 GMT-0500,,,,,,,1.0,Productivity Gain
+"It thinks """"Route 66"""" is referring to the year 1966? That's definitely a stretch.",,,,,,,1.0,Productivity Gain
+"    new Date(""""Beverly Hills"," 90210"""")",,,,,,1.0,Productivity Gain
+    // Mon Jan 01 90210 00:00:00 GMT-0500,,,,,,,1.0,Productivity Gain
+Year 90,210? Are you kidding me?!,,,,,,1.0,Productivity Gain
+Turns out that most popular JavaScript engines have legacy parsers that really, really want to help you parse dates.,,,,,,1.0,Productivity Gain
+We had a bug in our app were addresses and business names were being displayed as dates. The reason was that we were using the `Date` constructor as a fallback parser to catch unexpected formats. The fix was simple, but the bug made us laugh when we first saw it. And we learned to not treat the `Date` constructor as a validator.,,,,,,1.0,Productivity Gain
+"Full blog post which explains the parsing logic: [https://futuresearch.ai/blog/javascript-thinks-everythings-a-date/](https://futuresearch.ai/blog/javascript-thinks-everythings-a-date/)""",122,52,,,,,1.0,Productivity Gain
+1rx3fc7,2026-03-18 21:08:41,reddit,r/programming,How Debuggers Work • Sy Brand ,1,0,1.0,Productivity Gain
+1rx24k0,2026-03-18 20:09:37,reddit,r/programming,Forget Flags and Scripts: Just Rename the File ,0,5,1.0,Productivity Gain
+1rwy12a,2026-03-18 16:19:45,reddit,r/programming,From RDS to Data Lake: Archiving Massive MySQL Tables Without Losing Query Power ,1,0,1.0,Productivity Gain
+1rwx24q,2026-03-18 15:17:42,reddit,r/programming,"Top AI coding tools make mistakes one in four times, study shows ",131,45,1.0,Productivity Gain
+1rwv84w,2026-03-18 13:29:24,reddit,r/programming,How to Not Get Hacked Through File Uploads ,125,11,1.0,Productivity Gain
+1rwsl0x,2026-03-18 11:16:28,reddit,r/programming,Slug Algorithm released into public domain ,819,36,1.0,Productivity Gain
+1rwrrfd,2026-03-18 10:39:13,reddit,r/programming,AI won't make you rich. But fixing bugs in AI slopware will. &gt;  ,,,1.0,Productivity Gain
+The companies that went all-in on “AI-first engineering” are discovering their apps are slower than dial-up, their costs are exploding on unnecessary compute, and their “10x engineers” are actually 0.5x after the AI tax.,,,,,1.0,Productivity Gain
+&gt;Meanwhile the senior devs who understand some simple concepts like caching and concurrency will soon be printing money on cleanup gigs, architecture rescues, and “please fix what the robots broke” contracts.,,,,,1.0,Productivity Gain
+"Should I be relying this as my retirement strategy?""",447,151,,,,,1.0,Productivity Gain
+1rwnfam,2026-03-18 07:34:43,reddit,r/programming,Torturing Rustc by Emulating HKTs ,12,0,1.0,Productivity Gain
+1rwhoyg,2026-03-18 04:03:39,reddit,r/programming,Patching LMDB: How We Made Meilisearch’s Vector Store 3x Faster ,4,0,1.0,Productivity Gain
+1rwhnyr,2026-03-18 04:02:49,reddit,r/programming,A tale about fixing eBPF spinlock issues in the Linux kernel ,13,0,1.0,Productivity Gain
+1rwhjge,2026-03-18 03:58:38,reddit,r/programming,Memory Allocation Strategies ,17,7,1.0,Productivity Gain
+1rwhj4l,2026-03-18 03:58:21,reddit,r/programming,Reviewing large changes with Jujutsu ,0,1,1.0,Productivity Gain
+1rwhiih,2026-03-18 03:57:44,reddit,r/programming,"The Paxos algorithm, when presented in plain English, is very simple ",66,2,1.0,Productivity Gain
+1rwhhrv,2026-03-18 03:57:02,reddit,r/programming,Python 3.15’s JIT is now back on track ,116,34,2.0,Neutral
+1rwhg5o,2026-03-18 03:55:28,reddit,r/programming,"yes, all longest regex matches in linear time is possible ",28,2,1.0,Productivity Gain
+1rwhfwl,2026-03-18 03:55:12,reddit,r/programming,syntaqlite: high-fidelity devtools that SQLite deserves ,17,3,1.0,Productivity Gain
+1rwhfhr,2026-03-18 03:54:48,reddit,r/programming,Jepsen: MariaDB Galera Cluster 12.1.2 ,5,0,1.0,Productivity Gain
+1rwhf6h,2026-03-18 03:54:31,reddit,r/programming,Efficient sparse computations using linear algebra aware compilers ,3,0,1.0,Productivity Gain
+1rwhey4,2026-03-18 03:54:18,reddit,r/programming,Building a Shell ,4,0,1.0,Productivity Gain
+1rwhdaw,2026-03-18 03:52:46,reddit,r/programming,Finding a CPU Design Bug in the Xbox 360 ,101,9,1.0,Productivity Gain
+1rwhbea,2026-03-18 03:50:57,reddit,r/programming,"Java 26 is here, and with it a solid foundation for the future ",58,23,1.0,Productivity Gain
+1rwgokp,2026-03-18 03:28:37,reddit,r/programming,Writing an operating system kernel from scratch ,34,0,1.0,Productivity Gain
+1rwdv3g,2026-03-18 01:52:33,reddit,r/programming,Maintainable Podcast: Joel Oliveira: Predictability Is a Maintainability Feature ,3,0,1.0,Productivity Gain
+1rx6z1p,2026-03-18 23:27:53,reddit,r/cybersecurity,"Credential Guard - Control Validation I just published a deep‑dive article covering every offensive technique currently known to interact with or bypass **Credential Guard**, along with practical **detection strategies** for each one.",,,1.0,Productivity Gain
+The write‑up breaks down techniques such as:,,,,,,,1.0,Productivity Gain
+* **Patching**,,,,,,,1.0,Productivity Gain
+* **Pass‑the‑Challenge**,,,,,,,1.0,Productivity Gain
+* **Downgrade**,,,,,,,1.0,Productivity Gain
+* **SSP Negotiation**,,,,,,,1.0,Productivity Gain
+If you're working in detection engineering, red teaming, or Windows internals, you might find it useful. Happy to hear feedback or discuss gaps others have seen in the wild.,,,,1.0,Productivity Gain
+**Article:**  ,,,,,,,1.0,Productivity Gain
+"[https://ipurple.team/2026/03/17/credential-guard/](https://ipurple.team/2026/03/17/credential-guard/)""",1,0,,,,,1.0,Productivity Gain
+1rx6f0p,2026-03-18 23:06:43,reddit,r/cybersecurity,Examples of exposed assets found during passive recon During passive reconnaissance I’ve been noticing a recurring pattern:,,,0.0,Security Risk
+many organizations unintentionally expose assets on the public internet.,,,,,,,1.0,Productivity Gain
+Some examples I encountered:,,,,,,,1.0,Productivity Gain
+\- internal documents accessible through public endpoints  ,,,,,,,1.0,Productivity Gain
+\- management dashboards reachable without authentication  ,,,,,,,1.0,Productivity Gain
+\- APIs exposing unexpected data through enumeration  ,,,,,,,1.0,Productivity Gain
+What’s interesting is that these exposures often don’t require any exploitation, they’re just part of the external attack surface that hasn’t been mapped properly.,,,,,,1.0,Productivity Gain
+I started documenting these cases and building a small project around this approach (focused only on passive recon and exposure discovery).,,,,,,,1.0,Productivity Gain
+I’m curious how others here approach external attack surface discovery:,,,,,,,1.0,Productivity Gain
+\- do you rely mostly on automation or manual recon?,,,,,,,1.0,Productivity Gain
+"\- do you actively look for this type of exposure in your workflow?""",1,2,,,,,1.0,Productivity Gain
+1rx5y31,2026-03-18 22:48:45,reddit,r/cybersecurity,"Hundreds of agent skills, equally many potential security issues This is a public database that analyze the security risks introduced by AI agent skills.",,,0.0,Security Risk
+Skills MAY introduces new layers of attack surface that most people have only beginning to understand. They're no different from blindly installing NPM packages.,,,,,,,1.0,Productivity Gain
+Researchers had already found that over a quarter public skills contain at least one security vulnerability, including prompt injection vectors, privilege escalation opportunities, and data-exfiltration risks.,,,,1.0,Productivity Gain
+In this database, each entry is designed to explain real attack vectors and explains difference between normal operational capabilities and behaviors that could realistically be exploited by attackers.,,,,,,1.0,Productivity Gain
+"The resource is publicly accessible and is expected to expand.""",2,0,,,,,1.0,Productivity Gain
+1rx5ltq,2026-03-18 22:35:40,reddit,r/cybersecurity,Best practices to use ChatGPT / Claude to audit SharePoint permissions (least privilege)? I work in GRC and I’m trying to ensure our SharePoint environment respects least privilege — especially now that GenAI makes it easy for users to surface anything they already have access to.,,,1.0,Productivity Gain
+Once tools like ChatGPT or Claude are connected to SharePoint with the same rights than myself, I want it to make a list of publicly available files that contain confidential information. Has anyone here done that and have some advice to make it efficient?,,,,,,1.0,Productivity Gain
+"Thanks. """,1,1,,,,,1.0,Productivity Gain
+1rx5h60,2026-03-18 22:30:41,reddit,r/cybersecurity,Hundreds of Millions of iPhones Can Be Hacked With a New Tool Found in the Wild ,25,10,1.0,Productivity Gain
+1rx5ce0,2026-03-18 22:25:37,reddit,r/cybersecurity,"Passkeys or Passwords with MFA? Hi everyone,",,,1.0,Productivity Gain
+I am not sure if this is the right sub to post this but seems to make the most sense. I am wondering if in my situation I would benefits from passkey setup or continue with passwords and MFA. ,,,,,,,1.0,Productivity Gain
+I am currently using Bitwarden to store my password and Google authenticator as my MFA where possible, including MFA for Bitwarden. I have all of my passwords for financial institutions stored in Bitwarden, however, the last 6 characters of my passwords are not stored in the vault. I have memorized this string of characters and add it to my vault password when I am logging in. I only do this for my bank/financial accounts. I also have MFA set up where possible, unfortunately, one of my bank accounts only allow SMS. ,,1.0,Productivity Gain
+Some of these accounts now allow passkey setup which I can store in Bitwarden. I understand passkeys are more secure against phishing but I feel my current set up is more secured. When I have the passkey set up, it disabled my MFA for my authenticator. So theoretically, if I am understanding this correctly, if someone where to gain access to my Bitwarden and Authenticator, they would  also gain access to my passkeys for my bank accounts. If this is the case, does that mean my current set up would be more secure? Other than preventing phishing, are there any other benefits to using passkeys?,1.0,Productivity Gain
+",1,1,",,,,,,,1.0,Productivity Gain
+1rx4ytc,2026-03-18 22:10:55,reddit,r/cybersecurity,Second iOS exploit kit emerges from suspected Russian hackers using possible U.S. government-developed tools ,14,1,1.0,Productivity Gain
+1rx3phq,2026-03-18 21:20:13,reddit,r/cybersecurity,How ai proof is cybersec jobs? Im a staff swe of 12 years and its been great but I see the writing on the wall. I make a good paycheck and I want to keep this lifestyle for my family. How ai proof is cybersec really? ,0,17,1.0,Productivity Gain
+1rx3oyd,2026-03-18 21:19:37,reddit,r/cybersecurity,"How to AI based paste and screenshot methods bypass legacy DLP system? I keep noticing a trend in discussion and I'm not sure if I'm overthinking it or just catching up. Traditional DLP at least in my experience is built around files and specific channels email attachments, SaaS uploads, USB transfers, maybe some web form monitoring if you're lucky. But AI workflows seem to reshape how data moves. Instead of sending files, people paste content into chat tools, or take screenshots of restricted data and upload images that AI can OCR into text. For users, it feels like normal workflow, from security perspective it looks like a new way around controls. In real world scenarios, where are the biggest gaps showing up? And what's the first practical step to access exposure before trying to lock things down? Thanks!",2,2,1.0,Productivity Gain
+1rx3m6c,2026-03-18 21:16:36,reddit,r/cybersecurity,Torxy - Burp Suite Tor Proxy Extension ,1,0,1.0,Productivity Gain
+1rx3ebm,2026-03-18 21:07:28,reddit,r/cybersecurity,"Greek firms scan computer systems as Iran war raises cyberattack risks, sources say ",1,0,1.0,Productivity Gain
+1rx2sne,2026-03-18 20:40:59,reddit,r/cybersecurity,"java_agent.exe /Trojan:MSIL/ValleyRAT.GZD!MTB Hi everyone,",,,1.0,Productivity Gain
+I just got a severe threat alert from Windows Defender and I'm quite worried. The detection is for Trojan:MSIL/ValleyRAT.GZD!MTB.,,,,,,,1.0,Productivity Gain
+Here are the details from the alert (translated from German):,,,,,,,1.0,Productivity Gain
+• Threat: Trojan:MSIL/ValleyRAT.GZD!MTB,,,,,,,1.0,Productivity Gain
+• Status: Active / Severe,,,,,,,1.0,Productivity Gain
+• Affected Item: ,,,,,,,1.0,Productivity Gain
+amsi:\\Device Harddisk Volume\\Users\\Public Documents\\SecurityModule\\DriverHandler\\java\_agent.exe,,,,,,,1.0,Productivity Gain
+I know that ValleyRAT is a serious Remote Access Trojan. The fact that it says amsi: makes me think Defender caught it while it was trying to execute a script or load into memory," but I'm not 100% sure if my system is truly safe now. The file path looks highly suspicious (java\_agent.exe inside a random """"SecurityModule"""" folder in Public Documents).""",1,0,,,,1.0,Productivity Gain
+1rx2fe4,2026-03-18 20:23:45,reddit,r/cybersecurity,"ISC2 CC vaut il le coup ? Bonjour, ",,,1.0,Productivity Gain
+J’ai passé mon examen ISC2 CC la semaine dernière mais je l’a raté car je l’a trop pris à la légère. ,,,,,,,1.0,Productivity Gain
+Je viens du monde de l’architecture et fait un virage dans la transformation des organisations par l’ia. ,,,,,,,1.0,Productivity Gain
+Je me dit que d’avoir des notions de cyber sécurité est un vrai plus. ,,,,,,,1.0,Productivity Gain
+Est ce que ça vaut le coup que je mette 200 euros et du temps pour l’avoir ? ,,,,,,,1.0,Productivity Gain
+Est ce que la certification envoie un bon signal ? ,,,,,,,1.0,Productivity Gain
+"Quelles alternatives ? """,1,2,,,,,1.0,Productivity Gain
+1rx1wnv,2026-03-18 19:59:23,reddit,r/cybersecurity,ScreenConnect revoked certificate Our endpoint security system flagged the Screen Connect program due to a revoked certificate. The client has since restored the file to their PC. Will this cause any further issues?,,,1.0,Productivity Gain
+",1,0,",,,,,,,1.0,Productivity Gain
+1rx1vbz,2026-03-18 19:57:35,reddit,r/cybersecurity,ForceMemo: Python Repositories Compromised in GlassWorm Aftermath ,3,0,2.0,Neutral
+1rx1uim,2026-03-18 19:56:26,reddit,r/cybersecurity,Your KVM is the Weak Link: How $30 Devices Can Own Your Entire Network ,1,0,1.0,Productivity Gain
+1rx1lts,2026-03-18 19:44:16,reddit,r/cybersecurity,"Can we stop pretending like Microsoft isn't compromised?... as an entity My Dearest Jeffrey,",,,1.0,Productivity Gain
+These Russian prostitutes have given me the itch. Can you please help me crush up the clamydia pills and hide them in my wife's oatmeal?,,,,,,,1.0,Productivity Gain
+[https://www.propublica.org/article/microsoft-cloud-fedramp-cybersecurity-government](https://www.propublica.org/article/microsoft-cloud-fedramp-cybersecurity-government),,,,,,,1.0,Productivity Gain
+"Cybersecurity is effected by forces outside of technology. To ignore them is to be bad at our jobs. """,258,25,,,,,1.0,Productivity Gain
+1rx162t,2026-03-18 19:22:14,reddit,r/cybersecurity,Federal Cyber Experts Thought Microsoft’s Cloud Was “a Pile of Shit.” They Approved It Anyway. ,389,37,1.0,Productivity Gain
+1rx064l,2026-03-18 18:29:42,reddit,r/cybersecurity,"GlassWorm Is Back, and This Time It Hit 433 Packages Across Four Ecosystems ",8,0,1.0,Productivity Gain
+1rx05dq,2026-03-18 18:28:32,reddit,r/cybersecurity,What are my options for a securit audit for my open source project? I created the signal protocol for a related project. The implementation is in rust and compiles to WASM for browser-based usage.,,,2.0,Neutral
+* Github: [https://github.com/positive-intentions/signal-protocol](https://github.com/positive-intentions/signal-protocol),,,,,,,1.0,Productivity Gain
+* Demo: [https://signal.positive-intentions.com](https://signal.positive-intentions.com/),,,,,,,1.0,Productivity Gain
+Im not sure when its a good time to share it, but i think its reasonable now.,,,,,,1.0,Productivity Gain
+The aim is for it to align with the official implementation ([https://github.com/signalapp/libsignal](https://github.com/signalapp/libsignal)). That version was not used because my use case required client side browser-based functionality and i struggled to achieve that in the official one where javascript is used but is targeting nodejs.,,,,,,,1.0,Productivity Gain
+There are other nuances to my approach like using module federation, which led to me moving away from the official version.,,,,,,1.0,Productivity Gain
+The implementation is now moving past the MVP stage. It is integrated into a p2p messaging app. See it in action from the link on my profile.,,,,,,,1.0,Productivity Gain
+While i have made attempts to create things like [audits](https://positive-intentions.com/docs/research/Security%20audit/signal-protocol-security-audit/) and [formal-proofs](https://positive-intentions.com/docs/technical/signal-protocol-formal-verification), it isnt enough. I hope by sharing it, it can serve as a starting point for feedback about the implementation and highlight outstanding issues i may be overlooking. Its open source so you can take a look, but i completely understand it isnt worth your free time. Feel free to reach out for clarity on any details.,,,,1.0,Productivity Gain
+Ultimately id like to gear it up towards getting a professional third-party audit. If a free audit isnt going to happen, its prohibitively expensive... Users ask me questions about how my app works. In particular, people often ask about the protocol when it comes to cryptography. I'll have to share references to the AI audit," which id like to avoid.""",1,0,,1.0,Productivity Gain
+1rwzuec,2026-03-18 18:11:20,reddit,r/cybersecurity,"Advice on certifications Hey guys a bit of advice I have recently graduated with masters in cyber security, I have done Security plus and I need advice what to do next? I wanted to do an offensive cert also but confused with Pentest + or CEH or any other higher ones.Kindly advice.",0,11,1.0,Productivity Gain
+1rwzn1e,2026-03-18 17:59:47,reddit,r/cybersecurity,AWS Subdomain Takeover — how misconfigured DNS can expose your infrastructure I was exploring common cloud misconfigurations and came across a classic but still very relevant issue: **subdomain takeover**.,,,2.0,Neutral
+This usually happens when:,,,,,,,1.0,Productivity Gain
+* A DNS record (CNAME/ALIAS) points to a resource (S3, CloudFront, etc.),,,,,1.0,Productivity Gain
+* That resource gets deleted or is no longer in use,,,,,,,1.0,Productivity Gain
+* The DNS record is still active,,,,,,,1.0,Productivity Gain
+At that point, someone else can potentially **claim the resource and serve content under your domain**.,,,,,,1.0,Productivity Gain
+From a DevOps / cloud perspective, this is more of a **configuration and lifecycle management problem** than a complex exploit.,,,,,,1.0,Productivity Gain
+Some common scenarios:,,,,,,,1.0,Productivity Gain
+* S3 bucket deleted but DNS still points to it,,,,,,,1.0,Productivity Gain
+* Old CloudFront distributions not cleaned up,,,,,,,1.0,Productivity Gain
+* Third-party services (GitHub Pages, Heroku, etc.) removed but DNS left behind,,,,,1.0,Productivity Gain
+Why this matters:,,,,,,,1.0,Productivity Gain
+* Attackers can host malicious content under a trusted domain,,,,,,,1.0,Productivity Gain
+* Can lead to phishing or brand damage,,,,,,,1.0,Productivity Gain
+* Often missed in infrastructure cleanup,,,,,,,1.0,Productivity Gain
+I put together a small demo showing:,,,,,,,1.0,Productivity Gain
+* How this misconfiguration happens,,,,,,,1.0,Productivity Gain
+* What it looks like in AWS,,,,,,,1.0,Productivity Gain
+* How to identify and fix it,,,,,,,1.0,Productivity Gain
+Sharing for awareness:,,,,,,,1.0,Productivity Gain
+[https://youtu.be/J2sL1e-Z9uY](https://youtu.be/J2sL1e-Z9uY),,,,,,,1.0,Productivity Gain
+Curious how teams here prevent this in production:,,,,,,,1.0,Productivity Gain
+* Do you automate DNS cleanup?,,,,,,,1.0,Productivity Gain
+"* Any tools/scripts to detect dangling records?""",7,1,,,,,1.0,Productivity Gain
+1rwyd26,2026-03-18 16:40:55,reddit,r/cybersecurity,Petition sending emails on your behalf I recently signed a petition for section 230 and I noticed something about the petition I used this site:,,,1.0,Productivity Gain
+[WhatIsSection230.org](http://WhatIsSection230.org),,,,,,,1.0,Productivity Gain
+"I noticed when I hit """"Add your name"""""," I got a response email from my representative directly and not from the site. Turns out they send emails """"on behalf of"""" the email you gave them. Here's how google explains it and it tracks with why there was no sent email: ",,,,,,1.0,Productivity Gain
+"* **""""From"""" and """"On Behalf Of"""":** The email is sent using their technical infrastructure"," but it is sent """"on behalf of"""" you. This means the message clearly identifies you as the sender in the """"From"""" field", but the email originates from the advocacy group’s server.,,,,,1.0,Productivity Gain
+My question is are services like this safe, given that it sounds a lot like spoofing on its surface? The website itself is affiliated with Fight for the Future so I don't think this one is malicious," but could there be security issues with websites that do this when I use my personal email?""",1,2,,,1.0,Productivity Gain
+1rwxzrf,2026-03-18 16:17:26,reddit,r/cybersecurity,"""UK Companies House vulnerability enabled company hijacking A easily exploited flaw in the UK governments company registration system (you had to press the """"back"""" button) meant anyone with an account could view and possibly modify the official business records of any company within the Company House system. ",,,0.0,Security Risk
+"This was discovered on the 13th and the government took the portal offline while they fix but is recommending all business validate their registration information. """,7,0,,,,,1.0,Productivity Gain
+1rwxwa9,2026-03-18 16:11:04,reddit,r/cybersecurity,"Compromised account - revoked Entra sessions but they stayed logged into AWS and Salesforce for hours User got phished Friday, clicked link and typed password. We caught it fast and revoked all their Entra sessions. Thought that would kill everything. Wrong.",,,1.0,Productivity Gain
+Entra sessions died but AWS session tokens kept working for hours because AWS doesn't recheck with Entra after you authenticate. Salesforce same deal, their session just ran until timeout. Attacker was still in both systems after we supposedly cut access. Had to manually kill AWS tokens, force Salesforce logout," then check every federated app one by one to see what was still active. There's no actual kill switch that ends sessions everywhere. Each app has its own session logic and doesn't care that Entra revoked auth. Revoking at IdP doesn't actually stop active sessions downstream which seems like a pretty big gap when you're trying to contain a breach. What are people doing for this besides going system by system?""",80,20,,1.0,Productivity Gain
+1rx5fgz,2026-03-18 22:28:49,reddit,r/python,Started new projects without FastAPI Using Starlette is just fine. I create a lot if pretty simple web apps and recently found FastAPI completely unnecessary. It was actually refreshing to not have model validation not abstracted away. And also not having to use Pydantic for a model with only a couple of variables.,0,5,2.0,Neutral
+1rx48eq,2026-03-18 21:42:11,reddit,r/python,Phyton programmieren Hallo alle auf der Welt Könnte mir ein phyton beibringen einfach anschreiben oder so weil muss bisschen lernen weil bin das so was am machen um muss dafür phyton können ,0,5,1.0,Productivity Gain
+1rx2nkv,2026-03-18 20:34:33,reddit,r/python,"PyCon US 2026: Typing Summit For those who are going to PyCon US this year, consider attending the [Typing Summit](https://discuss.python.org/t/pycon-2026-typing-summit-thu-may-14-1-5pm/106354) on Thursday, May 14. As with last year, the summit is organized jointly by Carl (Astral, Ty maintainer) &amp; Steven (Meta, Pyrefly maintainer).",,,1.0,Productivity Gain
+Anyone interested in typing in Python is welcome to attend: there will be interesting scheduled talks and opportunities to chat with type checker maintainers, type stub authors, and members of the typing council. ,,,,,1.0,Productivity Gain
+No prior experience is required - last year's summit had plenty of hobbyists and students in attendance. I personally learned a lot from the talks, despite not having a Master's degree :),,,,,,1.0,Productivity Gain
+If you're planning to go, the [announcement thread](https://discuss.python.org/t/pycon-2026-typing-summit-thu-may-14-1-5pm/106354) has an interest form where you can tell the summit organizers what topics you're interested in hearing about," or propose a potential talk for the summit.""",9,0,,,1.0,Productivity Gain
+1rx20dz,2026-03-18 20:04:06,reddit,r/python,"Open-source Python interview prep - 424 questions across 28 topics, all with runnable code **What My Project Does**",,,2.0,Neutral
+awesomePrep is a free, open-source Python interview prep tool with 424 questions across 28 topics - data types, OOP, decorators, generators, concurrency, data structures,1.0,Productivity Gain
+**Target Audience**,,,,,,,1.0,Productivity Gain
+Anyone preparing for Python technical interviews - students, career switchers, or experienced developers brushing up. It is live and usable in production at [https://awesomeprep.prakersh.in](https://awesomeprep.prakersh.in). Also useful as a reference for Python concepts even outside interview prep.,,,,,1.0,Productivity Gain
+**Comparison**,,,,,,,1.0,Productivity Gain
+Unlike paid platforms (LeetCode premium, InterviewBit), this is completely free with no paywall or account required. Unlike static resources (GeeksforGeeks articles, random GitHub repos with question lists), every answer has actual runnable code with expected output, not just explanations. The dual study mode (detailed vs quick) is something I haven't seen elsewhere - you can learn a topic deeply, then switch to quick mode for revision before your interview. Content is stored as JSON files,1.0,Productivity Gain
+GPL-3.0 licensed. Looking for feedback on coverage gaps, wrong answers, or missing topics.,,,,,1.0,Productivity Gain
+Live: [https://awesomeprep.prakersh.in](https://awesomeprep.prakersh.in)  ,,,,,,,1.0,Productivity Gain
+"GitHub: [https://github.com/prakersh/awesomeprep](https://github.com/prakersh/awesomeprep)""",0,5,,,,,1.0,Productivity Gain
+1rx1g0y,2026-03-18 19:36:14,reddit,r/python,Looking for someone to build random cool stuff with I primarily used python and also did some C(though need refresher). We will just build random stuff that looks fun.,,,2.0,Neutral
+For example some of the random fun stuff I built :,,,,,,,1.0,Productivity Gain
+1. Using discord as a storage device(basically diving a file into chunks and sending it in a server) all using requests module,,,,,,,1.0,Productivity Gain
+2. Graphing functions with just characters. Like no visual library or anything. Just characters. Fun stuff,,,,,,,1.0,Productivity Gain
+3. Making filesharing web app through flask,,,,,,,1.0,Productivity Gain
+If anyone's here like me who just wanna code random cool stuff for just the sake of fun, then contact me.,,,,,,1.0,Productivity Gain
+Programming language should not matter that much. After all we can just build another program to communicate with each other through some shared file or other thing(it itself is a good fun project idea).,,,,,,,1.0,Productivity Gain
+Ofcourse I would have to say, am not professional. So we will not be following like best practices  or whatever else there is. Just build random stuff.,,,,,,1.0,Productivity Gain
+",0,1,",,,,,,,1.0,Productivity Gain
+1rx1fs7,2026-03-18 19:35:54,reddit,r/python,"Built a platform to find dev teammates + live code together (now fully in English) Hey,",,,1.0,Productivity Gain
+I’ve been building CodekHub, a platform to find other devs and actually build projects together.,,,,,,1.0,Productivity Gain
+One issue people pointed out was the language barrier (some content was in Italian), so I just updated everything — now the platform is fully in English, including project content.,,,,,1.0,Productivity Gain
+I also added a built-in collaborative workspace, so once you find a team you can:,,,,,,1.0,Productivity Gain
+- code together in real time,,,,,,,1.0,Productivity Gain
+- chat,,,,,,,1.0,Productivity Gain
+- manage GitHub (repo, commits, push/pull) directly from the browser,,,,,1.0,Productivity Gain
+We’re still early (~25 users) but a few projects are already active.,,,,,,,1.0,Productivity Gain
+Would you use something like this? Any feedback is welcome.,,,,,,,1.0,Productivity Gain
+"https://www.codekhub.it""",0,0,,,,,1.0,Productivity Gain
+1rx18dj,2026-03-18 19:25:27,reddit,r/python,"Flask email classifier powered by LLMs — dashboard UI, 182 tests, no frontend build step Sharing a project I've been working on. It's an email reply management system — connects to an outreach API, classifies replies using LLMs, generates draft responses, and serves a web dashboard for reviewing them.",,,1.0,Productivity Gain
+Some of the technical decisions that might be interesting:,,,,,,,1.0,Productivity Gain
+**LLM provider abstraction** — I needed to support OpenAI, Anthropic, and Gemini without the rest of the codebase caring which one is active. Ended up with a thin `llm_client.py` that wraps all three behind a single `generate()` function. Swapping providers is one config change.,,,,,1.0,Productivity Gain
+**Provider pattern for the email platform** — There's an `OutreachProvider` ABC that defines the interface (get replies, send reply, update lead status, etc). [Instantly.ai](http://Instantly.ai) is the only implementation right now but the poller and responder don't import it directly.,,,,1.0,Productivity Gain
+**No frontend toolchain** — The whole UI is Jinja2 templates + Tailwind via CDN + vanilla JS. No npm, no webpack, no build step. It's worked fine and I haven't missed React once.,,,,,1.0,Productivity Gain
+**SQLite with WAL mode** — Handles the concurrent reads from the web UI while the poller writes. Didn't need Postgres for this scale. The DB module uses raw SQL — no ORM.,,,,,,,1.0,Productivity Gain
+**Testing** — 182 tests via pytest. In-memory SQLite for test fixtures, mock LLM responses, and a full Flask test client for route testing. CI runs tests + ruff on every push.,,,,,1.0,Productivity Gain
+**Python 3.9 compat** — Needed `from __future__ import annotations` everywhere because the deployment target is a Mac Mini on 3.9. Minor annoyance but it works.,,,,,,,1.0,Productivity Gain
+Demo mode seeds a database with fake data so you can run the dashboard without API keys:,,,,,,,1.0,Productivity Gain
+    pip install -r requirements.txt,,,,,,,1.0,Productivity Gain
+    python run_sdr.py demo,,,,,,,1.0,Productivity Gain
+Repo: [https://github.com/kandksolvefast/ai-sdr-agent](https://github.com/kandksolvefast/ai-sdr-agent),,,,,,,1.0,Productivity Gain
+Open to feedback on the architecture. Anything you'd have done differently?,,,,,,,1.0,Productivity Gain
+What My Project Does,,,,,,,1.0,Productivity Gain
+It's an email reply management system for cold outreach. Connects to [Instantly.ai](http://Instantly.ai), polls for new replies, classifies each one using an LLM (interested, question, wants to book, not interested, referral,1.0,Productivity Gain
+Target Audience,,,,,,,1.0,Productivity Gain
+People running cold email campaigns who are tired of manually triaging replies. It's a production tool — I use it daily for my own outreach. Also useful if you want to study a mid-sized Flask app with LLM integration, provider abstraction patterns, or a no-build-step frontend.,,,,,1.0,Productivity Gain
+Comparison,,,,,,,1.0,Productivity Gain
+Paid tools like Salesforge, Artisan, and Jason AI do similar classification but cost $300-500/mo, are closed source, and your data lives on their servers. This is free, MIT licensed, self-hosted,1.0,Productivity Gain
+Some technical details that might be interesting:,,,,,,,1.0,Productivity Gain
+* LLM provider abstraction — thin llm\_client.py wraps OpenAI/Anthropic/Gemini behind a single generate() call. Swapping providers is one config change.,,,,,,,1.0,Productivity Gain
+* OutreachProvider ABC so the pipeline doesn't care which email platform you use. Instantly is the first adapter.,,,,,,,1.0,Productivity Gain
+* No frontend toolchain — Jinja2 templates + Tailwind via CDN + vanilla JS. No npm, no webpack.,,,,,,1.0,Productivity Gain
+* SQLite with WAL mode for concurrent reads/writes. No ORM, raw SQL.,,,,,,1.0,Productivity Gain
+* 182 pytest tests, in-memory SQLite fixtures, ruff-clean. CI runs both on every push.,,,,,1.0,Productivity Gain
+* Python 3.9 compat (from \_\_future\_\_ import annotations everywhere).,,,,,,,1.0,Productivity Gain
+Demo mode seeds a database with fake data so you can run it without API keys:,,,,,,,1.0,Productivity Gain
+    pip install -r requirements.txt,,,,,,,1.0,Productivity Gain
+    python run_sdr.py demo,,,,,,,1.0,Productivity Gain
+Repo: [https://github.com/kandksolvefast/ai-sdr-agent](https://github.com/kandksolvefast/ai-sdr-agent),,,,,,,1.0,Productivity Gain
+"Open to feedback on the architecture.""",0,1,,,,,1.0,Productivity Gain
+1rwzqoy,2026-03-18 18:05:22,reddit,r/python,Free Spotify Ad Muter What my project does:,,,1.0,Productivity Gain
+It automatically monitors active media streams and toggles mute state when it detects an ad.  ,,,,,,,1.0,Productivity Gain
+link to github repository: [https://github.com/soljaboy27/Spotify-Ad-Muter.git](https://github.com/soljaboy27/Spotify-Ad-Muter.git),,,,,,,1.0,Productivity Gain
+Target Audience:,,,,,,,1.0,Productivity Gain
+People who can't pay for Spotify Premium,,,,,,,1.0,Productivity Gain
+Comparison:,,,,,,,1.0,Productivity Gain
+My inspiration came from seeing another post that was uploaded to this subreddit by another user a while ago which doesn't work anymore.,,,,,,,1.0,Productivity Gain
+    import time,,,,,,,1.0,Productivity Gain
+    import win32gui,,,,,,,1.0,Productivity Gain
+    import win32process,,,,,,,1.0,Productivity Gain
+    from pycaw.pycaw import AudioUtilities,,,,,,,1.0,Productivity Gain
+     # FUNCTIONS,,,,,,,1.0,Productivity Gain
+    def get_spotify_pid():,,,,,,,1.0,Productivity Gain
+        sessions = AudioUtilities.GetAllSessions(),,,,,,,1.0,Productivity Gain
+        for session in sessions:,,,,,,,1.0,Productivity Gain
+"            if session.Process and session.Process.name().lower() == """"spotify.exe"""":",,,,,,,1.0,Productivity Gain
+                return session.Process.pid,,,,,,,1.0,Productivity Gain
+        return None,,,,,,,1.0,Productivity Gain
+    def get_all_spotify_titles(target_pid):,,,,,,,1.0,Productivity Gain
+       ,,,,,,,1.0,Productivity Gain
+        titles = [],,,,,,,1.0,Productivity Gain
+        def callback(hwnd, _):,,,,,,1.0,Productivity Gain
+            if win32gui.IsWindowVisible(hwnd):,,,,,,,1.0,Productivity Gain
+                _, found_pid = win32process.GetWindowThreadProcessId(hwnd),,,,,,1.0,Productivity Gain
+                if found_pid == target_pid:,,,,,,,1.0,Productivity Gain
+                    text = win32gui.GetWindowText(hwnd),,,,,,,1.0,Productivity Gain
+                    if text:,,,,,,,1.0,Productivity Gain
+                        titles.append(text),,,,,,,1.0,Productivity Gain
+        win32gui.EnumWindows(callback, None),,,,,,1.0,Productivity Gain
+        return titles,,,,,,,1.0,Productivity Gain
+    def set_mute(mute, target_pid):,,,,,,1.0,Productivity Gain
+        sessions = AudioUtilities.GetAllSessions(),,,,,,,1.0,Productivity Gain
+        for session in sessions:,,,,,,,1.0,Productivity Gain
+            if session.Process and session.Process.pid == target_pid:,,,,,,,1.0,Productivity Gain
+                volume = session.SimpleAudioVolume,,,,,,,1.0,Productivity Gain
+                volume.SetMute(1 if mute else 0, None),,,,,,1.0,Productivity Gain
+                return,,,,,,,1.0,Productivity Gain
+    # main(),,,,,,,1.0,Productivity Gain
+    def main():,,,,,,,1.0,Productivity Gain
+"        print(""""Local Ad Muter is running... (Ghost Window Fix active)"""")",,,,,,,1.0,Productivity Gain
+        is_muted = False,,,,,,,1.0,Productivity Gain
+        while True:,,,,,,,1.0,Productivity Gain
+            current_pid = get_spotify_pid(),,,,,,,1.0,Productivity Gain
+            ,,,,,,,1.0,Productivity Gain
+            if current_pid:,,,,,,,1.0,Productivity Gain
+                ,,,,,,,1.0,Productivity Gain
+                all_titles = get_all_spotify_titles(current_pid),,,,,,,1.0,Productivity Gain
+                ,,,,,,,1.0,Productivity Gain
+                ,,,,,,,1.0,Productivity Gain
+                is_ad = False,,,,,,,1.0,Productivity Gain
+                ,,,,,,,1.0,Productivity Gain
+                if not all_titles:,,,,,,,1.0,Productivity Gain
+                    is_ad = False ,,,,,,,1.0,Productivity Gain
+                else:,,,,,,,1.0,Productivity Gain
+                    ,,,,,,,1.0,Productivity Gain
+                    for title in all_titles:,,,,,,,1.0,Productivity Gain
+"                        if title == """"Spotify"""" or """"Advertisement"""" in title or """"Spotify Free"""" in title:",,,,,,,1.0,Productivity Gain
+                            is_ad = True,,,,,,,1.0,Productivity Gain
+                            current_title = title,,,,,,,1.0,Productivity Gain
+                            break,,,,,,,1.0,Productivity Gain
+                    ,,,,,,,1.0,Productivity Gain
+                    ,,,,,,,1.0,Productivity Gain
+                    if not is_ad:,,,,,,,1.0,Productivity Gain
+                        ,,,,,,,1.0,Productivity Gain
+"                        song_titles = [t for t in all_titles if """" - """" in t]",,,,,,,1.0,Productivity Gain
+                        if song_titles:,,,,,,,1.0,Productivity Gain
+                            is_ad = False,,,,,,,1.0,Productivity Gain
+                            current_title = song_titles[0],,,,,,,1.0,Productivity Gain
+                        else:,,,,,,,1.0,Productivity Gain
+                           ,,,,,,,1.0,Productivity Gain
+                            is_ad = True,,,,,,,1.0,Productivity Gain
+                            current_title = all_titles[0],,,,,,,1.0,Productivity Gain
+                if is_ad:,,,,,,,1.0,Productivity Gain
+                    if not is_muted:,,,,,,,1.0,Productivity Gain
+"                        print(f""""Ad detected. Muting... (Found: {all_titles})"""")",,,,,,,1.0,Productivity Gain
+                        set_mute(True, current_pid),,,,,,1.0,Productivity Gain
+                        is_muted = True,,,,,,,1.0,Productivity Gain
+                else:,,,,,,,1.0,Productivity Gain
+                    if is_muted:,,,,,,,1.0,Productivity Gain
+"                        print(f""""Song detected: {current_title}. Unmuting..."""")",,,,,,,1.0,Productivity Gain
+                        set_mute(False, current_pid),,,,,,1.0,Productivity Gain
+                        is_muted = False,,,,,,,1.0,Productivity Gain
+            ,,,,,,,1.0,Productivity Gain
+            time.sleep(1),,,,,,,1.0,Productivity Gain
+"    if __name__ == """"__main__"""":",,,,,,,1.0,Productivity Gain
+        main(),,,,,,,1.0,Productivity Gain
+",0,2,",,,,,,,1.0,Productivity Gain
+1rwygat,2026-03-18 16:46:35,reddit,r/python,Is it a sensible move? Is starting to the Python For Finance book by Yves Hilpisch after just finishing the CS50P course from Harvard makes sense?,0,2,2.0,Neutral
+1rwxeqo,2026-03-18 15:39:55,reddit,r/python,"""Kenneth Reitz says """"open source gave me everything until I had nothing left to give"""" **Kenneth Reitz (creator of Requests) on open source", mental health, and what intensity costs**,2.0,Neutral
+Kenneth Reitz wrote a pretty raw essay about the connection between building Requests and his psychiatric hospitalizations. The same intensity that produced the library produced the conditions for his worst mental health crises, and open source culture celebrated that intensity without ever asking what it cost him.,,,,,,1.0,Productivity Gain
+He also talks about how maintainer identity fuses with the project, conference culture as a clinical risk factor for bipolar disorder, and why most maintainers who go through this just go quiet instead of writing about it.,,,,,1.0,Productivity Gain
+https://kennethreitz.org/essays/2026-03-18-open_source_gave_me_everything_until_i_had_nothing_left_to_give,,,,,,,1.0,Productivity Gain
+He also published a companion piece about the golden era of open source ending, how projects now come with exit strategies instead of lego brick ethos, and how tech went from being his identity to just being craft:,,,,,1.0,Productivity Gain
+https://kennethreitz.org/essays/2026-03-18-values_i_outgrew_and_the_ones_that_stayed,,,,,,,1.0,Productivity Gain
+",212,28,",,,,,,,1.0,Productivity Gain
+1rwwjug,2026-03-18 14:46:38,reddit,r/python,"""We let type hints completely ruin the readability of python.. Honestly I am just so unbelievably exhausted by the sheer amount of artificial red tape we’ve invented for ourselves in modern development. we used to just write actual logic that solved real problems, but now I spend 70% of my day playing defense against an incredibly aggressive linter or trying to decipher deeply nested utility types just to pass a simple string to a UI element. it genuinely feels like the entire industry collectively decided that if a codebase doesn’t require a master's degree in abstract linguistics to read, then it isn't """"enterprise ready",""""" and I am begging us to just go back to building things that work instead of writing 400 lines of metadata describing what our code might do if the build step doesn't randomly fail.""",0,1.0,Productivity Gain
+1rwrfff,2026-03-18 10:24:17,reddit,r/python,conjecscore.org (alpha version) - A scoreboard for open problems. # What My Project Does,,,2.0,Neutral
+I am working on a website: [https://conjecscore.org/](https://conjecscore.org/) . The goal of this website is to collect open problems in mathematics (that is, no one knows the answer to them), frame them as optimization problems (that is," to assign each problem a """"score"""" function)", and put a scoreboard for each of the problems. Also, the code is [open source](https://github.com/thyrgle/conjecscore) and written using the Python web framework FastAPI amongst other technologies.,,1.0,Productivity Gain
+# Target Audience,,,,,,,1.0,Productivity Gain
+If you like [Project Euler](https://projecteuler.net/) or other *competitive programming sites* you might like this site as well!,,,,,,,1.0,Productivity Gain
+# Comparison,,,,,,,1.0,Productivity Gain
+As mentioned above, it is similar to other competitive programming sites, but the problems do not have known solutions. As such," I suspect it is much harder to get something like ChatGPT (or related AI) to just give you a perfect score (which entails solving the problem).""",0,2,,1.0,Productivity Gain
+1rwoq79,2026-03-18 08:27:03,reddit,r/python,"Mods have a couple of months to stop AI slop project spam before this sub is dead Might only be weeks, to be honest. This is untenable. I don’t want to look at your vibe coded project you use to fish for GitHub stars so you can put it on your resume. Where are all the good discussions about the python programming language? ",749,159,2.0,Neutral
+1rwm19s,2026-03-18 06:42:49,reddit,r/python,albums: interactive tool to manage a music library (with video intro) **What My Project Does**,,,1.0,Productivity Gain
+Manage a library of music: validate and fix tags and metadata, rename files, adjust and embed album art, clean up and import albums, and sync parts of the library to digital audio players or portable storage.,,,1.0,Productivity Gain
+* [Read the documentation](https://4levity.github.io/albums/),,,,,,,1.0,Productivity Gain
+* [Watch a video about how to use albums](https://www.youtube.com/watch?v=B5tBG_GaG7A),,,,,,,1.0,Productivity Gain
+* [Look at the source code](https://github.com/4levity/albums),,,,,,,1.0,Productivity Gain
+FLAC, Ogg Vorbis, MP3/ID3, M4A/AAC/ALAC, ASF/WMA and AIFF files are supported with the most common standard tags. Image files (PNG, JPEG, GIF,0.0,Security Risk
+**Target Audience**,,,,,,,1.0,Productivity Gain
+Albums is for anyone with a collection of digital music files that are mostly organized into albums, who want all the tags and filenames and embedded pictures to be perfect. Must be okay with using the command prompt / terminal, but albums is interactive and aims to be user-friendly.,,,,,1.0,Productivity Gain
+**Comparison**,,,,,,,1.0,Productivity Gain
+Albums checks and fixes operate primarily on whole albums/folders. Fixes, when offered, require a simple choice or confirmation only. It doesn't provide an interface for manually tagging or renaming individual files. Instead, in interactive mode it has a quick way to open an external tagger or file explorer window if needed. It also offers many hands-free automatic fixes. The user can decide what level of interaction to use.,,,,1.0,Productivity Gain
+In addition to fixing metadata, albums can sync parts of the collection to external storage and import new music into the library after checking for issues.,,,,,,1.0,Productivity Gain
+**More About Albums**,,,,,,,1.0,Productivity Gain
+Albums is free software (GPL v3). No AI was used to write it. It doesn't use an Internet connection, it just analyzes what's in the library.,,,,,,1.0,Productivity Gain
+Albums has detailed documentation. The build and release process is automated. Whenever a version tag is pushed, GitHub Actions automatically publish Python wheels to PyPi, documentation to GitHub Pages, and standalone binary releases for Windows and Linux created with PyInstaller.,,,,1.0,Productivity Gain
+If you have a music collection and want to give it a try, or if you have any comments on the project or tooling," that'd be great! Thanks.""",0,5,,,1.0,Productivity Gain
+1rwjuhc,2026-03-18 05:21:15,reddit,r/python,"My First Port Scanner with multithreading and banner grabbing and I want improving it Title: My First Port Scanner With Multithreading, Banner Grabbing and Service Finding  ",,,1.0,Productivity Gain
+What it does: I made a port scanner with Python. It finds open ports with socket module. It uses ThreadPoolExecutor, so it does multithreading. I use it for LEGAL purposes.,,,,,,1.0,Productivity Gain
+Target Audience: Beginners interested in network-cyber security and socket programming.,,,,,,,1.0,Productivity Gain
+Comparison: I writed this because I wanted learning how networking works in Python. Also I wanted how multithreading works in socket programming.,,,,,,,1.0,Productivity Gain
+GitHub: [https://github.com/kotkukotku/ilk-proje](https://github.com/kotkukotku/ilk-proje),,,,,,,1.0,Productivity Gain
+",0,15,",,,,,,,1.0,Productivity Gain
+1rwh4vr,2026-03-18 03:44:43,reddit,r/python,"pip install runcycles — hard budget limits for AI agent calls, enforced before they run **Title:** pip install runcycles — hard budget limits for AI agent calls, enforced before they run",,,1.0,Productivity Gain
+**What My Project Does:**,,,,,,,1.0,Productivity Gain
+Reserve estimated cost before the LLM call, commit actual usage after, release the remainder on failure. If the budget is exhausted, the call is blocked before it fires — not billed after.,,,,1.0,Productivity Gain
+    from runcycles import cycles,,,,,,,1.0,Productivity Gain
+    @cycles(estimate=5000," action_kind=""""llm.completion"""""," action_name=""""openai:gpt-4o"""")",,,,,1.0,Productivity Gain
+    def ask(prompt: str) -&gt; str:,,,,,,,1.0,Productivity Gain
+        return client.chat.completions.create(,,,,,,,1.0,Productivity Gain
+"            model=""""gpt-4o""""",,,,,,,1.0,Productivity Gain
+"            messages=[{""""role"""": """"user"""""," """"content"""": prompt}]",,,,,,1.0,Productivity Gain
+        ).choices[0].message.content,,,,,,,1.0,Productivity Gain
+**Target Audience:**,,,,,,,1.0,Productivity Gain
+Developers building autonomous agents or LLM-powered applications that make repeated or concurrent API calls.,,,,,,,1.0,Productivity Gain
+**Comparison:**,,,,,,,1.0,Productivity Gain
+Provider caps apply per-provider and report after the fact. LangSmith tracks cost after execution. This enforces before — the call never fires if the budget is gone. Works with any LLM provider (OpenAI, Anthropic, Bedrock, Ollama, anything).,,,1.0,Productivity Gain
+Self-hosted server (Docker + Redis). Apache 2.0. Requires Python 3.10+.,,,,,,,1.0,Productivity Gain
+GitHub: [https://github.com/runcycles/cycles-runaway-demo](https://github.com/runcycles/cycles-runaway-demo)  ,,,,,,,1.0,Productivity Gain
+"Docs: [https://runcycles.io/quickstart/getting-started-with-the-python-client](https://runcycles.io/quickstart/getting-started-with-the-python-client)""",0,2,,,,,1.0,Productivity Gain
+1rwffus,2026-03-18 02:46:08,reddit,r/python,"I built FileForge — a professional file organizer with auto-classification, SHA-256 duplicate detect Hey everyone,",,,1.0,Productivity Gain
+I wanted to share a project I have been building called **FileForge**, a file organizer I originally wrote to solve a very personal problem: years of accumulated files across Downloads, Desktop, and external drives with no consistent structure, duplicates everywhere, and no easy way to clean it all up without spending an entire weekend doing it manually.,,1.0,Productivity Gain
+So I built the tool I wished existed.,,,,,,,1.0,Productivity Gain
+**What FileForge does right now**,,,,,,,1.0,Productivity Gain
+At its core, FileForge scans a directory and automatically classifies every file it finds into one of 26 categories covering 504+ extensions. The category-to-extension mapping is stored in a plain JSON file, so if your workflow involves uncommon formats, you can add them yourself without touching any code.,,,,1.0,Productivity Gain
+Duplicate detection works in two phases. First it groups files by size, which costs zero disk reads. Only files that share the same size proceed to phase two, where it computes SHA-256 hashes to confirm true duplicates. This means it never hashes a file unless it has a realistic chance of being a duplicate, which keeps things fast even on large directories.,,,,1.0,Productivity Gain
+There is also a heuristics layer that goes beyond simple extension matching. It detects screenshots, meme-style images, and oversized files based on name patterns and source folder context, then handles them differently from regular files. Every organize and move operation is written to a history log with full undo support, so nothing is permanent unless you want it to be.,,,1.0,Productivity Gain
+Performance-wise it hits around 50,000 files per second on an NVMe drive using parallel scanning with multithreading. RAM usage stays flat because it streams the scan rather than loading a full file list into memory. The entire core logic has zero external dependencies.,,,,,,1.0,Productivity Gain
+The GUI is built with PySide6 using a dark Catppuccin palette with live progress bars and a real-time operation log. The project is 100% offline with no telemetry and no network calls of any kind.,,,,,,,1.0,Productivity Gain
+**What is coming next**,,,,,,,1.0,Productivity Gain
+This is where things get interesting. I am currently working on a significant redesign of the project. The CLI is being removed entirely, and I am rethinking the interface from scratch to make everything more intuitive and accessible, especially for people who are not comfortable with terminals or desktop Python apps. There is a bigger change coming that I think will make FileForge considerably more useful to a much wider audience, but I will leave that as a surprise for now.,,,,1.0,Productivity Gain
+The repository is MIT licensed and the code is clean enough that contributions, forks, and feedback are all genuinely welcome. If you run into bugs or have ideas for how the classifier or heuristics could be smarter, open an issue.,,,,1.0,Productivity Gain
+**Repository:** [https://github.com/EstebanDev411/fileforge](https://github.com/EstebanDev411/fileforge),,,,,,,1.0,Productivity Gain
+If you find it useful," a star on the repo is always appreciated and helps the project get visibility. Honest feedback is even better.""",0,17,,,,1.0,Productivity Gain
+1rwb879,2026-03-18 00:21:17,reddit,r/python,"built an open-source CLI that scans Python AI projects for EU AI Act compliance — benchmarked it ag AIR Blackbox is a Python CLI tool that scans your AI/ML codebase for the 6 technical requirements defined in the EU AI Act (enforcement deadline: August 2, 2026). It maps each requirement to concrete code patterns and gives you a PASS/WARN/FAIL per article.",,,2.0,Neutral
+    pip install air-blackbox,,,,,,,1.0,Productivity Gain
+    air-blackbox setup          # pulls local AI model via Ollama,,,,,,,1.0,Productivity Gain
+    air-blackbox comply --scan ./your-project -v --deep,,,,,,,1.0,Productivity Gain
+It uses a hybrid scanning engine:,,,,,,,1.0,Productivity Gain
+1. Rule-based regex scanning across every Python file in the project, with strong vs. weak pattern separation to prevent false positives,,,,,,1.0,Productivity Gain
+2. A fine-tuned AI model (Llama-based, runs locally via Ollama) that analyzes a smart sample of compliance-relevant files,,,,,,1.0,Productivity Gain
+3. Reconciliation logic that combines the breadth of regex with the depth of AI analysis,,,,,,,1.0,Productivity Gain
+To validate it, I benchmarked against three production frameworks:,,,,,,1.0,Productivity Gain
+* CrewAI: 4/6 passing — strongest human oversight (560-line u/human_feedback decorator, OpenTelemetry with 72 event files),,,,,,1.0,Productivity Gain
+* LangFlow: 4/6 passing — strongest security story (GuardrailsComponent, prompt injection detection, SSRF blocking),,,,,1.0,Productivity Gain
+* Quivr: 1/6 passing — solid Langfuse integration but gaps in human oversight and security,,,,,,,1.0,Productivity Gain
+"The scanner initially produced false positives: """"user\_id"""" in 2 files was enough to PASS human oversight"," """"sanitize"""" matched """"sanitize\_filename"""""," and """"pii"""" matched inside the word """"api"""". I rewrote 5 check functions to separate strong signals (dedicated security libraries", explicit delegation tokens) from weak signals (generic config variables).,,,,1.0,Productivity Gain
+No data leaves your machine. No cloud. No API keys. Apache 2.0.,,,,,,,1.0,Productivity Gain
+# Target Audience,,,,,,,1.0,Productivity Gain
+Python developers building AI/ML systems (especially agent frameworks, RAG pipelines, LLM applications) who need to understand where their codebase stands relative to the EU AI Act's technical requirements. Useful for production teams with EU exposure," but also educational for anyone curious about what """"AI compliance"""" actually means at the code level.",,,,1.0,Productivity Gain
+# Comparison,,,,,,,1.0,Productivity Gain
+Most EU AI Act tools are SaaS platforms focused on governance documentation and risk assessments (Credo AI, Holistic AI, IBM OpenPages). AIR Blackbox is different:,,,,,1.0,Productivity Gain
+* It's a CLI tool that scans actual source code, not a documentation platform,,,,,,1.0,Productivity Gain
+* It runs entirely locally — your code never leaves your machine,,,,,,,1.0,Productivity Gain
+* It's open-source (Apache 2.0), not enterprise SaaS,,,,,,1.0,Productivity Gain
+* It uses a hybrid engine (regex + fine-tuned local LLM) rather than just checklist-based assessment,,,,,,,1.0,Productivity Gain
+"* It maps directly to the 6 technical articles in the EU AI Act rather than general """"AI ethics"""" frameworks",,,,,,,1.0,Productivity Gain
+Think of it as a linter for AI governance — like how pylint checks code style, this checks compliance infrastructure.,,,,,,1.0,Productivity Gain
+GitHub: [https://github.com/airblackbox/scanner](https://github.com/airblackbox/scanner) PyPI: [https://pypi.org/project/air-blackbox/](https://pypi.org/project/air-blackbox/),,,,,,,1.0,Productivity Gain
+"Feedback welcome — especially on the strong vs. weak pattern detection. Every bug report from a real scan makes it better.""",0,5,,,,,1.0,Productivity Gain
+1rw7vay,2026-03-17 22:20:28,reddit,r/python,"Marketing Pipeline in Python Using Claude Code (repo and forkable example) We’ve been running Claude Code as a K8s CronJob and using markdown as a workflow engine. Wanted to share the open-source marketing pipeline that runs on it: scanners, a classifier with 13 structured questions, and proposer agents that draft forum responses with working SDK examples of our tool.",,,1.0,Productivity Gain
+Most of it (89%) is noise, but the 2-3% that make it to the last stage are actually really good!,,,,,,1.0,Productivity Gain
+Repo: [https://github.com/futuresearch/example-cc-cronjob](https://github.com/futuresearch/example-cc-cronjob),,,,,,,1.0,Productivity Gain
+Tutorial and forkable ex: [https://futuresearch.ai/blog/marketing-pipeline-using-claude-code/](https://futuresearch.ai/blog/marketing-pipeline-using-claude-code/),,,,,,,1.0,Productivity Gain
+I haven't found any such project out there," I would be curious where people can take it next.""",0,3,,,,1.0,Productivity Gain
+1rw7bk2,2026-03-17 21:59:46,reddit,r/python,"I built a one‑line, local‑first debugger for ai agents – finally, no more log spelunking I've been building AI agents with LangChain and CrewAI, and debugging them has been a nightmare. Silent context drops, hallucinated tool arguments, infinite loops – and I'd waste hours digging through print statements.",,,1.0,Productivity Gain
+So I built **AgentTrace** – a zero‑config, local‑first observability tool that traces every LLM call and tool execution. You just add one line to your Python script, and it spins up a beautiful local dashboard.,,,,,1.0,Productivity Gain
+python,,,,,,,1.0,Productivity Gain
+    import agenttrace.auto  # ← that's it,,,,,,,1.0,Productivity Gain
+    # ... your existing agent code ...,,,,,,,1.0,Productivity Gain
+# What My Project Does,,,,,,,1.0,Productivity Gain
+AgentTrace intercepts every LLM call (OpenAI, Anthropic, Gemini, etc.) and tool execution in your agent, storing them in a local SQLite database and serving a live React dashboard at `localhost:8000`. You get:,,,1.0,Productivity Gain
+* **Interactive timeline** – Replay your agent's execution step‑by‑step, with full visibility into prompts, completions, tool inputs/outputs, and timing.,,,1.0,Productivity Gain
+* **Auto‑judge** – Built‑in pure‑Python detectors flag infinite loops (same tool call 3x), latency spikes, and cost anomalies. Optionally use an LLM‑as‑a‑judge (via Groq) to detect instruction drift or tool misuse.,,,,,1.0,Productivity Gain
+* **Trace comparison** – Diff two agent runs side‑by‑side to see exactly how changes affect behavior.,,,,,,,1.0,Productivity Gain
+* **Session tracing** – Group multiple traces into a single session (e.g., multi‑turn conversations or cron jobs).,,,,,,1.0,Productivity Gain
+* **Evaluation datasets** – Curate successful traces into golden datasets and export as JSONL for regression testing.,,,,,,,1.0,Productivity Gain
+All data stays on your machine – no cloud, no API keys, no accounts.,,,,,1.0,Productivity Gain
+# Target Audience,,,,,,,1.0,Productivity Gain
+AgentTrace is for **Python developers building AI agents**, whether you're using LangChain, CrewAI, AutoGen, or just raw LLM calls. It's designed for **local development and debugging**, not production monitoring (though you could self‑host it). It's free, open‑source,1.0,Productivity Gain
+# Comparison,,,,,,,1.0,Productivity Gain
+Existing observability tools for agents (LangSmith, Langfuse, Humanloop, etc.) are powerful but often require:,,,,1.0,Productivity Gain
+* Cloud accounts and API keys,,,,,,,1.0,Productivity Gain
+* Sending your prompts and traces to third‑party servers,,,,,,,1.0,Productivity Gain
+* Complex setup (wrapping code, adding callbacks, etc.),,,,,1.0,Productivity Gain
+AgentTrace is different:,,,,,,,1.0,Productivity Gain
+* **Local‑first** – Your data never leaves your machine.,,,,,,,1.0,Productivity Gain
+* **Zero‑config** – One import, and you're done.,,,,,,1.0,Productivity Gain
+* **Open source** – MIT licensed, so you can modify or self‑host.,,,,,,1.0,Productivity Gain
+* **Multi‑language** – Supports Python, Node.js, and Go out of the box (so you can trace agents written in other languages too).,,,,,1.0,Productivity Gain
+It's not meant to replace production observability platforms, but for **local debugging and experimentation**, it's the simplest tool I know.,,,,,1.0,Productivity Gain
+**I'd love your feedback:**,,,,,,,1.0,Productivity Gain
+* Does it work with your stack? (LangGraph? AutoGen? Custom agents?),,,,,,,1.0,Productivity Gain
+* Is the dashboard showing what you actually need to debug?,,,,,,,1.0,Productivity Gain
+* What features would make you use it every day?,,,,,,,1.0,Productivity Gain
+Repo: [https://github.com/CURSED-ME/agent\_trace](https://github.com/CURSED-ME/agent_trace) (stars are always appreciated!),,,,,,,1.0,Productivity Gain
+If you have 5 minutes to try it and tell me why my code is terrible," I'd be super grateful. Thanks for reading!""",0,0,,,,1.0,Productivity Gain
+1rw76f8,2026-03-17 21:54:08,reddit,r/python,"Python devs, you are on demand! Why people hire python devs for usual backend development like crud, I understand about ML, but why they hire people writing on fastapi or jango if it’s slower that other backend languages so much? And also nodejs dev for example easier to hire and might be full stack. Please tell me your usual work duties. Why python devs are in demand in Europe right now for backend?",0,15,2.0,Neutral
+1rw5ujy,2026-03-17 21:00:16,reddit,r/python,"tryke: A fast, modern test framework for Python # What My Project Does",,,2.0,Neutral
+[https://github.com/thejchap/tryke](https://github.com/thejchap/tryke),,,,,,,1.0,Productivity Gain
+Every time i've spun up a side project (like [this one](https://github.com/thejchap/sapling) or [this one)](https://github.com/thejchap/diffswarm) I've felt like I've wanted a slightly nicer testing experience. I've been using pytest for a long time and have been very happy with it, but wanted to experiment with something new.,,,,,,1.0,Productivity Gain
+    from tryke import expect, test, describe,,,,,1.0,Productivity Gain
+    def add(a: int, b: int) -&gt; int:,,,,,,1.0,Productivity Gain
+        return a + b,,,,,,,1.0,Productivity Gain
+"    with describe(""""add""""):",,,,,,,1.0,Productivity Gain
+"        @test(""""1 + 1"""")",,,,,,,1.0,Productivity Gain
+        def test_basic():,,,,,,,1.0,Productivity Gain
+            expect(1 + 1).to_equal(2),,,,,,,1.0,Productivity Gain
+I built tryke to address many of the things I found myself wanting in pytest. tryke features things like [watch mode](https://thejchap.github.io/tryke/guides/watch-mode.html), built-in [async support](https://thejchap.github.io/tryke/guides/async.html), very [speedy test discovery](https://thejchap.github.io/tryke/concepts/discovery.html) powered by [Ruff](https://docs.astral.sh/ruff/)'s Python parser, an LLM reporter (similar to Bun's new LLM mode), and being able to run tests for a specific diff (ie test file A and test file B import source file C, source file C changed on this branch, run only test files A and B) - similar to [pytest-picked](https://github.com/anapaulagomes/pytest-picked).,0.0,Security Risk
+"In addition to watch mode there's just a general [client/server](https://thejchap.github.io/tryke/concepts/client-server.html) mode that accepts commands from a client (ie """"run test"""") and executes against a warm pool of workers - so in theory a LLM could just ping commands to the server as well. The IDE integrations I built for this have an option to use client/server mode instead of running a test command from scratch every time. Currently there are [IDE integrations for Neovim and VS Code](https://thejchap.github.io/tryke/guides/editor-integration.html).",,,,,,,1.0,Productivity Gain
+In the library there are also [soft assertions by default](https://thejchap.github.io/tryke/concepts/soft-assertions.html) (this is a design choice I am still deciding how much I like), and [doctest support](https://thejchap.github.io/tryke/guides/doctests.html).,,,,,,1.0,Productivity Gain
+The next thing I am planning to tackle are fixtures/shared setup+teardown logic/that kind of thing - i really like fastapi's explicit dependency injection.,,,,,,,1.0,Productivity Gain
+# Target Audience,,,,,,,1.0,Productivity Gain
+Anyone who is interested in (or willing to) experiment with a new testing experience in Python. This is still in early alpha/development releases (0.0.X), and will experience lots of change. I wouldn't recommend using it yet for production projects. I have switched my side projects over to it.,,,,,,1.0,Productivity Gain
+I welcome feedback, ideas, and pull requests.,,,,,1.0,Productivity Gain
+# Comparison,,,,,,,1.0,Productivity Gain
+|Feature|tryke|pytest|,,,,,,,1.0,Productivity Gain
+|:-|:-|:-|,,,,,,,1.0,Productivity Gain
+|**Startup speed**|Fast (Rust binary)|Slower (Python + plugin loading)|,,,,,,,1.0,Productivity Gain
+|**Discovery speed**|Fast (Rust AST parsing)|Slower (Python import)|,,,,,,,1.0,Productivity Gain
+|**Execution**|Concurrent workers|Sequential (default) or plugin (xdist)|,,,,,,,1.0,Productivity Gain
+|**Diagnostics**|Per-assertion expected/received|Per-test with rewrite|,,,,,,,1.0,Productivity Gain
+|**Dependencies**|Zero|Many transitive|,,,,,,,1.0,Productivity Gain
+|**Watch mode**|Built-in|Plugin (pytest-watch)|,,,,,,,1.0,Productivity Gain
+|**Server mode**|Built-in|Not available|,,,,,,,1.0,Productivity Gain
+|**Changed files**|Built-in (`--changed`, static import graph)|Plugins such as pytest-picked / pytest-testmon|,,,,,,1.0,Productivity Gain
+|**Async**|Built-in|Plugin (pytest-asyncio)|,,,,,,,1.0,Productivity Gain
+|**Reporters**|text, json, dot, junit, llm|Verbose, short + plugins|,,1.0,Productivity Gain
+|**Plugin ecosystem**|—|Extensive (1000+)|,,,,,,,1.0,Productivity Gain
+|**Fixtures**|WIP|Powerful, composable|,,,,,,1.0,Productivity Gain
+|**Parametrize**|WIP|Built-in|,,,,,,,1.0,Productivity Gain
+|**Community**|Nonexistent :)|Large, established|,,,,,,1.0,Productivity Gain
+|**Documentation**|Growing|Extensive|,,,,,,,1.0,Productivity Gain
+|**IDE support**|VS Code, Neovim|All major IDEs|,,,,,,1.0,Productivity Gain
+## Benchmarks,,,,,,,1.0,Productivity Gain
+### Discovery,,,,,,,1.0,Productivity Gain
+|Scale|tryke|pytest|Speedup|,,,,,,,1.0,Productivity Gain
+|:-|:-|:-|:-|,,,,,,,1.0,Productivity Gain
+|50|174.8ms|199.7ms|1.1x|,,,,,,,1.0,Productivity Gain
+|500|178.6ms|234.3ms|1.3x|,,,,,,,1.0,Productivity Gain
+"|5000|176.6ms|628.5ms|3.6x|""",0,3,,,,,1.0,Productivity Gain
+1rw312s,2026-03-17 18:43:21,reddit,r/python,"I just added a built-in Real-Time Cloud IDE synced with GitHub Hey everyone,",,,1.0,Productivity Gain
+I've been working on CodekHub, a platform to help developers find teammates and build projects together.,,,,,,1.0,Productivity Gain
+The matchmaking part was working well, but I noticed a problem: once a team is formed, collaboration gets messy (Discord, GitHub, Live Share, etc.).,,1.0,Productivity Gain
+So I built a collaborative workspace directly inside the platform.,,,,,,,1.0,Productivity Gain
+Main features:,,,,,,,1.0,Productivity Gain
+- Real-time code collaboration (like Google Docs for code),,,,,,,1.0,Productivity Gain
+- Auto GitHub repo creation for each project,,,,,,,1.0,Productivity Gain
+- Pull, commit, and push directly from the browser,,,,,1.0,Productivity Gain
+- Integrated team chat,,,,,,,1.0,Productivity Gain
+- Project history with restore functionality,,,,,,,1.0,Productivity Gain
+Tech stack:,,,,,,,1.0,Productivity Gain
+I started with Monaco Editor but ran into a lot of issues, so I rebuilt everything using CodeMirror 6 + Yjs. Backend is FastAPI.,,,,,,1.0,Productivity Gain
+The platform is still early, and I’d really love some honest feedback:,,,,,,1.0,Productivity Gain
+Would you use something like this? What would you improve?,,,,,,,1.0,Productivity Gain
+"https://www.codekhub.it""",0,0,,,,,1.0,Productivity Gain
+1rw1nb4,2026-03-17 17:21:22,reddit,r/python,"ClipForge: AI-powered short-form video generator in Python (~2K lines, MIT) I just open-sourced ClipForge, a Python library + CLI for generating short-form videos (YouTube Shorts, TikTok, Reels) with AI.",,,2.0,Neutral
+Install:,,,,,,,1.0,Productivity Gain
+ `pip install clipforge`,,,,,,,1.0,Productivity Gain
+Quick usage:,,,,,,,1.0,Productivity Gain
+`from clipforge import generate_short`,,,,,,,1.0,Productivity Gain
+"`generate_short(topic=""""black holes"""""," style=""""space"""""," output=""""video.mp4"""")`",,,,,1.0,Productivity Gain
+Or via CLI:,,,,,,,1.0,Productivity Gain
+"`clipforge generate --topic """"lightning"""" --style mind_blowing`",,,,,,,1.0,Productivity Gain
+Architecture:,,,,,,,1.0,Productivity Gain
+* [story.py](http://story.py) — LLM-agnostic script generation (Groq free tier / OpenAI / Anthropic),,,,,,,1.0,Productivity Gain
+* visuals.py — AI image generation via fal.ai FLUX Schnell + Ken Burns ffmpeg effects,,,,,,,1.0,Productivity Gain
+* [voice.py](http://voice.py) — Edge TTS (free, async, word-level timestamps),,,,,1.0,Productivity Gain
+* [subtitles.py](http://subtitles.py) — ASS subtitle generation with word-by-word karaoke highlighting,,,,,,,1.0,Productivity Gain
+* [compose.py](http://compose.py) — FFmpeg composition (concat, scale/crop to 9:16, audio mix, subtitle burn),,,,1.0,Productivity Gain
+* [cli.py](http://cli.py) — Click-based CLI with generate/voices/config commands,,,,,,,1.0,Productivity Gain
+* [config.py](http://config.py) — Dataclass config with env var support,,,,,,,1.0,Productivity Gain
+Design decisions:,,,,,,,1.0,Productivity Gain
+* No hardcoded paths — everything via env vars or function args,,,,,,,1.0,Productivity Gain
+* Async Edge TTS with sync wrapper for convenience,,,,,,,1.0,Productivity Gain
+* Fallback system: no FAL\_KEY? → gradient clips. No LLM key? → bring your own script,,,,,,,1.0,Productivity Gain
+* Type hints throughout, logging in every module,,,,,,1.0,Productivity Gain
+* \~2K lines total, no heavy frameworks,,,,,,1.0,Productivity Gain
+Dependencies: edge-tts, fal-client, requests, click + FFmpeg (system),,,,1.0,Productivity Gain
+GitHub: [https://github.com/DarkPancakes/clipforge](https://github.com/DarkPancakes/clipforge),,,,,,,1.0,Productivity Gain
+"Feedback welcome — especially on the subtitle rendering and the scene extraction prompt engineering.""",0,9,,,,,1.0,Productivity Gain
+1rw18i5,2026-03-17 16:55:22,reddit,r/python,Using the walrus operator := to self-document if conditions Recently I have been using the walrus operator `:=` to document if conditions.,,,2.0,Neutral
+So instead of doing:,,,,,,,1.0,Productivity Gain
+    complex_condition = (A and B) or C,,,,,,,1.0,Productivity Gain
+    if complex_condition:,,,,,,,1.0,Productivity Gain
+        ...,,,,,,,1.0,Productivity Gain
+I would do:,,,,,,,1.0,Productivity Gain
+    if complex_condition := (A and B) or C:,,,,,,,1.0,Productivity Gain
+        ...,,,,,,,1.0,Productivity Gain
+To me, it reads better. However, you could argue that the variable `complex_condition` is unused, which is therefore not a good practice. Another option would be to extract the condition computing into a function of its own. But I feel it's a bit overkill sometimes.,,,,1.0,Productivity Gain
+"What do you think ?""",53,100,,,,,1.0,Productivity Gain
+1rx7yvm,2026-03-19 00:04:37,reddit,r/LearnProgramming,APNA COLLEGE 8000 PAID COURSE FOR 500/- SIGMA 11 APNA COLLEGE 8000 PAID COURSE FOR 500/- SIGMA 11,,,1.0,Productivity Gain
+It is a on going course you will get almost everything that is in official course ,,,,,,,1.0,Productivity Gain
+Complete Web Development + DSA,,,,,,,1.0,Productivity Gain
+Complete Web Development,,,,,,,1.0,Productivity Gain
+Complete DSA in Java/C++,,,,,,,1.0,Productivity Gain
+Advanced DSA,,,,,,,1.0,Productivity Gain
+50 Live Practice Sessions with MAANG Engineers : alternate day,,,,,,,1.0,Productivity Gain
+Library Feature : Video Solutions of FAANG Coding Rounds,,,,,,,1.0,Productivity Gain
+Individual Doubt Support for DSA &amp; Development : TA,,,,,,,1.0,Productivity Gain
+Quant &amp; Aptitude Preparation,,,,,,,1.0,Productivity Gain
+Duration - 8.5 months,,,,,,,1.0,Productivity Gain
+Only for 500 ,,,,,,,1.0,Productivity Gain
+DM if you're genuinely interested ,,,,,,,1.0,Productivity Gain
+"Lectures are Uploaded on Telegram Group """,0,0,,,,,1.0,Productivity Gain
+1rx6mso,2026-03-18 23:14:47,reddit,r/LearnProgramming,"I have a problem with Unity modules instalation Hi, I am a complete beginner with Unity (and game engines in general). I have just installed Unity 6.3 LTS and set up Visual Studio Community, Windows Build Support, and Documentation without any issues. However, I am hitting a wall when trying to add modules like Android Build Support or WebGL Build Support. Every time I try to add these modules vith Unity Hub, the installation fails. I've tried about 10 times now and it keeps failing. Has anyone encountered this or knows a fix? Any help would be great!",1,1,2.0,Neutral
+1rx6h79,2026-03-18 23:08:51,reddit,r/LearnProgramming,"Any tricks on dealing with the long time in front of the computer? Hi guys,",,,1.0,Productivity Gain
+I know this question might sound very silly to most of you but I just want to hear of you have any tipps.,,,,,,,1.0,Productivity Gain
+Here is the thing: My regular Home Office job requieres me to sit in front of the computer for 8 -9 hours daily, and besides I occasionally do sworn translations (actually a job thats pays less money than people think, but it is a side hustle), so usually I can do 9-11 hours some days in front of the computer.,,,,1.0,Productivity Gain
+Currently I am studying programming besides because I like it a lot and I think it' ll fit very well in my cv, but I really struggel to concentrate after so many hours spend in front of the computer. Do you guys have any tips? Maybe a recommendation for a seat, or whatever you do to be comfortable? I already have a decent desk," a 32"""" and a 27 """" screen and a gaming seat.",,,,1.0,Productivity Gain
+"Thanks in advance!""",1,2,,,,,1.0,Productivity Gain
+1rx67nl,2026-03-18 22:59:05,reddit,r/LearnProgramming,"What do you listen while programming? I like listening to generative music, that helps to focus, using services such as [endel.io](http://endel.io) and [brain.fm](http://brain.fm), what do you listen to? Or did you find silence the most productive for you?",4,19,1.0,Productivity Gain
+1rx60uo,2026-03-18 22:51:48,reddit,r/LearnProgramming,Breaking News: IIT DELHI - One of the India's Biggest University announced a fellowship for students BUT... Indian Institute of Technology has announced a stipend-based research fellowship.,,,1.0,Productivity Gain
+The irony is that IIT Delhi students aren't eligible.,,,,,,,1.0,Productivity Gain
+* They are providing Weekly Stipend: Rs 2000 /s,,,,,,,1.0,Productivity Gain
+* Free Stay in the Institute's hostel,,,,,,,1.0,Productivity Gain
+* and travel fare coverage,,,,,,,1.0,Productivity Gain
+* UG/PG Students can apply.,,,,,,,1.0,Productivity Gain
+"Here is the [Complete Guide](https://youtu.be/rbfwc0MvD0A) only for those (except IITD students) who are serious about this opportunity.""",0,0,,,,,1.0,Productivity Gain
+1rx46ja,2026-03-18 21:39:59,reddit,r/LearnProgramming,"does any body use Atom any more Hello,  world! ok so stumbled on this IDE Atom a hackable text editor for the 21st Century i was iteressed in it bc it was made by **github** so i downloaded it it installed it it was pretter good so why does NOBODY use it anymore and btw i know it was arcived",9,19,1.0,Productivity Gain
+1rx450w,2026-03-18 21:38:20,reddit,r/LearnProgramming,"""Moving from Java (Android) and C to Swift: What are the biggest """"gotchas"""" for a veteran dev? Hi everyone",,,1.0,Productivity Gain
+I’ve been a professional Android developer for quite a while now, primarily working with **Java** and some **C**. Recently, I’ve started picking up **Swift**, and while the syntax looks modern, the underlying philosophy feels totally different.,,,1.0,Productivity Gain
+For those who have made the jump from Java/C to Swift," what should I pay attention to so I don't """"write Java in Swift syntax""""?",,,,,,1.0,Productivity Gain
+**Specifically, I’m looking for advice on:**,,,,,,1.0,Productivity Gain
+* **Optionals:** Coming from Java," the `?` and `!` and `if let` patterns are new. Any tips for managing these without creating """"force-unwrap"""" habits?",,,,,,1.0,Productivity Gain
+* **Structs vs Classes:** I know Swift favors Value Types (Structs). In Java, everything is an object. When should I resist the urge to make everything a Class?,,,,,,1.0,Productivity Gain
+* **Functional Patterns:** Swift seems to lean heavily into `map`, `filter`, and closures.,,,,,1.0,Productivity Gain
+"If you have any """"mental model"""" shifts that helped you learn Swift quickly"," I’d love to hear them!""",3,1,,,,1.0,Productivity Gain
+1rx3tfv,2026-03-18 21:24:37,reddit,r/LearnProgramming,How to foster child's interest in programming and coding? Sent my son to stem camp and the instructor was really impressed with his ability to grasp things as well as his talent for it.,,,1.0,Productivity Gain
+Background my son has always been good with scratch and doing stuff on roblox(making game) side. But me and my wife thought it was just things kids do nowadays.,,,,,,,1.0,Productivity Gain
+Hes always had an interest in these things so there is was no need to push him to do it.,,,,,,,1.0,Productivity Gain
+But after insight from his instructor we would like to foster it correctly.,,,,,,,1.0,Productivity Gain
+Thanks in advance for all the input.,,,,,,,1.0,Productivity Gain
+"I just ordered the elegoo ultimatestarter kit for him today. Anything else i should get for him as well?""",16,17,,,,,1.0,Productivity Gain
+1rx1sv0,2026-03-18 19:54:06,reddit,r/LearnProgramming,"Those who have taken online classes from Harvard, are those only certificate classes or can I roll them into a degree? As the title says, are these eligible to be rolled into a degree or are the certificate only? ",0,2,2.0,Neutral
+1rx17y1,2026-03-18 19:24:50,reddit,r/LearnProgramming,What do I do I am an A-Level comp sci student looking to go into software engineering. I only know C# at the A-Level standard and I want to go into software engineering but I don't know what I should be doing. Please can anyone give me some advice on things I can do to help me improve? ,2,4,2.0,Neutral
+1rx0nxe,2026-03-18 18:56:31,reddit,r/LearnProgramming,"How often should I poll for dead connections, or is there a better way? I know I should probably be using ThreadPoolExecutor, but I like control and knowing the intimate details of my own architecture. Plus, it's a learning experience.",,,1.0,Productivity Gain
+```,,,,,,,1.0,Productivity Gain
+#!/usr/bin/env python3,,,,,,,1.0,Productivity Gain
+# Ocronet (The Open Cross Network) is a volunteer P2P network of international,,,,,,,1.0,Productivity Gain
+# registration and peer discovery nodes used for third-party decentralized,,,,,,,1.0,Productivity Gain
+# applications.,,,,,,,1.0,Productivity Gain
+# The network is organized via a simple chord protocol, with a 16-character,,,,,,1.0,Productivity Gain
+# hexadecimal node ID space. Network navigation and registration rules are set,,,,,,,1.0,Productivity Gain
+# by said third-party applications.,,,,,,,1.0,Productivity Gain
+# Python was chosen because of its native support for big integers.,,,,,,,1.0,Productivity Gain
+# NodeIDs are generated by hashing the node's `ip|port` with SHA3-512.,,,,,,,1.0,Productivity Gain
+from socket import socket, AF_INET6, SOCK_DGRAM, SOL_SOCKET, SO_REUSEADDR,,,1.0,Productivity Gain
+from time import sleep, time,,,,,,1.0,Productivity Gain
+from os import name as os_name,,,,,,,1.0,Productivity Gain
+from os import system,,,,,,,1.0,Productivity Gain
+from threading import Thread,,,,,,,1.0,Productivity Gain
+from hashlib import sha3_512,,,,,,,1.0,Productivity Gain
+from collections import Counter,,,,,,,1.0,Productivity Gain
+from json import loads, dumps,,,,,,1.0,Productivity Gain
+def clear():,,,,,,,1.0,Productivity Gain
+    if os_name == 'nt':,,,,,,,1.0,Productivity Gain
+        system('cls'),,,,,,,1.0,Productivity Gain
+    else:,,,,,,,1.0,Productivity Gain
+        system('clear'),,,,,,,1.0,Productivity Gain
+def getNodeID(data):,,,,,,,1.0,Productivity Gain
+    return sha3_512(data.encode('utf-8')).hexdigest()[0:16].upper(),,,,,,,1.0,Productivity Gain
+def tally(votes):,,,,,,,1.0,Productivity Gain
+    if len(votes) == 0:,,,,,,,1.0,Productivity Gain
+        return None,,,,,,,1.0,Productivity Gain
+    tally = Counter(votes).most_common()[0][0],,,,,,,1.0,Productivity Gain
+    return tally,,,,,,,1.0,Productivity Gain
+class peerManager:,,,,,,,1.0,Productivity Gain
+    def __init__(self):,,,,,,,1.0,Productivity Gain
+        self.publicAddress = None,,,,,,,1.0,Productivity Gain
+        self.nodeID = None,,,,,,,1.0,Productivity Gain
+        self.idealPeers = [],,,,,,,1.0,Productivity Gain
+        self.peers = {},,,,,,,1.0,Productivity Gain
+    def _calculateIdealPeers(self):,,,,,,,1.0,Productivity Gain
+        # Placeholder for ideal peer calculation logic,,,,,,,1.0,Productivity Gain
+        pass,,,,,,,1.0,Productivity Gain
+    def updateID(self, publicAddress):,,,,,,1.0,Productivity Gain
+        self.publicAddress = publicAddress,,,,,,,1.0,Productivity Gain
+        self.nodeID = getNodeID(publicAddress),,,,,,,1.0,Productivity Gain
+        self._calculateIdealPeers(),,,,,,,1.0,Productivity Gain
+class ocronetServer:,,,,,,,1.0,Productivity Gain
+    def __init__(self, **kwargs):,,,,,,1.0,Productivity Gain
+"        name = """"Ocronet 26.03.30""""",,,,,,,1.0,Productivity Gain
+        clear(),,,,,,,1.0,Productivity Gain
+"        print(f""""======================== {name} ========================"""")",,,,,,,1.0,Productivity Gain
+        # Define and merge user settings with defaults,,,,,,,1.0,Productivity Gain
+        self.settings = {,,,,,,,1.0,Productivity Gain
+"            """"address"""": """"::|1984""""",,,,,,,1.0,Productivity Gain
+"            """"bootstrap"""": []",,,,,,,1.0,Productivity Gain
+"            """"threadLimit"""": 100",,,,,,,1.0,Productivity Gain
+        },,,,,,,1.0,Productivity Gain
+        self.settings.update(kwargs),,,,,,,1.0,Productivity Gain
+        # Create and bind the UDP server socket,,,,,,,1.0,Productivity Gain
+        self.server = socket(AF_INET6, SOCK_DGRAM),,,,,,1.0,Productivity Gain
+        self.server.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1),,,,,1.0,Productivity Gain
+"        address = self.settings['address'].split(""""|"""")",,,,,,,1.0,Productivity Gain
+        self.server.bind((address[0], int(address[1]))),,,,,,1.0,Productivity Gain
+        # Print the server address and port,,,,,,,1.0,Productivity Gain
+"        print(f""""\nOcronet server started on {self.settings[""""address""""]}\n"""")",,,,,,,1.0,Productivity Gain
+        # Declare voting variables,,,,,,,1.0,Productivity Gain
+        self.publicAddressVotes = [],,,,,,,1.0,Productivity Gain
+        self.publicAddressVoters = [],,,,,,,1.0,Productivity Gain
+        self.publicAddress = None,,,,,,,1.0,Productivity Gain
+        self.nodeID = None,,,,,,,1.0,Productivity Gain
+        # Thread management,,,,,,,1.0,Productivity Gain
+        self.Threads = [],,,,,,,1.0,Productivity Gain
+        Thread(target=self._server, daemon=True).start(),,,,,,1.0,Productivity Gain
+        Thread(target=self._bootstrap, daemon=True).start(),,,,,,1.0,Productivity Gain
+        Thread(target=self._cleanup, daemon=True).start(),,,,,,1.0,Productivity Gain
+        # Keep the main thread alive,,,,,,,1.0,Productivity Gain
+        while True:,,,,,,,1.0,Productivity Gain
+            sleep(1),,,,,,,1.0,Productivity Gain
+    def _server(self):,,,,,,,1.0,Productivity Gain
+        while True:,,,,,,,1.0,Productivity Gain
+            data, addr = self.server.recvfrom(4096),,,,,,1.0,Productivity Gain
+"            if len(self.Threads) &lt; self.settings[""""threadLimit""""]:",,,,,,,1.0,Productivity Gain
+                data = data.decode('utf-8'),,,,,,,1.0,Productivity Gain
+                t = Thread(target=self._handler, args=(data, addr), daemon=True),,,,1.0,Productivity Gain
+                t.start(),,,,,,,1.0,Productivity Gain
+                self.Threads.append(t),,,,,,,1.0,Productivity Gain
+    def _handler(self, data, addr):        ,,,,,1.0,Productivity Gain
+        # ===Error handling===,,,,,,,1.0,Productivity Gain
+"        addr = f""""{addr[0]}|{addr[1]}""""",,,,,,,1.0,Productivity Gain
+        try:,,,,,,,1.0,Productivity Gain
+            data = loads(data)                    ,,,,,,,1.0,Productivity Gain
+        except Exception as e:,,,,,,,1.0,Productivity Gain
+"            print(f""""Error processing data from {addr}: {e}"""")",,,,,,,1.0,Productivity Gain
+            return,,,,,,,1.0,Productivity Gain
+        if not isinstance(data, list) or len(data) == 0:,,,,,,1.0,Productivity Gain
+            return,,,,,,,1.0,Productivity Gain
+"        print(f""""Received [{data[0]}] message from {addr}"""")",,,,,,,1.0,Productivity Gain
+        match data[0]:,,,,,,,1.0,Productivity Gain
+            # ===Data handling===,,,,,,,1.0,Productivity Gain
+            # Info request,,,,,,,1.0,Productivity Gain
+"            case """"info"""":",,,,,,,1.0,Productivity Gain
+"                self.send([""""addr""""", addr], addr),,,,,1.0,Productivity Gain
+"            case """"addr"""":",,,,,,,1.0,Productivity Gain
+"                if addr not in self.settings[""""bootstrap""""] or addr in self.publicAddressVoters:",,,,,,,1.0,Productivity Gain
+                    return,,,,,,,1.0,Productivity Gain
+                self.publicAddressVoters.append(addr),,,,,,,1.0,Productivity Gain
+                self.publicAddressVotes.append(data[1]),,,,,,,1.0,Productivity Gain
+            # Ping request,,,,,,,1.0,Productivity Gain
+"            case """"ping"""":",,,,,,,1.0,Productivity Gain
+"                self.send([""""pong""""]", addr),,,,,,1.0,Productivity Gain
+"            case """"pong"""":",,,,,,,1.0,Productivity Gain
+                pass,,,,,,,1.0,Productivity Gain
+    def send(self, data, addr):,,,,,1.0,Productivity Gain
+"        addr = addr.split(""""|"""")",,,,,,,1.0,Productivity Gain
+        self.server.sendto(dumps(list(data)).encode(), (addr[0], int(addr[1]))),,,,,1.0,Productivity Gain
+    def _bootstrap(self):,,,,,,,1.0,Productivity Gain
+        while True:,,,,,,,1.0,Productivity Gain
+            for peer in self.settings['bootstrap']:,,,,,,,1.0,Productivity Gain
+"                self.send([""""info""""]", peer),,,,,,1.0,Productivity Gain
+            self.publicAddress = tally(self.publicAddressVotes),,,,,,,1.0,Productivity Gain
+            self.publicAddressVotes, self.publicAddressVoters = [], [],,,,,1.0,Productivity Gain
+            if self.publicAddress:,,,,,,,1.0,Productivity Gain
+                self.nodeID = getNodeID(self.publicAddress),,,,,,,1.0,Productivity Gain
+"                print(f""""Public address consensus: {self.publicAddress} (NodeID: {self.nodeID})"""")",,,,,,,1.0,Productivity Gain
+            else:,,,,,,,1.0,Productivity Gain
+"                print(""""Getting network consensus."""")",,,,,,,1.0,Productivity Gain
+                sleep(30),,,,,,,1.0,Productivity Gain
+                continue,,,,,,,1.0,Productivity Gain
+            sleep(900),,,,,,,1.0,Productivity Gain
+    def _cleanup(self):,,,,,,,1.0,Productivity Gain
+        while True:,,,,,,,1.0,Productivity Gain
+            for thread in self.Threads:,,,,,,,1.0,Productivity Gain
+                if not thread.is_alive():,,,,,,,1.0,Productivity Gain
+                    self.Threads.remove(thread),,,,,,,1.0,Productivity Gain
+            sleep(1),,,,,,,1.0,Productivity Gain
+# Testing,,,,,,,1.0,Productivity Gain
+"if __name__ == """"__main__"""":",,,,,,,1.0,Productivity Gain
+    Thread(target=ocronetServer," kwargs={""""address"""": """"::|1984"""""," """"bootstrap"""": [""""::1|1985""""]}).start()",,,,,1.0,Productivity Gain
+    Thread(target=ocronetServer," kwargs={""""address"""": """"::|1985"""""," """"bootstrap"""": [""""::1|1984""""]}).start()",,,,,1.0,Productivity Gain
+```,,,,,,,1.0,Productivity Gain
+As you can see, the ```_server``` thread threads a ```_handler``` for each message. The handler will take care of the routing logic. And a ```_cleanup``` is called every 1 second to get rid of dead threads. Assuming this was in a large-scale Chord network," what's the ideal polling rate for clearing away dead threads?""",1,2,,,1.0,Productivity Gain
+1rwzvvt,2026-03-18 18:13:45,reddit,r/LearnProgramming,"How do you usually catch DB-related bugs before they hit staging? Junior backend dev here, still learning. App logic bugs are one thing, but DB-related issues always feel harder to spot early, especially when schema or seed data is involved. Curious what people usually check before calling something “ready.”",1,4,1.0,Productivity Gain
+1rwzp75,2026-03-18 18:03:03,reddit,r/LearnProgramming,"Which platform to use for learning C Hello guys, I recently started 2nd semester of my college and we are learning C. The thing is that in college we use windows and Microsoft VS IDE for programming C but at home for practice I onlty have macbook. I saw that macOS has its own Xcode IDE. Should I use that or Microsoft vscode which is available for macOS (I know that vscode isnt really and IDE like xcode and vs). If I do use either of them how different will it be from visual studio we use in college? Thanks in advance.",3,11,2.0,Neutral
+1rwzlp8,2026-03-18 17:57:27,reddit,r/LearnProgramming,1 cilp left before i done cs50 so im try to go ai way and i try watch cs50ai and it kinda boring for me so u have any video recommended abt ai?,,,1.0,Productivity Gain
+"ty everyone:]""",0,11,,,,,1.0,Productivity Gain
+1rwwz3a,2026-03-18 15:12:28,reddit,r/LearnProgramming,"Trouble with coding I started my second Java programming class, and I still have no idea how to code. Every time I have an assignment, I just have to watch tutorials to piece it together or search up the whole thing on Google. I was trying to finish my coding assignment today, and I felt like a complete imposter. I really feel discouraged about coding right now, and I want to know if any of you guys have any advice about learning to code. I have never used Reddit before, so forgive me for my formatting. ",8,13,1.0,Productivity Gain
+1rwwurr,2026-03-18 15:05:04,reddit,r/LearnProgramming,Anyone learning react/nextjs and would like to stay in touch? Well that's pretty much it. Anyone wanna get in touch and share progress. I am learning react and nextjs as a side thing. I am a data engineer and very comfortable in python. ,2,1,1.0,Productivity Gain
+1rwum2g,2026-03-18 12:56:56,reddit,r/LearnProgramming,First design job expectations vs reality for career changers I'm switching careers into design and trying to set realistic expectations about what entry level design work actually involves. All the portfolio examples and case studies are strategic product work but I'm guessing junior roles are more like making landing pages and resizing banners? What do junior designers really spend their time doing? How long until you work on interesting product problems vs execution work? Trying to understand the career path without illusions so I know if its right for me before committing fully.,1,10,2.0,Neutral
+1rwsyve,2026-03-18 11:34:39,reddit,r/LearnProgramming,"""Is picking up another side language OKAY? Been learning c++ for about...maybe around 300 days now? Not really sure, im kinda at a VERY slow wall now with sfml, 3.0 specifically. I've literally been banging my head against the keyboard for the past few days cause I didnt know 3.0 uses """"window.pollevent()"""" and some stupid ugly fugly crap with """"std::optional""""...took me 2 weeks to even GRASP it", and im currently just....still stuck," cause I dont even understand it that well yet...plus I needa learn a bunch of other stuff in sfml with all the """"circle.setyadaydayda(blah blah blah random numbers that you should learn by heart)"""" or else I dont get to have fun....",1.0,Productivity Gain
+"This doesnt even feel like the typical """"cool"""" stuck in c++....im not even learning anything that actually helps me in c++ ITSELF"," im just learning some random library that has a bunch of LIBRARY specific stuff if yknow what I mean....and going back to """"learn something new every week"""" is....boring now I guess? Its probably me just being lazy and wanting to see stuff happen...",,,,,,1.0,Productivity Gain
+But that's enough copium," anyways I just wanted to ask you guys if picking up html as a """"secondary"""" would be okay. I saw stuff one youtube videos that us html (alot of html) and c++ TOGETHER", which sounds pretty cool. Maybe could replace sfml (although html cant really....make games that well)...,,,,,1.0,Productivity Gain
+"Thank you c:""",6,12,,,,,1.0,Productivity Gain
+1rwqt7v,2026-03-18 09:56:45,reddit,r/LearnProgramming,"""(X-post from r/gamedev) On learning math for programming/gamedev Hello! I don't know if this is a specifically gamedev oriented thing or a more general programming thing, but I wanted the thoughts of actual gamedevs about this. For context, I'm interested in programming/CS though mostly not in gamedev, but rather language modeling/linguistics work. While I was working on a project for Latin, the implementation bogged me down despite knowing what exactly I wanted to do and what to implement. I didn't have the precise """"language"""" in my mind to transition between the algorithm at hand and my informal description of the steps needed.",,,1.0,Productivity Gain
+I really like video games and have written simple text-based games in Python without an engine, though I'm interested in game development from a programming standpoint more than anything else. To that end I'm more interested in graphics libraries like Raylib or SDL, or frameworks like LÖVE and MonoGame, where I can implement everything as I want it, as I find the journey itself quite satisfying.,,,1.0,Productivity Gain
+I've taken a break from programming, however, to focus on improving my mathematical skills, both for linguistics work but also for gamedev. I think of myself as somewhat adept at symbolic manipulation," but studying math would give me both the ability to spot the same mathematical """"patterns"""" in things as well as reason about them in a manner that's closer to the implementation.",,,1.0,Productivity Gain
+"A statement like """"All entities must be within the bounds of the map"""" becomes """"For all e", if e is an entity, and its position is represented as (x, y), then x must not surpass the width of the map," and y must not surpass the map"""". It's a switch from informal language to formal language.",,1.0,Productivity Gain
+"I'm currently studying discrete math with Epp's """"Discrete Mathematics With Applications"""". This has direct relation to my linguistics work (formal semantics relies on formal logic", syntax often makes use of graph theory). But to me, it seems like what I'd learn in it would also make me more adept at implementing ideas in a game.,,,,,1.0,Productivity Gain
+Path finding AI uses graph theory, game logic and player/enemy behavior could be represented as states and transitions with enums, that type of thing. Puzzle design, as well, as I find a lot of puzzles are just graph theory, combinatorics and logic with a mustache.,,1.0,Productivity Gain
+I also want to strengthen my knowledge of algebra, trigonometry and analytic geometry. Trig seems crucial in pointing a character or enemy a specific direction, and analytic geometry comes in since entity positions are practically points on a Cartesian plane.,,,,,1.0,Productivity Gain
+On that note, I also wanted to do linear algebra, which probably has the most relevance to gamedev. Speed as magnitude, distance and direction vectors, camera position in relation to the player, and practically all of 3D programming, all of that seems to rely on vectors and scalars.,1.0,Productivity Gain
+I do plan on doing all of this whether or not it assists in being better at implementing ideas in games, but I do wanna know what I'd get out of it from a game-dev perspective. I understand you don't necessarily need to know about the ins and outs of state machines in their entirety if you're working with engines that do abstract a good bit of it out (nothing wrong with them), but I do prefer to work with GLs/frameworks.,,,,,1.0,Productivity Gain
+I hope this is relevant, sorry if it isn't.,,,,,,1.0,Productivity Gain
+"MM27""",2,1,,,,,1.0,Productivity Gain
+1rwqs1n,2026-03-18 09:55:23,reddit,r/LearnProgramming,"is it worth learning how to code a job career for long term? im 17 years old and i wanna know if its worth coding for the long term, like will i be able to find a good job and live somewhat comfortably with coding?",40,31,2.0,Neutral
+1rwqd6q,2026-03-18 09:37:13,reddit,r/LearnProgramming,how should i go on to learning software development? Have been writing with python off and on for the past year and confused on how to start something. But am finally forcing myself to just WRITE and learn fundamentals. I am interested in making software applications for fun and for my future.,,,1.0,Productivity Gain
+"I have recently just started looking into making apps on youtube. And watching the tutorials has me wondering seomthing. How do i go and learn this information? should i just keep making applications with the code he taught me and edit it in the future. or should i be writing it over and over again to make sure i understand each line with comments. Maybe I am overcomplicating this...Please tell me what i should be doing. """,1,4,,,,,1.0,Productivity Gain
+1rwq9mq,2026-03-18 09:32:49,reddit,r/LearnProgramming,"Want to start learning AI/ML python. I'm in CSE final year. Familiar with MERN stack, python, odoo 17, flask and similar frameworks.",,,2.0,Neutral
+I've been told multiple times that I'm good technically but my main weakness is DSA. ,,,,,,,1.0,Productivity Gain
+I've recently started learning python and currently doing an internship as a python ERP trainee using odoo. ,,,,,,,1.0,Productivity Gain
+I figured that I'm not interested in ERP or odoo. I wanna start learning AI/ML. But i don't know how to stay, whether I should go for DSA first or stay AI ML first. ,,,,,,1.0,Productivity Gain
+"Need advice from experienced from similar field""",2,1,,,,,1.0,Productivity Gain
+1rwpwlk,2026-03-18 09:17:01,reddit,r/LearnProgramming,"How to make my frontend page recognize an Address from random text # I am trying to make a front end page that connects to a database for an school asignment. I have sucsessfuly linked the front end, server, and database, and would like to add another feature, but I have no idea what to even look for to get started. That feature is making it so the user must impliment a real Street Address instead of being able to impliment anyting such as '123 new street'.",2,3,1.0,Productivity Gain
+1rwpkuv,2026-03-18 09:02:58,reddit,r/LearnProgramming,Connecting HTML Data to OneDrive for Backup Hi everyone! I have an HTML file that I want to back up automatically to OneDrive. Can anyone guide me on how to connect my HTML data to OneDrive so that it updates or backs up automatically?,,,1.0,Productivity Gain
+"Thanks in advance for your help!""",0,1,,,,,1.0,Productivity Gain
+1rwpg8q,2026-03-18 08:57:46,reddit,r/LearnProgramming,Need help figuring out where to start I only have experience with HTML and fairly little coding experience.,,,1.0,Productivity Gain
+I play this game sometimes where you are given 2 card, an opponent is given 2 cards and then there are 2 cards in the discard pile. The goal of the game is to guess if the sum of your cards is higher, lower or tied to the opponents cards. There are two rounds in the game, round one you see both of your cards and one of the discarded cards then make your guess, the second round one you get to see one of the opponents cards and the other discarded card and get to choose to switch your guess or keep it the same. The deck is 10 cards with numbers 1-10, there are no repeats.,,1.0,Productivity Gain
+I wanted to try to make a code that i could input the cards in and have it give the likelihood that my cards are higher, lower or the same as the opponents.,,,,,,1.0,Productivity Gain
+The issue is I have no clue where to start," i don't even know what language would be the best to make this in. Literally any advice on where to start would be greatly appreciated!""",1,1,,,,1.0,Productivity Gain

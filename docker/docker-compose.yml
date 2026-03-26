@@ -1,42 +1,270 @@
+# OpenClaw Sentiment Analysis - Full Stack Docker Compose
+# Complete containerized pipeline: Infrastructure + Applications
+
 version: '3.8'
 
 services:
+  # ============================================
+  # Infrastructure Services
+  # ============================================
+
   zookeeper:
     image: confluentinc/cp-zookeeper:7.4.0
+    container_name: openclaw-zookeeper
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
     ports:
       - "2181:2181"
+    networks:
+      - openclaw-net
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "2181"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   kafka:
     image: confluentinc/cp-kafka:7.4.0
+    container_name: openclaw-kafka
     depends_on:
-      - zookeeper
+      zookeeper:
+        condition: service_healthy
     ports:
-      - "9092:9092"
+      - "9092:9092"      # External access
+      - "29092:29092"    # Internal access
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT_HOST://localhost:9092,PLAINTEXT://kafka:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT_HOST:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_LOG_RETENTION_HOURS: 1
+    networks:
+      - openclaw-net
+    healthcheck:
+      test: ["CMD", "kafka-broker-api-versions", "--bootstrap-server", "localhost:9092"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: openclaw-sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "OpenClaw123!"
+      MSSQL_PID: "Express"
+      MSSQL_TCP_PORT: 1433
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - openclaw-net
+    healthcheck:
+      test: ["CMD", "/opt/mssql-tools/bin/sqlcmd", "-S", "localhost", "-U", "sa", "-P", "OpenClaw123!", "-Q", "SELECT 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  # ============================================
+  # Spark Standalone Cluster
+  # ============================================
 
   spark-master:
-    image: bitnami/spark:3.3
+    image: bitnami/spark:3.5.0
+    container_name: openclaw-spark-master
     environment:
       - SPARK_MODE=master
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
     ports:
-      - "8080:8080"
-      - "7077:7077"
+      - "8080:8080"    # Spark Master UI
+      - "7077:7077"    # Spark Master port
+    networks:
+      - openclaw-net
     volumes:
-      - ..:/app
+      - ./models:/app/models:rw
+      - ./data:/app/data:rw
+      - ./config.py:/app/config.py:ro
+      - ./spark:/app/spark:ro
 
   spark-worker:
-    image: bitnami/spark:3.3
+    image: bitnami/spark:3.5.0
+    container_name: openclaw-spark-worker
     depends_on:
       - spark-master
     environment:
       - SPARK_MODE=worker
       - SPARK_MASTER_URL=spark://spark-master:7077
+      - SPARK_WORKER_MEMORY=2G
+      - SPARK_WORKER_CORES=2
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+    ports:
+      - "8081:8081"    # Spark Worker UI
+    networks:
+      - openclaw-net
     volumes:
-      - ..:/app
+      - ./models:/app/models:rw
+      - ./data:/app/data:rw
+
+  # ============================================
+  # Application Services
+  # ============================================
+
+  # ML Training Service
+  openclaw-trainer:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: openclaw-trainer
+    environment:
+      - SPARK_MASTER=spark://spark-master:7077
+      - KAFKA_BROKER=kafka:29092
+    depends_on:
+      - spark-master
+      - spark-worker
+    networks:
+      - openclaw-net
+    volumes:
+      - ./models:/app/models:rw
+      - ./data:/app/data:rw
+      - ./spark:/app/spark:ro
+      - ./config.py:/app/config.py:ro
+    command: ["train"]
+    profiles:
+      - training  # Only start with --profile training
+
+  # Streaming Classifier Service
+  openclaw-stream:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: openclaw-stream
+    environment:
+      - SPARK_MASTER=spark://spark-master:7077
+      - KAFKA_BROKER=kafka:29092
+      - SQLSERVER_HOST=sqlserver
+      - SQLSERVER_PORT=1433
+      - SQLSERVER_PASSWORD=OpenClaw123!
+    depends_on:
+      - kafka
+      - spark-master
+      - spark-worker
+      - sqlserver
+    networks:
+      - openclaw-net
+    volumes:
+      - ./models:/app/models:ro
+      - ./config.py:/app/config.py:ro
+      - ./spark:/app/spark:ro
+    restart: unless-stopped
+    command: ["stream"]
+
+  # Kafka Producer Service (data generator)
+  openclaw-producer:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: openclaw-producer
+    environment:
+      - KAFKA_BROKER=kafka:29092
+      - POSTS_PER_SECOND=10
+    depends_on:
+      - kafka
+    networks:
+      - openclaw-net
+    volumes:
+      - ./config.py:/app/config.py:ro
+      - ./data:/app/data:ro
+    restart: unless-stopped
+    command: ["producer"]
+
+  # Batch Statistics Service (runs periodically)
+  openclaw-batch:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: openclaw-batch
+    environment:
+      - SPARK_MASTER=spark://spark-master:7077
+      - SQLSERVER_HOST=sqlserver
+      - SQLSERVER_PORT=1433
+      - SQLSERVER_PASSWORD=OpenClaw123!
+    depends_on:
+      - spark-master
+      - spark-worker
+      - sqlserver
+      - openclaw-stream
+    networks:
+      - openclaw-net
+    volumes:
+      - ./config.py:/app/config.py:ro
+      - ./spark:/app/spark:ro
+      - ./dashboard:/app/dashboard:rw
+    command: ["batch"]
+    profiles:
+      - batch  # Only start with --profile batch
+
+  # Performance Benchmark Service
+  openclaw-benchmark:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: openclaw-benchmark
+    environment:
+      - KAFKA_BROKER=kafka:29092
+      - SPARK_MASTER=spark://spark-master:7077
+      - BENCHMARK_DURATION=60
+      - POSTS_PER_SECOND=80
+    depends_on:
+      - kafka
+      - spark-master
+      - spark-worker
+      - openclaw-stream
+    networks:
+      - openclaw-net
+    volumes:
+      - ./config.py:/app/config.py:ro
+      - ./tests:/app/tests:ro
+      - ./benchmark-results:/app/benchmark-results:rw
+    command: ["benchmark"]
+    profiles:
+      - benchmark  # Only start with --profile benchmark
+
+  # ============================================
+  # Monitoring (Optional)
+  # ============================================
+
+  # Spark UI Proxy (access via browser)
+  spark-ui:
+    image: haproxy:2.8-alpine
+    container_name: openclaw-spark-ui
+    ports:
+      - "9000:8080"
+    depends_on:
+      - spark-master
+    networks:
+      - openclaw-net
+    volumes:
+      - ./docker/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+    profiles:
+      - monitoring
+
+networks:
+  openclaw-net:
+    driver: bridge
+
+volumes:
+  sqlserver_data:
+    driver: local

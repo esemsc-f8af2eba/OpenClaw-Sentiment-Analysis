@@ -1,0 +1,434 @@
+post_id,user_id,title,content,post_type,source,source_subreddit,source_category,timestamp,upvotes,comments,downs,score,link_flair,permalink
+1rx8prg,vitlyoshin,[D] Why Self-Driving AI Is So Hard,"[D] Why Self-Driving AI Is So Hard Most AI systems don’t fail when things are normal; they fail in rare, unpredictable situations.
+
+One idea stuck with me from my recent podcast conversation: building AI for the real world is less about making models smarter and more about making systems reliable when things go wrong.
+
+What’s interesting is that a lot of the engineering effort goes into handling edge cases, the scenarios that rarely happen, but matter the most when they do. It changes how you think about AI entirely. It’s not just a model problem; it’s a systems problem.
+
+Curious how others here think about this:  
+  
+Are we focusing too much on model performance and not enough on real-world reliability?
+
+",D,reddit,r/MachineLearning,reddit,2026-03-19 00:32:11,0,1,0,0,Discussion,https://www.reddit.com/r/MachineLearning/comments/1rx8prg
+1rx7uz5,pengtaoxie,[P] AIBuildAI: An AI agent that automatically builds AI models (#1 on OpenAI MLE-Bench),"[P] AIBuildAI: An AI agent that automatically builds AI models (#1 on OpenAI MLE-Bench) Hi everyone,
+
+We recently released AIBuildAI, an agentic system that automatically builds AI models.  
+GitHub: [https://github.com/aibuildai/AI-Build-AI](https://github.com/aibuildai/AI-Build-AI) 
+
+On OpenAI’s MLE-Bench benchmark, AIBuildAI ranked #1: [https://github.com/openai/mle-bench](https://github.com/openai/mle-bench) 
+
+The system runs an agent loop that automatically:  
+• analyzes the task  
+• designs models  
+• writes code to implement them  
+• trains the models  
+• tunes hyperparameters  
+• evaluates model performance  
+• iteratively improves the models
+
+The goal is to reduce the amount of manual work required to build AI models and automate much of the model development process.
+
+Happy to answer questions and would love to hear feedback from the community.",P,reddit,r/MachineLearning,reddit,2026-03-19 00:00:49,0,2,0,0,Project,https://www.reddit.com/r/MachineLearning/comments/1rx7uz5
+1rx5i61,Bright_Warning_8406,[D] Looking for arXiv endorsement (cs.LG) - PDE-based world model paper,"[D] Looking for arXiv endorsement (cs.LG) - PDE-based world model paper Hi everyone,
+
+I'm a researcher looking for an arXiv endorsement for cs.LG to submit my first paper. I've been working for about a year on FluidWorld, a world model where the prediction engine is a reaction-difffusion PDE instead of attention. The Laplacian diffusion handles spatial propagation, learned reaction terms do the nonlinear mixing, and the PDE integration itself produces the prediction.
+
+No attention, no KV-cache, O(N) complexity, 867K parameters total. I ran a parameter matched comparison (PDE vs Transformer vs ConvLSTM, all at \~800K params, same encoder/decoder/losses/data on UCF-101) and the interesting finding is that while single-step metrics are nearly identical, the PDE holds together much better on multi-step rollouts -- the diffusion acts as a natural spatial regularizer that prevents error accumulation.
+
+Paper: [https://github.com/infinition/FluidWorld/blob/main/paper/Fluidworld.pdf](https://github.com/infinition/FluidWorld/blob/main/paper/Fluidworld.pdf)
+
+Endorsement code: 6AB9UP  
+[https://arxiv.org/auth/endorse?x=6AB9UP](https://arxiv.org/auth/endorse?x=6AB9UP)
+
+If anyone is working on world model, video prediction, neural PDEs, or efficient architectures could endorse me, that would be really appreciated. Happy to answer any questions about the work. Thanks!",D,reddit,r/MachineLearning,reddit,2026-03-18 22:31:43,0,0,0,0,Research,https://www.reddit.com/r/MachineLearning/comments/1rx5i61
+1rx5avj,madkimchi,[P] ColQwen3.5-v3 release + Case study,"[P] ColQwen3.5-v3 release + Case study Happy to share the latest colqwen3.5-4.5B model in the series.
+
+ColQwen3.5-4.5B-v3 is #1 (avg) on the MTEB ViDoRe leaderboard (Pending release) at 75.67 mean, \~half the params, \~13x fewer embedding dims, \~half the memory footprint of the previous #1 model.
+
+Thoughts: V3 edges out v2 on V3 English u@5 (0.6034 vs 0.6023), a marginal gain for substantially more compute. The real win was the V2 benchmark jump and surpassing 8B models on V3. That's where I decided to draw the line between further optimization and accepting the limitations of the model and training data.
+
+The full evaluation trail is public, with result files covering every candidate tried.
+
+Links:
+
+* Models (V1, V2, V3): [https://huggingface.co/athrael-soju/colqwen3.5-4.5B-v3](https://huggingface.co/athrael-soju/colqwen3.5-4.5B-v3) (Model cards may need corrections)
+* All eval files are up if you want to check my homework: [https://huggingface.co/datasets/athrael-soju/colqwen-optimization-trail](https://huggingface.co/datasets/athrael-soju/colqwen-optimization-trail)
+* Full training methodology &amp; Case Study in the blog post: [https://athrael.net/blog/research/diminishing-returns-benchmark-optimization](https://athrael.net/blog/research/diminishing-returns-benchmark-optimization)
+* Mteb Leaderboard (Select ViDoRe V3 from the sidebar on the left): [https://huggingface.co/spaces/mteb/leaderboard](https://huggingface.co/spaces/mteb/leaderboard)
+
+ColQwen3.5-4.5B-v3 is already officially supported by colpali-engine and vLLM (ROCm + CUDA), so you can actually use the thing.
+
+License: Apache 2.0
+
+I'm now training the 9B variant with a much simpler setup and will post once that's done.",P,reddit,r/MachineLearning,reddit,2026-03-18 22:23:58,1,0,0,1,Project,https://www.reddit.com/r/MachineLearning/comments/1rx5avj
+1rx4j4s,ManningBooks,Evaluation and Alignment: The Seminal Papers (new book + 50% code),"Evaluation and Alignment: The Seminal Papers (new book + 50% code) Hi r/MachineLearning,
+
+I'm Stjepan from Manning, and I'm posting on behalf of Manning with the mods' approval.
+
+We’ve just released a book that focuses on a part of ML systems that tends to get less attention than model design, but ends up driving a lot of the hard decisions in practice: evaluation and alignment.
+
+**Evaluation and Alignment: The Seminal Papers** by Hanchung Lee  
+[https://www.manning.com/books/evaluation-and-alignment-the-seminal-papers](https://hubs.la/Q047k5xH0)
+
+[Evaluation and Alignment, The Seminal Papers](https://preview.redd.it/bdl6e5136tpg1.jpg?width=2213&amp;format=pjpg&amp;auto=webp&amp;s=fb15bd9b1540243ff9786193d1ea0e85903c780b)
+
+A lot of current work in LLMs and applied ML ends up circling the same set of questions: what does “good” actually mean for this system, how do we measure it, and what do we do when the metrics don’t match user expectations? This book approaches those questions by going back to the research that shaped how we evaluate and adapt models.
+
+It walks through the progression from surface-level metrics to semantic similarity approaches and then into more judgment-based evaluation methods. The interesting part is how those ideas connect to real system design. Evaluation is treated as something you define upfront, based on what your system needs to get right, rather than something you tack on at the end.
+
+The book also introduces a working cycle that shows up a lot in production settings: define what matters, evaluate against it, analyze failures, and then align the system accordingly. That loop is where most of the practical work happens, especially when you’re balancing things like helpfulness, safety, and consistency of outputs.
+
+If you’ve ever had a model that looked good on paper but didn’t behave the way you expected in practice, this book spends time in that gap between metrics and behavior.
+
+**For the** r/MachineLearning **community:**  
+You can get **50% off** with the code **MLLEE450RE**.
+
+If there’s interest, I’d be happy to invite the author to join the discussion and answer questions about the papers and evaluation approaches covered in the book.
+
+Thanks for having us here.
+
+Cheers,
+
+Stjepan",Unknown,reddit,r/MachineLearning,reddit,2026-03-18 21:53:58,6,1,0,6,News,https://www.reddit.com/r/MachineLearning/comments/1rx4j4s
+1rx201a,S4M22,[D] ICML rejects papers of reviewers who used LLMs despite agreeing not to,"[D] ICML rejects papers of reviewers who used LLMs despite agreeing not to According to multiple posts on Twitter/X ICML has rejected all paper of reviewers who used LLMs for their reviews even though they chose the review track with no LLM use. What are your thoughts on this? Too harsh considering the limited precision of AI detection tools?
+
+It is the first time I see a major conferences taking harsh actions on LLM-generated reviews.
+
+https://preview.redd.it/trkb82lumspg1.png?width=1205&amp;format=png&amp;auto=webp&amp;s=03953ce11b9803cf35dd7fe83428e4187f8c4092
+
+",D,reddit,r/MachineLearning,reddit,2026-03-18 20:03:38,96,39,0,96,Discussion,https://www.reddit.com/r/MachineLearning/comments/1rx201a
+1rx1gtn,GeorgeBird1,[R] A Gradient Descent Misalignment — Causes Normalisation To Emerge,"[R] A Gradient Descent Misalignment — Causes Normalisation To Emerge [**This paper**](https://arxiv.org/pdf/2512.22247), just accepted at ICLR's GRaM workshop, asks a simple question:
+
+&gt;*Does gradient descent systematically take the wrong step in activation space*?
+
+It is shown:
+
+&gt;*Parameters take the step of steepest descent*; ***activations do not***
+
+The paper mathematically demonstrates this for simple affine layers, convolution, and attention.
+
+The work then explores solutions to address this.
+
+The solutions may consequently provide an alternative *mechanistic explanation* for why normalisation helps at all, as two structurally distinct fixes arise: existing (L2/RMS) normalisers and a new form of fully connected layer (MLP).
+
+Derived is:
+
+1. **A new form of affine-like layer** (a.k.a. new form for fully connected/linear layer). featuring inbuilt normalisation whilst preserving DOF (unlike typical normalisers). Hence, a new alternative layer architecture for MLPs.
+2. A new family of normalisers: **""PatchNorm""** **for convolution**, opening new directions for empirical search.
+
+Empirical results include:
+
+* This affine-like solution is *not* scale-invariant and is *not* a normaliser, yet it consistently matches or exceeds BatchNorm/LayerNorm in controlled MLP ablation experiments—suggesting that scale invariance is not the primary mechanism at work—but maybe this it is the misalignment.
+* The framework makes a clean, falsifiable prediction: increasing batch size should *hurt* performance for divergence-correcting layers. **This counterintuitive effect is observed** empirically and does not hold for BatchNorm or standard affine layers. Corroborating the theory.
+
+Hope this is interesting and worth a read.
+
+* I've added some (hopefully) interesting intuitions scattered throughout, e.g. the consequences of *reweighting LayerNorm's mean* &amp; why RMSNorm may need the sqrt-n factor &amp; unifying normalisers and activation functions. Hopefully, all surprising fresh insights - please let me know what you think.
+
+Happy to answer any questions :-)
+
+\[[**ResearchGate Alternative Link**](https://www.researchgate.net/publication/399175786_The_Affine_Divergence_Aligning_Activation_Updates_Beyond_Normalisation)\] \[[**Peer Reviews**](https://openreview.net/forum?id=KKQSwSpfJ1#discussion)\]",R,reddit,r/MachineLearning,reddit,2026-03-18 19:37:24,22,8,0,22,Research,https://www.reddit.com/r/MachineLearning/comments/1rx1gtn
+1rwyy9g,Chocolate_Milk_Son,[R] From Garbage to Gold: A Formal Proof that GIGO Fails for High-Dimensional Data with Latent Structure — with a Connection to Benign Overfitting Prerequisites,"[R] From Garbage to Gold: A Formal Proof that GIGO Fails for High-Dimensional Data with Latent Structure — with a Connection to Benign Overfitting Prerequisites Paper: [https://arxiv.org/abs/2603.12288](https://arxiv.org/abs/2603.12288)  
+  
+GitHub (R simulation, Paper Summary, Audio Overview): [https://github.com/tjleestjohn/from-garbage-to-gold](https://github.com/tjleestjohn/from-garbage-to-gold)
+
+I'm Terry, the first author. This paper has been 2.5 years in the making and I'd genuinely welcome technical critique from this community.
+
+**The core result:** We formally prove that for data generated by a latent hierarchical structure — Y ← S¹ → S² → S'² — a Breadth strategy of expanding the predictor set asymptotically dominates a Depth strategy of cleaning a fixed predictor set. The proof follows from partitioning predictor-space noise into two formally distinct components:
+
+* **Predictor Error:** Observational discrepancy between true and measured predictor values. Addressable by cleaning, repeated measurement, or expanding the predictor set with distinct proxies of S¹.
+* **Structural Uncertainty:** The irreducible ambiguity arising from the probabilistic S¹ → S² generative mapping — the information deficit that persists even with perfect measurement of a fixed predictor set. Only resolvable by expanding the predictor set with distinct proxies of S¹.
+
+The distinction matters because these two noise types obey different information-theoretic limits. Cleaning strategies are provably bounded by Structural Uncertainty regardless of measurement precision. Breadth strategies are not.
+
+**The BO connection:** We formally show that the primary structure Y ← S¹ → S² → S'² naturally produces low-rank-plus-diagonal covariance structure in S'² — precisely the spiked covariance prerequisite that the Benign Overfitting literature (Bartlett et al., Hastie et al., Tsigler &amp; Bartlett) identifies as enabling interpolating classifiers to generalize. This provides a generative data-architectural explanation for why the BO conditions hold empirically rather than being imposed as abstract mathematical prerequisites.
+
+**Empirical grounding:** The theory was motivated by a peer-reviewed clinical result at Cleveland Clinic Abu Dhabi — .909 AUC predicting stroke/MI in 558k patients using thousands of uncurated EHR variables with no manual cleaning, published in PLOS Digital Health — that could not be explained by existing theory.
+
+**Honest scope:** The framework requires data with a latent hierarchical structure. The paper provides heuristics for assessing whether this condition holds. We are explicit that traditional DCAI's focus on outcome variable cleaning remains distinctly powerful in specific conditions — particularly where Common Method Variance is present.
+
+The paper is long — 120 pages with 8 appendices — because GIGO is deeply entrenched and the theory is nuanced. The core proofs are in Sections 3-4. The BO connection is Section 7. Limitations are Section 15 and are extensive.
+
+Fully annotated R simulation in the repo demonstrating Dirty Breadth vs Clean Parsimony across varying noise conditions.
+
+Happy to engage with technical questions or pushback on the proofs.",R,reddit,r/MachineLearning,reddit,2026-03-18 17:17:30,11,18,0,11,Research,https://www.reddit.com/r/MachineLearning/comments/1rwyy9g
+1rwy5ch,alexsht1,[P] Tridiagonal eigenvalue models in PyTorch: cheaper training/inference than dense spectral models,"[P] Tridiagonal eigenvalue models in PyTorch: cheaper training/inference than dense spectral models This post is part of a series I'm working on with a broader goal: understand what one nonlinear ""neuron"" can do when the nonlinearity is a matrix eigenvalue, and whether that gives a useful middle ground between linear models that are easy to explain and larger neural networks that are more expressive but much less transparent. Something unusual, in this ""attention is all you need"" world :)
+
+In this installment, I look at a cheaper variant of the model family by constraining each learned matrix to be symmetric tridiagonal instead of dense.
+
+The model family is still f(x) = λₖ(A₀ + ∑ᵢ xᵢAᵢ), but the eigensolve becomes much cheaper. The motivation here is that diagonal structure collapses the model to something close to piecewise linear, while tridiagonal structure still keeps adjacent latent-variable interactions.
+
+The post walks through why this structural restriction is interesting, how I wired `scipy.linalg.eigh_tridiagonal` into PyTorch autograd, and what happens on a few toy and tabular experiments. In my runs, the tridiagonal eigensolver was about `5x-6x` faster than the dense one on `100x100` batches, which was enough to make larger experiments much cheaper to run.
+
+If you're interested in structured spectral models, custom autograd around numerical linear algebra routines, or model families that try to sit between linear interpretability and fully opaque neural nets, the full writeup is here:
+
+https://alexshtf.github.io/2026/03/15/Spectrum-Banded.html
+
+This is an engineering writeup rather than a paper, so I'd read it in that spirit.",P,reddit,r/MachineLearning,reddit,2026-03-18 16:27:22,14,0,0,14,Project,https://www.reddit.com/r/MachineLearning/comments/1rwy5ch
+1rwua2c,Comfortable_Aside_54,[R] PhD Topic Ideas (Malaysia): Machine Learning for Process Monitoring – Industry Needs &amp; Research Gaps,"[R] PhD Topic Ideas (Malaysia): Machine Learning for Process Monitoring – Industry Needs &amp; Research Gaps Hi everyone,
+
+I’m planning to pursue a PhD in Machine Learning for Process Monitoring, with a focus on applications relevant to Malaysia.
+
+I’m particularly interested in industries that are important in Malaysia, such as:
+
+* Oil &amp; gas and petrochemicals
+* Palm oil processing and biomass/biorefineries
+* Power sector (especially renewable energy integration)
+* Manufacturing and semiconductor industries
+
+From my initial review, it seems the field is evolving toward:
+
+* Real-time monitoring and predictive maintenance using ML
+* Fault Detection
+* Digital twins for industrial processes
+* Deployment challenges (MLOps, scalability, reliability)
+
+However, I’m trying to better understand the **local context and gaps**, such as:
+
+* Limited high-quality industrial datasets in Malaysia
+* Challenges in adopting ML in traditional industries
+* Model reliability in harsh or variable operating conditions
+* Skill and infrastructure gaps for AI deployment
+* Need for explainable and safety-compliant ML systems
+
+I’d really appreciate insights from those working in or familiar with Malaysia:
+
+1. What are the key challenges industries in Malaysia are currently facing in process monitoring?
+2. Where do you see the biggest research gaps or unmet needs?
+3. What would be high-impact PhD topics that are both relevant to Malaysia and publishable internationally?
+4. Are there specific companies, sectors, or collaborations (industry–academia) worth exploring?
+
+My goal is to work on something that has real industrial impact in Malaysia while maintaining strong research novelty.
+
+Thanks in advance for your insights 🙏",R,reddit,r/MachineLearning,reddit,2026-03-18 12:39:10,2,1,0,2,Research,https://www.reddit.com/r/MachineLearning/comments/1rwua2c
+1rx502f,Round-Classic-7746,Weve been running into a lot of friction trying to get a clear picture across all our services lately,"Weve been running into a lot of friction trying to get a clear picture across all our services lately Over the past few months we scaled out more microservices and evrything is spread across different logging and metrics tools. kubernetes logs stay in the cluster, app logs go into the SIEM, cloud provider keeps its own audit and metrics, and any time a team rolls out a new service it seems to come with its own dashboard.
+
+last week we had a weird spike in latency for one service. It wasnt a full outage, just intermittent slow requests, but figuring out what happened took way too long. we ended up flipping between kubernetes logs, SIEM exports, and cloud metrics trying to line up timestamps. some of the fields didn’t match perfectly, one pod was restarted during the window so the logs were split, and a cou\[ple of the dashboards showed slightly different numbers. By the time we had a timeline, the spike was over and we still werent 100% sure what triggered it. New enginrs especially get lost in all the different dashboards and sources.
+
+For teams running microservices at scale, how do you handle this without adding more dashboards or tools? do you centralize logs somewhere first or just accept that investigations will be a mess every time something spikes?",Unknown,reddit,r/devops,reddit,2026-03-18 22:12:16,0,7,0,0,Ops / Incidents,https://www.reddit.com/r/devops/comments/1rx502f
+1rwnudj,Melodic_Struggle_95,Looking to get real DevOps exposure by helping on small tasks,"Looking to get real DevOps exposure by helping on small tasks Hey everyone I know this might not be the usual way to ask, so feel free to ignore if it’s not appropriate here I’m currently learning DevOps and trying to move beyond tutorials into real-world work I’m not looking for paid work right now just an opportunity to contribute and learn by doing If anyone has small, non-critical tasks, backlog items, or anything in a dev/staging setup where an extra hand could help, I’d be glad to contribute i understand the concerns around access and trust, so even guidance towards where I can find such opportunities would mean a lot.",Unknown,reddit,r/devops,reddit,2026-03-18 07:51:14,32,20,0,32,Discussion,https://www.reddit.com/r/devops/comments/1rwnudj
+1rwecc6,Philippe_Merle,AWS CloudFormation Diagrams 0.3.0 is out!,"AWS CloudFormation Diagrams 0.3.0 is out! [AWS CloudFormation Diagrams](https://github.com/philippemerle/AWS-CloudFormation-Diagrams) is an open source tool to generate AWS infrastructure diagrams from AWS CloudFormation templates.
+
+It parses both YAML and JSON AWS CloudFormation templates, supports [159 AWS resource types and any custom resource types](https://github.com/philippemerle/AWS-CloudFormation-Diagrams/blob/main/docs/supported_resource_types.md), supports `Rain::Module` resource type, supports `DependsOn`, `Ref`, `Fn::GetAtt` relationships, and `${}` resource attributes, generates D2, DOT, draw.io, GIF, JPEG, Mermaid, PDF, PNG, SVG, and TIFF diagrams, provides [highly configurable visual representation](https://github.com/philippemerle/AWS-CloudFormation-Diagrams/blob/main/docs/configuration.md), [D2 Diagram Generation](https://github.com/philippemerle/AWS-CloudFormation-Diagrams#d2-diagram-generation), [Mermaid Diagram Generation](https://github.com/philippemerle/AWS-CloudFormation-Diagrams#mermaid-diagram-generation), provides an [interactive diagram viewer](https://github.com/philippemerle/AWS-CloudFormation-Diagrams#interactive-viewer), allows [editable draw.io export](https://github.com/philippemerle/AWS-CloudFormation-Diagrams#editable-drawio-export), and provides 156 generated diagram examples.
+
+This new release comes with [many improvements](https://github.com/philippemerle/AWS-CloudFormation-Diagrams/releases/tag/0.3.0) and is available as a [Python package in PyPI](https://pypi.org/project/AWS-CloudFormation-Diagrams).
+
+",Unknown,reddit,r/devops,reddit,2026-03-18 02:08:29,4,3,0,4,Tools,https://www.reddit.com/r/devops/comments/1rwecc6
+1rw7c6l,Piyush_shrii,DevOps Intern Facing an Issue – Need Advice,"DevOps Intern Facing an Issue – Need Advice I am a 21M DevOps intern who was recently moved to a new project where I handle some responsibilities while my senior mentor mainly reviews my work. However, my mentor expects me to have very deep, associate-level knowledge. Whenever I make a mistake, he only points it out without explaining it, and even when he fixes something, he does not provide any explanation , I am not expecting spoon feeding but if it's my accountability then atleast one explanation would be great. Since I am still an intern and learning, I am unsure how to handle this situation.What should I do??",Unknown,reddit,r/devops,reddit,2026-03-17 22:00:24,53,65,0,53,Discussion,https://www.reddit.com/r/devops/comments/1rw7c6l
+1rvw6b8,Obvious-Anywhere8435,Do DevOps engineers actually need to understand business logic deeply?,"Do DevOps engineers actually need to understand business logic deeply? I’ve been thinking about this lately while working on my own projects and learning more about DevOps.
+From what I understand, DevOps is mostly about automation, CI/CD, infrastructure, monitoring, etc. But when I try to build more “real-world” projects, I keep running into situations where I need to understand the business logic to do things properly.
+For example:
+Setting up pipelines — you need to know what actually matters in the app (critical flows, edge cases, etc.)
+Monitoring — what should you alert on if you don’t understand what’s “business critical”?
+Scaling — which services matter most to users or revenue?
+At the same time, I’ve seen people say DevOps engineers should stay more on the platform/infrastructure side and not go too deep into application logic.
+So I’m a bit confused.
+How deep do you actually need to go into business logic as a DevOps engineer? Is a high-level understanding enough, or do you need to think almost like a backend engineer/product person?",Unknown,reddit,r/devops,reddit,2026-03-17 11:57:00,5,24,0,5,Discussion,https://www.reddit.com/r/devops/comments/1rvw6b8
+1rvv08u,WiseDog7958,I’ve been experimenting with deterministic secret remediation in CI/CD pipelines using Python AST (refuses unsafe fixes),"I’ve been experimenting with deterministic secret remediation in CI/CD pipelines using Python AST (refuses unsafe fixes) I’ve been experimenting with a slightly different approach to secret handling in CI/CD pipelines.
+
+Most scanners detect hardcoded secrets, but the remediation is still manual. The pipeline fails, someone edits the file, commits again, and reruns the build.
+
+I wanted to see if the obvious safe cases could be automated.
+
+The idea was to see if secret remediation could be automated safely enough to run directly inside CI pipelines.
+
+So I started experimenting with a small tool that:
+
+\- scans Python repositories for hardcoded secrets  
+\- analyzes assignments using the Python **AST** instead of regex  
+\- replaces the secret with an **environment variable reference** when the change is structurally safe  
+**- refuses the change** if it can’t prove the rewrite is safe
+
+The idea is to keep the behavior **deterministic**.
+
+No LLM patches, no guessing. If the transformation isn’t guaranteed to preserve the code structure, it just reports the finding and leaves the file untouched.
+
+Example of the kind of case it handles.
+
+Before  
+SENDGRID\_API\_KEY = ""SG.live-abc123xyz987""
+
+After  
+SENDGRID\_API\_KEY = os.environ\[""SENDGRID\_API\_KEY""\]
+
+But something like this would be **refused**:  
+token = ""Bearer "" + ""sk-live-abc123""
+
+because the literal can't be safely isolated.
+
+The motivation is mainly **automation in CI/CD**:  
+detect → deterministic fix → pipeline continues  
+or  
+detect → refuse → pipeline fails and requires manual review
+
+Curious how people here approach this.
+
+\- Would you allow **automatic remediation** in a CI pipeline?  
+\- Or should CI stop at **detection only**?  
+\- Are teams already doing something like this internally?
+
+Interested to hear how teams handle this problem in real pipelines.
+
+If anyone wants to look at the experiment or try breaking it:  
+[https://github.com/VihaanInnovations/autonoma](https://github.com/VihaanInnovations/autonoma)",Unknown,reddit,r/devops,reddit,2026-03-17 11:00:19,7,21,0,7,Discussion,https://www.reddit.com/r/devops/comments/1rvv08u
+1rvt8tr,cpt_iemand,Product developer to devops. What should I know?,"Product developer to devops. What should I know? I recently got moved out of my company where I was doing SaaS development in Django (DRF) and React for a few years. I got really comfy doing that and enjoyed it a lot but for financial reasons my company moved me to the parent company on a team that’s very devops heavy. 
+
+Now it’s all Kubernetes, Terraform, GitHub actions, Jenkins, CI/CD, Datadog etc. I’ve been feeling pretty overwhelmed and out of my element. The imposter syndrome is real! Any advice for adapting to this new environment? Are there good resources for learning these tools or is it just better to observe and learn by osmosis? ",Unknown,reddit,r/devops,reddit,2026-03-17 09:41:47,8,14,0,8,Career / learning,https://www.reddit.com/r/devops/comments/1rvt8tr
+1rvgyh6,Successful-Ship580,does anyone using this exact architecture?,"does anyone using this exact architecture?                     Internet Users
+                          │
+                          ▼
+                  api.google.ai
+                  app.google.ai
+                          │
+                          ▼
+                   CloudFront CDN
+                          │
+            ┌─────────────┴─────────────┐
+            │                           │
+            ▼                           ▼
+          S3 Bucket              Load Balancer
+         (Frontend)                    │
+         stati website                 |
+                                       ▼
+                                 Target Group
+                                  Port 8001
+                                       │
+                                       ▼
+                                EC2 Instance
+                                       │
+                                       ▼
+                               Docker Container
+                                  Node.js API
+                                   Port 8001
+
+  
+Is there any need for improvement?  
+Is this the good approach for a production application?  
+What are the other alternatives?",Unknown,reddit,r/devops,reddit,2026-03-17 02:00:21,0,10,0,0,Architecture,https://www.reddit.com/r/devops/comments/1rvgyh6
+1rv99cj,Technical_Sound7794,Cinder CSI vs Ceph RBD CSI in Kubernetes: An Analysis of Persistent Volume Lifecycle Performance,"Cinder CSI vs Ceph RBD CSI in Kubernetes: An Analysis of Persistent Volume Lifecycle Performance Hey everyone, I recently investigated the performance differences between [storage classes on Rackspace Spot](https://spot.rackspace.com/docs/en/persistent-volumes), specifically comparing storage classes backed by OpenStack Cinder against those backed directly by Ceph RBD on Rackspace Spot and I wrote an article on it.
+
+Here's the article: [Cinder CSI vs Ceph RBD CSI in Kubernetes: An Analysis of Persistent Volume Lifecycle Performance on Rackspace Spot](https://spot.rackspace.com/blogs/cinder-csi-vs-ceph-rbd-csi-in-kubernetes-an-analysis-of-persistent-volume-lifecycle-performance-on-rackspace-spot)
+
+Users of Rackspace Spot observed that when creating or deleting Persistent Volumes backed by OpenStack Cinder storage classes, the operations often took a significant amount of time to complete. This could lead to pods getting stuck in `ContainerCreating` for a long time.
+
+Meanwhile, things were a whole lot faster with the Ceph RBD storage class.
+
+I ran a detailed analysis to understand exactly why this happens architecturally and compared it against the [newer spot-ceph storage class](https://spot.rackspace.com/blogs/why-kubernetes-ceph-csi-for-rackspace-spot).
+
+The summary is that OpenStack Cinder requires coordination across about five independent control plane layers before a single volume attachment can finalize: Kubernetes, the CSI driver, Cinder, Nova(OpenStack Compute), and the hypervisor all have to reach agreement before the VolumeAttachment object is updated.
+
+When Kubernetes retries while any of those layers is still in a transitional state, you get state conflicts that compound into significant delays and longer pod startup times.
+
+Meanwhile, for Ceph, the CSI driver communicates directly with the Ceph cluster, resulting in a straightforward volume attachment path. 
+
+Here's the Performance summary:
+
+* Detach phase: Cinder requires 75 seconds; Ceph completes in 10 seconds with clean removal
+* Attach phase (initial): Cinder requires 70 seconds with 3 retry failures due to state conflicts; Ceph completes in &lt;1 second with a single successful attempt
+* Attach phase (reattachment): Cinder requires 71 seconds with 3 retry failures (identical pattern); Ceph completes in &lt;1 second with a single successful attempt
+* End-to-end pod rescheduling: 151 seconds (Cinder: 75s detach + 76s reattach) versus 11 seconds (Ceph: 10s detach + 1s reattach) - a **13.7x performance improvement**
+
+  
+If you're interested in Kubernetes volume internals or want to understand how these two different storage class implementations work in Kubernetes, you might find this article useful.",Unknown,reddit,r/devops,reddit,2026-03-16 21:21:11,4,1,0,4,Vendor / market research,https://www.reddit.com/r/devops/comments/1rv99cj
+1ruxklc,Spiritual-Seat-4893,"Workspaces, Terragrunt or something else","Workspaces, Terragrunt or something else In past I have maintained around 7 environments with Terraform, each in its separate directory and state , the main file calling common modules. Recently have been given ownership of another project, they have around 7-8 environments maintained using Terraform. They utilise workspaces. Each solution has benefits and issues, the first one having to duplicate file and workspaces having a common state file. I started looking at Terragrunt as alternative. I would like to know practical experiences of managing environments at scale and which practice/tools can make life easier.",Unknown,reddit,r/devops,reddit,2026-03-16 10:37:10,24,32,0,24,Discussion,https://www.reddit.com/r/devops/comments/1ruxklc
+1rx8xma,holyknight00,Working Effectively with AI Is a Soft Skill,Working Effectively with AI Is a Soft Skill,Unknown,reddit,r/programming,reddit,2026-03-19 00:40:07,0,0,0,0,,https://www.reddit.com/r/programming/comments/1rx8xma
+1rx8kfc,Marmelab,Comprehension debt: the silent time bomb a lot of managers are ignoring,"Comprehension debt: the silent time bomb a lot of managers are ignoring I honestly wish every higher-up and C-suite member had to read this before pulling the trigger on more layoffs. 
+
+Every 'efficiency-driven' manager needs a serious reality check: firing devs for AI agents creates a comprehension gap that will eventually bankrupt the project. You can already see this in real life: projects where no one can make a simple change without breaking the system because **nobody actually understands how the parts fit together.**
+
+AI can output code, but it doesn't understand long-term intent. If no human has deep system context to oversee *why* decisions were made, you're simply trading lower costs today for a huge comprehension bill tomorrow.",Unknown,reddit,r/programming,reddit,2026-03-19 00:26:45,6,1,0,6,,https://www.reddit.com/r/programming/comments/1rx8kfc
+1rx4ofl,HNipps,"Formally Verifying the Easy Part: a field report on using Dafny to verify AI-generated code, and why all 4 real production bugs were in the integration layer","Formally Verifying the Easy Part: a field report on using Dafny to verify AI-generated code, and why all 4 real production bugs were in the integration layer",Unknown,reddit,r/programming,reddit,2026-03-18 21:59:50,0,2,0,0,,https://www.reddit.com/r/programming/comments/1rx4ofl
+1rx4lb3,robertgambee,JavaScript's date parser is out of control and needs to be stopped,"JavaScript's date parser is out of control and needs to be stopped I recently spent an afternoon learning that JavaScript has a very generous definition of ""date.""
+
+    new Date(""2020-01-23"")
+    // Wed Jan 22 2020 19:00:00 GMT-0500
+
+Makes sense. ISO format, midnight UTC, so it shows up as January 22 in the Western Hemisphere.
+
+    new Date(""Today is 2020-01-23"")
+    // Thu Jan 23 2020 00:00:00 GMT-0500
+
+OK, it pulled the date out of a sentence, which might be helpful in some cases. And interestingly, the time shifted, which is a little odd.
+
+    new Date(""Route 66"")
+    // Sat Jan 01 1966 00:00:00 GMT-0500
+
+It thinks ""Route 66"" is referring to the year 1966? That's definitely a stretch.
+
+    new Date(""Beverly Hills, 90210"")
+    // Mon Jan 01 90210 00:00:00 GMT-0500
+
+Year 90,210? Are you kidding me?!
+
+Turns out that most popular JavaScript engines have legacy parsers that really, really want to help you parse dates.
+
+We had a bug in our app were addresses and business names were being displayed as dates. The reason was that we were using the `Date` constructor as a fallback parser to catch unexpected formats. The fix was simple, but the bug made us laugh when we first saw it. And we learned to not treat the `Date` constructor as a validator.
+
+Full blog post which explains the parsing logic: [https://futuresearch.ai/blog/javascript-thinks-everythings-a-date/](https://futuresearch.ai/blog/javascript-thinks-everythings-a-date/)",Unknown,reddit,r/programming,reddit,2026-03-18 21:56:19,139,68,0,139,,https://www.reddit.com/r/programming/comments/1rx4lb3
+1rx24k0,Insert_Bitcoin,Forget Flags and Scripts: Just Rename the File,Forget Flags and Scripts: Just Rename the File,Unknown,reddit,r/programming,reddit,2026-03-18 20:09:37,0,5,0,0,,https://www.reddit.com/r/programming/comments/1rx24k0
+1rwy12a,fR0DDY,From RDS to Data Lake: Archiving Massive MySQL Tables Without Losing Query Power,From RDS to Data Lake: Archiving Massive MySQL Tables Without Losing Query Power,Unknown,reddit,r/programming,reddit,2026-03-18 16:19:45,1,0,0,1,,https://www.reddit.com/r/programming/comments/1rwy12a
+1rwx24q,PixeledPathogen,"Top AI coding tools make mistakes one in four times, study shows","Top AI coding tools make mistakes one in four times, study shows",Unknown,reddit,r/programming,reddit,2026-03-18 15:17:42,148,50,0,148,,https://www.reddit.com/r/programming/comments/1rwx24q
+1rwv84w,Missics,How to Not Get Hacked Through File Uploads,How to Not Get Hacked Through File Uploads,Unknown,reddit,r/programming,reddit,2026-03-18 13:29:24,139,11,0,139,,https://www.reddit.com/r/programming/comments/1rwv84w
+1rwsl0x,AbrasiveRadiance,Slug Algorithm released into public domain,Slug Algorithm released into public domain,Unknown,reddit,r/programming,reddit,2026-03-18 11:16:28,833,37,0,833,,https://www.reddit.com/r/programming/comments/1rwsl0x
+1rx8ovr,Nervous_Star_2200,Preciso de um diploma?,Preciso de um diploma? Preciso de um diploma universitário para entrar na área ou apenas estudos sozinhos e certificados já bastam?,Unknown,reddit,r/cybersecurity,reddit,2026-03-19 00:31:15,0,1,0,0,Career Questions &amp; Discussion,https://www.reddit.com/r/cybersecurity/comments/1rx8ovr
+1rx6z1p,netbiosX,Credential Guard - Control Validation,"Credential Guard - Control Validation I just published a deep‑dive article covering every offensive technique currently known to interact with or bypass **Credential Guard**, along with practical **detection strategies** for each one.
+
+The write‑up breaks down techniques such as:
+
+* **Patching**
+* **Pass‑the‑Challenge**
+* **Downgrade**
+* **SSP Negotiation**
+
+If you're working in detection engineering, red teaming, or Windows internals, you might find it useful. Happy to hear feedback or discuss gaps others have seen in the wild.
+
+**Article:**  
+[https://ipurple.team/2026/03/17/credential-guard/](https://ipurple.team/2026/03/17/credential-guard/)",Unknown,reddit,r/cybersecurity,reddit,2026-03-18 23:27:53,2,0,0,2,Threat Actor TTPs &amp; Alerts,https://www.reddit.com/r/cybersecurity/comments/1rx6z1p
+1rx6f0p,visitor_m,Examples of exposed assets found during passive recon,"Examples of exposed assets found during passive recon During passive reconnaissance I’ve been noticing a recurring pattern:
+
+many organizations unintentionally expose assets on the public internet.
+
+Some examples I encountered:
+
+\- internal documents accessible through public endpoints  
+
+\- management dashboards reachable without authentication  
+
+\- APIs exposing unexpected data through enumeration  
+
+What’s interesting is that these exposures often don’t require any exploitation, they’re just part of the external attack surface that hasn’t been mapped properly.
+
+I started documenting these cases and building a small project around this approach (focused only on passive recon and exposure discovery).
+
+I’m curious how others here approach external attack surface discovery:
+
+\- do you rely mostly on automation or manual recon?
+
+\- do you actively look for this type of exposure in your workflow?",Unknown,reddit,r/cybersecurity,reddit,2026-03-18 23:06:43,1,2,0,1,Research Article,https://www.reddit.com/r/cybersecurity/comments/1rx6f0p
+1rx5y31,founders_keepers,"Hundreds of agent skills, equally many potential security issues","Hundreds of agent skills, equally many potential security issues This is a public database that analyze the security risks introduced by AI agent skills.
+
+Skills MAY introduces new layers of attack surface that most people have only beginning to understand. They're no different from blindly installing NPM packages.
+
+Researchers had already found that over a quarter public skills contain at least one security vulnerability, including prompt injection vectors, privilege escalation opportunities, and data-exfiltration risks.
+
+In this database, each entry is designed to explain real attack vectors and explains difference between normal operational capabilities and behaviors that could realistically be exploited by attackers.
+
+The resource is publicly accessible and is expected to expand.",Unknown,reddit,r/cybersecurity,reddit,2026-03-18 22:48:45,2,0,0,2,FOSS Tool,https://www.reddit.com/r/cybersecurity/comments/1rx5y31
+1rx5ltq,Project_Lanky,Best practices to use ChatGPT / Claude to audit SharePoint permissions (least privilege)?,"Best practices to use ChatGPT / Claude to audit SharePoint permissions (least privilege)? I work in GRC and I’m trying to ensure our SharePoint environment respects least privilege — especially now that GenAI makes it easy for users to surface anything they already have access to.
+
+Once tools like ChatGPT or Claude are connected to SharePoint with the same rights than myself, I want it to make a list of publicly available files that contain confidential information. Has anyone here done that and have some advice to make it efficient?
+
+Thanks. ",Unknown,reddit,r/cybersecurity,reddit,2026-03-18 22:35:40,1,1,0,1,Business Security Questions &amp; Discussion,https://www.reddit.com/r/cybersecurity/comments/1rx5ltq
+1rx5h60,moooooky,Hundreds of Millions of iPhones Can Be Hacked With a New Tool Found in the Wild,Hundreds of Millions of iPhones Can Be Hacked With a New Tool Found in the Wild,Unknown,reddit,r/cybersecurity,reddit,2026-03-18 22:30:41,26,12,0,26,News - General,https://www.reddit.com/r/cybersecurity/comments/1rx5h60
+1rx5ce0,Les_Habitants912,Passkeys or Passwords with MFA?,"Passkeys or Passwords with MFA? Hi everyone,
+
+I am not sure if this is the right sub to post this but seems to make the most sense. I am wondering if in my situation I would benefits from passkey setup or continue with passwords and MFA. 
+
+I am currently using Bitwarden to store my password and Google authenticator as my MFA where possible, including MFA for Bitwarden. I have all of my passwords for financial institutions stored in Bitwarden, however, the last 6 characters of my passwords are not stored in the vault. I have memorized this string of characters and add it to my vault password when I am logging in. I only do this for my bank/financial accounts. I also have MFA set up where possible, unfortunately, one of my bank accounts only allow SMS. 
+
+Some of these accounts now allow passkey setup which I can store in Bitwarden. I understand passkeys are more secure against phishing but I feel my current set up is more secured. When I have the passkey set up, it disabled my MFA for my authenticator. So theoretically, if I am understanding this correctly, if someone where to gain access to my Bitwarden and Authenticator, they would  also gain access to my passkeys for my bank accounts. If this is the case, does that mean my current set up would be more secure? Other than preventing phishing, are there any other benefits to using passkeys?
+
+",Unknown,reddit,r/cybersecurity,reddit,2026-03-18 22:25:37,1,2,0,1,Personal Support &amp; Help!,https://www.reddit.com/r/cybersecurity/comments/1rx5ce0
+1rx4ytc,drewchainzz,Second iOS exploit kit emerges from suspected Russian hackers using possible U.S. government-developed tools,Second iOS exploit kit emerges from suspected Russian hackers using possible U.S. government-developed tools,Unknown,reddit,r/cybersecurity,reddit,2026-03-18 22:10:55,21,1,0,21,UKR/RUS,https://www.reddit.com/r/cybersecurity/comments/1rx4ytc
+1rx3phq,gwynftw,How ai proof is cybersec jobs?,How ai proof is cybersec jobs? Im a staff swe of 12 years and its been great but I see the writing on the wall. I make a good paycheck and I want to keep this lifestyle for my family. How ai proof is cybersec really? ,Unknown,reddit,r/cybersecurity,reddit,2026-03-18 21:20:13,0,17,0,0,Career Questions &amp; Discussion,https://www.reddit.com/r/cybersecurity/comments/1rx3phq
+1rx3oyd,midasweb,How to AI based paste and screenshot methods bypass legacy DLP system?,"How to AI based paste and screenshot methods bypass legacy DLP system? I keep noticing a trend in discussion and I'm not sure if I'm overthinking it or just catching up. Traditional DLP at least in my experience is built around files and specific channels email attachments, SaaS uploads, USB transfers, maybe some web form monitoring if you're lucky. But AI workflows seem to reshape how data moves. Instead of sending files, people paste content into chat tools, or take screenshots of restricted data and upload images that AI can OCR into text. For users, it feels like normal workflow, from security perspective it looks like a new way around controls. In real world scenarios, where are the biggest gaps showing up? And what's the first practical step to access exposure before trying to lock things down? Thanks!",Unknown,reddit,r/cybersecurity,reddit,2026-03-18 21:19:37,2,2,0,2,Business Security Questions &amp; Discussion,https://www.reddit.com/r/cybersecurity/comments/1rx3oyd

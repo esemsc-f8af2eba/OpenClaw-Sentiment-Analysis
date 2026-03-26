@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Data
+# data/*.csv  # Commented to keep posts.csv tracked
+
+# Models
+models/
+
+# Checkpoints
+/tmp/
+
+# Environment variables
+.env
+
+# Exports
+dashboard/export/
+
+# IDE
+.vscode/
+.idea/
+*.swp

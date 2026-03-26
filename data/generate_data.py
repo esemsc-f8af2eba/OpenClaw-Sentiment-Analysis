@@ -91,7 +91,7 @@ def generate_dataset(n: int = 5000, save_path: str = "data/posts.csv"):
 
     # Print distribution
     dist = df["label"].value_counts()
-    print(f"✅ Generated {n} posts → {save_path}")
+    print(f"[OK] Generated {n} posts -> {save_path}")
     print(f"   Security Risk:     {dist.get(0, 0)} ({dist.get(0, 0)/n*100:.1f}%)")
     print(f"   Productivity Gain: {dist.get(1, 0)} ({dist.get(1, 0)/n*100:.1f}%)")
     print(f"   Neutral:           {dist.get(2, 0)} ({dist.get(2, 0)/n*100:.1f}%)")

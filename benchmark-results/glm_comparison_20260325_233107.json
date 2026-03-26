@@ -1,0 +1,121 @@
+{
+  "timestamp": "2026-03-25T23:31:07.680290",
+  "total_samples": 15,
+  "valid_comparisons": 14,
+  "agreements": 12,
+  "agreement_rate_pct": 85.71428571428571,
+  "results": [
+    {
+      "post_id": "1rihows",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[D] Self-Promotion Thread Please post your personal projects, startups, product ",
+      "keyword_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1qrrayn",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[D] Monthly Who's Hiring and Who wants to be Hired? **For Job Postings** please ",
+      "keyword_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s3adeo",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[D] Any other PhD students feel underprepared and that the bar is too low? Hello",
+      "keyword_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s387tx",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[D] ICML 2026: Policy A vs Policy B impact on scores discussion I am curious whe",
+      "keyword_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s366un",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[R] Ternary neural networks as a path to more efficient AI - is (+1, 0, -1) weig",
+      "keyword_pred": 1,
+      "glm_pred": 2,
+      "agreement": false
+    },
+    {
+      "post_id": "1s2yr9b",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[R] KALAVAI: Predicting When Independent Specialist Fusion Works (gain = 0.82 × ",
+      "keyword_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s36bxr",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[R] Adversarial Machine Learning Adversarial Machine Learning\n\nHy guys, i'm new ",
+      "keyword_pred": 0,
+      "glm_pred": 1,
+      "agreement": false
+    },
+    {
+      "post_id": "1s38qxm",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[P] Built a Interactive Web for PINN Solving the 2D Heat Equation Hey everyone,\n",
+      "keyword_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s2qham",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[R] How are you managing long-running preprocessing jobs at scale? Curious what'",
+      "keyword_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s27pnk",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[D] Matryoshka Representation Learning Hey everyone,\n\nMatryoshka Representation ",
+      "keyword_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s32g40",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[P] Best approach for online crowd density prediction from noisy video counts? (",
+      "keyword_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s1yz2t",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[D] ICML 2026 Review Discussion ICML 2026 reviews will release today (24-March A",
+      "keyword_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s248e0",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[R] Causal self-attention as a probabilistic model over embeddings We’ve been wo",
+      "keyword_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s346dl",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[R] What is the difference b/w Human and Humanoid? It is easy to observe that hu",
+      "keyword_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    }
+  ]
+}

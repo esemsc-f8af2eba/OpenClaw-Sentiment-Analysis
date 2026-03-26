@@ -36,7 +36,7 @@ def run():
 
     # If unlabelled (real scraped data), run classifier
     if "label" not in df.columns or df.filter(col("label").isNull()).count() > 0:
-        print("🤖 Running classifier on unlabelled data...")
+        print(" Running classifier on unlabelled data...")
         model = PipelineModel.load(MODEL_PATH)
         df = model.transform(df).withColumnRenamed("prediction", "label")
 
@@ -59,8 +59,9 @@ def run():
     print(overall_pd[["category", "count", "percentage"]].to_string(index=False))
 
     # ── 2. Trend over time (daily) ──────────────────────────────────────────
+    from pyspark.sql.functions import col as spark_col
     daily = (
-        df.withColumn("date", date_trunc("day", "timestamp"))
+        df.withColumn("date", date_trunc("day", "timestamp").cast("string"))
         .groupBy("date", "label")
         .agg(count("*").alias("count"))
         .orderBy("date", "label")
@@ -68,7 +69,7 @@ def run():
     daily_pd = daily.toPandas()
     daily_pd["category"] = daily_pd["label"].map(LABEL_NAMES)
     daily_pd.to_csv(f"{EXPORT_DIR}/daily_trend.csv", index=False)
-    print(f"\n✅ Saved daily_trend.csv ({len(daily_pd)} rows)")
+    print(f"\n Saved daily_trend.csv ({len(daily_pd)} rows)")
 
     # ── 3. Breakdown by source ──────────────────────────────────────────────
     by_source = (

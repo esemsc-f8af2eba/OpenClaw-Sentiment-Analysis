@@ -1,0 +1,162 @@
+{
+  "timestamp": "2026-03-25T23:45:16.395672",
+  "test_description": "Real Reddit posts labeled as OpenClaw discussions",
+  "total_samples": 20,
+  "valid_comparisons": 19,
+  "agreements": 14,
+  "overall_accuracy": 0.7368421052631579,
+  "results": [
+    {
+      "post_id": "1rihows",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[D] Self-Promotion Thread Please post your personal projects",
+      "spark_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1qrrayn",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[D] Monthly Who's Hiring and Who wants to be Hired? **For Jo",
+      "spark_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s3adeo",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[D] Any other PhD students feel underprepared and that the b",
+      "spark_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s387tx",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[D] ICML 2026: Policy A vs Policy B impact on scores discuss",
+      "spark_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s366un",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[R] Ternary neural networks as a path to more efficient AI -",
+      "spark_pred": 1,
+      "glm_pred": 2,
+      "agreement": false
+    },
+    {
+      "post_id": "1s2yr9b",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[R] KALAVAI: Predicting When Independent Specialist Fusion W",
+      "spark_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s36bxr",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[R] Adversarial Machine Learning Adversarial Machine Learnin",
+      "spark_pred": 0,
+      "glm_pred": 2,
+      "agreement": false
+    },
+    {
+      "post_id": "1s38qxm",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[P] Built a Interactive Web for PINN Solving the 2D Heat Equ",
+      "spark_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s2qham",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[R] How are you managing long-running preprocessing jobs at ",
+      "spark_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s397tl",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[P] Made a dataset but don't know what to do with it This we",
+      "spark_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s27pnk",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[D] Matryoshka Representation Learning Hey everyone,\n\nMatryo",
+      "spark_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s32g40",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[P] Best approach for online crowd density prediction from n",
+      "spark_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s1yz2t",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[D] ICML 2026 Review Discussion ICML 2026 reviews will relea",
+      "spark_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s248e0",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[R] Causal self-attention as a probabilistic model over embe",
+      "spark_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s346dl",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[R] What is the difference b/w Human and Humanoid? It is eas",
+      "spark_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    },
+    {
+      "post_id": "1s20svb",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[D] Decoding backchannel info: Is a PI being \"aggressive in ",
+      "spark_pred": 0,
+      "glm_pred": 2,
+      "agreement": false
+    },
+    {
+      "post_id": "1s2clxr",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[R] Evaluating MLLMs with Child-Inspired Cognitive Tasks Hey",
+      "spark_pred": 0,
+      "glm_pred": 2,
+      "agreement": false
+    },
+    {
+      "post_id": "1s1uvfr",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[P] Prompt optimization for analog circuit placement — 97% o",
+      "spark_pred": 1,
+      "glm_pred": 2,
+      "agreement": false
+    },
+    {
+      "post_id": "1s1h8fw",
+      "subreddit": "r/MachineLearning",
+      "text_preview": "[N] Understanding &amp; Fine-tuning Vision Transformers A ne",
+      "spark_pred": 2,
+      "glm_pred": 2,
+      "agreement": true
+    }
+  ]
+}
